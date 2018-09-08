@@ -1,3 +1,8 @@
+.imgtodo {
+  background-color: grey;
+  width: 30vw;
+  height:30vh;
+}
 body {
   margin:0;
 }
@@ -5,30 +10,109 @@ img {
   max-width: 100%;
   align-self: center;
 }
+a {
+  text-decoration: none;
+  color: #cc3300;
+}
+nav a{
+  color:black;
+}
 
+h1,h2,h3,h4,p {
+  margin: 0;
+}
 
-h1 {
+h1, h2 {
   font-family: 'EB Garamond', serif;
+}
+h1 {
   font-size: 3em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h4 {
+  font-size: 1.2em;
 }
 p {
   font-family: sans-serif;
+  padding-bottom: .5vh;
 }
 
-header {
+
+.parent, .child, header, .header_parent, .header_child, nav, .home1, .home1child, .footer_parent, .footer_child {
   display: flex;
+}
+
+header, .header_parent, nav, .home1, .footer_parent {
   flex-direction: row;
 }
 
-header {
+.child, .header_child, .home1child, .footer_child {
+  flex-direction: column;
+}
+
+.parent,.child,.home1 {
+  justify-content: space-around;
+  align-items: center;
+}
+
+header,footer {
   background-color: #cc3300;
   color:white;
 }
 
 header img {
-  width:10vw;
+  width:7.5vw;
 }
 
 .header_parent {
-  margin:4vh 4vw;
+  margin: 4vh 8vw;
+}
+
+.header_child {
+  margin-left: 6vw;
+  width: 70vw;
+}
+
+
+nav {
+  justify-content: space-between;
+  margin-bottom: 4vh;
+  padding: 2vh 18vw 2vh 20vw;
+  border-bottom: solid #cc3300;
+}
+
+nav a {
+  font-size: 1.5em;
+}
+
+.child {
+  width:75vw;
+}
+
+.home1 {
+  width: inherit;
+  margin: 5vh 0;
+}
+
+.home1child {
+  align-items: center;
+  text-align: center;
+  margin-left:5vw;
+}
+.home1child h3 {
+  border-bottom: solid #cc3300;
+}
+
+.footer_child {
+  width:30vw;
+  margin:5vh 0;
+}
+.footer_parent {
+  align-items: center;
+}
+#fc1 {
+  margin-left: 20vw;
+  margin-right:5vw;
 }
