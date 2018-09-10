@@ -14,11 +14,17 @@ img {
 a {
   color: #cc3300;
 }
-
+.about .hiddenlink{
+  color:black;
+}
 nav a{
   color:black;
   text-decoration: none;
 }
+.about a {
+  text-decoration: none;
+}
+
 /* typefaces */
 h1,h2,h3,h4,p {
   margin: 0;
@@ -31,18 +37,28 @@ h1, h2,h3,h4, nav a {
 h1 {
   font-size: 2.7em;
 }
+.header2 h1 {
+  text-align: center;
+}
 h2 {
   font-size: 2.4em;
 }
+.homechild h2 {
+  margin-bottom: 1vh;
+}
 .about h2 {
   text-align: center;
+  margin-bottom: 7.5vh;
+}
+.bio h2 {
+  margin-bottom: 5vh;
 }
 h3 {
   font-size: 1.7em;
 }
 .about h3 {
   font-size: 2em;
-  margin: 7.5vh 0;
+  margin-bottom: 7.5vh;
   text-align: center;
 }
 h4 {
@@ -55,6 +71,9 @@ nav h4 {
   font-size: 1.7em;
   text-align: right;
 }
+.about h4 {
+  margin: 1vh 0;
+}
 footer h4 {
   padding-bottom: 1vh;
 }
@@ -65,26 +84,27 @@ p {
 }
 footer p {
   font-size: 1em;
-  padding-bottom: .7vh;
+  padding-bottom: .5vh;
 }
 
 /* flex stuff */
-.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .footer_parent, .footer_child {
+.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive {
   display: flex;
 }
 
-header, .header_parent, nav ul, .home, .footer_parent {
+header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .ministerarchive {
   flex-direction: row;
 }
 
-.child, .header_child, .homechild, .footer_child {
+.child, .header_child, .homechild, .ministernav, .footer_child {
   flex-direction: column;
 }
 
-.parent,.child,.home {
+.parent,.child,.home,.ministerarchive {
   justify-content: space-around;
   align-items: center;
 }
+
 
 /* header */
 header,footer {
@@ -176,14 +196,31 @@ nav ul li ul li {
 .homechild h4 {
   border-bottom: solid #cc3300;
 }
-.homechild h2 {
-  margin-bottom: 1vh;
-}
+
 
 .about {
   margin: 10vh 0;
   width: 60vw;
   align-items: unset;
+}
+
+.ministernavchild {
+  justify-content: space-between;
+  width: 100%;
+}
+.ministernav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ministerarchive {
+
+}
+
+.bio img {
+  border: solid #cc3300;
+  padding:.7vw;
+  margin:15vh 0 10vh;
 }
 
 /* footer */
