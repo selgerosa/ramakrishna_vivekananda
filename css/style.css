@@ -1,3 +1,4 @@
+/* todo will delete */
 .imgtodo {
   background-color: grey;
   width: 30vw;
@@ -11,18 +12,20 @@ img {
   align-self: center;
 }
 a {
-  text-decoration: none;
   color: #cc3300;
 }
+
 nav a{
   color:black;
+  text-decoration: none;
 }
-
+/* typefaces */
 h1,h2,h3,h4,p {
   margin: 0;
+  padding: 0;
 }
 
-h1, h2,h3,h4 {
+h1, h2,h3,h4, nav a {
   font-family: 'EB Garamond', serif;
 }
 h1 {
@@ -31,23 +34,46 @@ h1 {
 h2 {
   font-size: 2.4em;
 }
+.about h2 {
+  text-align: center;
+}
 h3 {
   font-size: 1.7em;
 }
+.about h3 {
+  font-size: 2em;
+  margin: 7.5vh 0;
+  text-align: center;
+}
 h4 {
+  font-size: 1.4em;
+}
+nav h4 {
   font-size: 1.2em;
+}
+.about h4 {
+  font-size: 1.7em;
+  text-align: right;
+}
+footer h4 {
+  padding-bottom: 1vh;
 }
 p {
   font-family: sans-serif;
-  padding-bottom: .5vh;
+  padding-bottom: 10vh;
+  font-size: 1.7em;
+}
+footer p {
+  font-size: 1em;
+  padding-bottom: .7vh;
 }
 
-
-.parent, .child, header, .header_parent, .header_child, nav, .home, .homechild, .footer_parent, .footer_child {
+/* flex stuff */
+.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .footer_parent, .footer_child {
   display: flex;
 }
 
-header, .header_parent, nav, .home, .footer_parent {
+header, .header_parent, nav ul, .home, .footer_parent {
   flex-direction: row;
 }
 
@@ -60,6 +86,7 @@ header, .header_parent, nav, .home, .footer_parent {
   align-items: center;
 }
 
+/* header */
 header,footer {
   background-color: #cc3300;
   color:white;
@@ -67,6 +94,10 @@ header,footer {
 
 header img {
   width:7.5vw;
+}
+
+header h2 {
+  text-align: center;
 }
 
 .header_parent {
@@ -78,18 +109,56 @@ header img {
   width: 70vw;
 }
 
-
+/* nav */
 nav {
-  justify-content: space-between;
-  margin-bottom: 4vh;
-  padding: 2vh 18vw 2vh 20vw;
   border-bottom: solid #cc3300;
+}
+
+nav ul {
+  justify-content: space-between;
+  padding: 2vh 18vw 2vh 20vw;
+  margin:0;
+}
+
+.dropdown {
+  padding:0;
+  border:none;
 }
 
 nav a {
   font-size: 1.2em;
 }
+nav li {
+ display: block;
+ transition-duration: 0.5s;
+}
 
+nav li:hover {
+  cursor: pointer;
+}
+
+nav ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover > ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/* body */
 .child {
   width:75vw;
 }
@@ -111,6 +180,13 @@ nav a {
   margin-bottom: 1vh;
 }
 
+.about {
+  margin: 10vh 0;
+  width: 60vw;
+  align-items: unset;
+}
+
+/* footer */
 .footer_child {
   width:30vw;
   margin:5vh 0;
