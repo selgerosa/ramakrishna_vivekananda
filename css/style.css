@@ -1,7 +1,7 @@
 .imgtodo {
   background-color: grey;
   width: 30vw;
-  height:30vh;
+  height:50vh;
 }
 body {
   margin:0;
@@ -22,14 +22,17 @@ h1,h2,h3,h4,p {
   margin: 0;
 }
 
-h1, h2 {
+h1, h2,h3,h4 {
   font-family: 'EB Garamond', serif;
 }
 h1 {
-  font-size: 3em;
+  font-size: 2.7em;
 }
 h2 {
-  font-size: 2.7em;
+  font-size: 2.4em;
+}
+h3 {
+  font-size: 1.7em;
 }
 h4 {
   font-size: 1.2em;
@@ -40,19 +43,19 @@ p {
 }
 
 
-.parent, .child, header, .header_parent, .header_child, nav, .home1, .home1child, .footer_parent, .footer_child {
+.parent, .child, header, .header_parent, .header_child, nav, .home, .homechild, .footer_parent, .footer_child {
   display: flex;
 }
 
-header, .header_parent, nav, .home1, .footer_parent {
+header, .header_parent, nav, .home, .footer_parent {
   flex-direction: row;
 }
 
-.child, .header_child, .home1child, .footer_child {
+.child, .header_child, .homechild, .footer_child {
   flex-direction: column;
 }
 
-.parent,.child,.home1 {
+.parent,.child,.home {
   justify-content: space-around;
   align-items: center;
 }
@@ -67,7 +70,7 @@ header img {
 }
 
 .header_parent {
-  margin: 4vh 8vw;
+  margin: 3vh 8vw;
 }
 
 .header_child {
@@ -84,25 +87,28 @@ nav {
 }
 
 nav a {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .child {
   width:75vw;
 }
 
-.home1 {
+.home {
   width: inherit;
   margin: 5vh 0;
 }
 
-.home1child {
+.homechild {
   align-items: center;
   text-align: center;
   margin-left:5vw;
 }
-.home1child h3 {
+.homechild h4 {
   border-bottom: solid #cc3300;
+}
+.homechild h2 {
+  margin-bottom: 1vh;
 }
 
 .footer_child {
