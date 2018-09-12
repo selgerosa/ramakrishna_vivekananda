@@ -21,7 +21,7 @@ nav a{
   color:black;
   text-decoration: none;
 }
-.col a {
+.minister a {
   text-decoration: none;
 }
 
@@ -88,7 +88,7 @@ footer p {
 }
 
 /* flex stuff */
-.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .col {
+.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive {
   display: flex;
 }
 
@@ -96,7 +96,7 @@ header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .minis
   flex-direction: row;
 }
 
-.child, .header_child, .homechild, .ministernav, .footer_child, .col {
+.child, .header_child, .homechild, .ministernav, .footer_child {
   flex-direction: column;
 }
 
@@ -104,13 +104,10 @@ header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .minis
   justify-content: space-around;
   align-items: center;
 }
-.colparent {
+.minister {
   width: 85vw !important;
-  flex-direction: row;
 }
-.col {
-  width:40vw;
-}
+
 /* header */
 header,footer {
   background-color: #cc3300;
