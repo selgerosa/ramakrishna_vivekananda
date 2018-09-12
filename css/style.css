@@ -21,7 +21,7 @@ nav a{
   color:black;
   text-decoration: none;
 }
-.minister a {
+.archive a {
   text-decoration: none;
 }
 
@@ -104,7 +104,7 @@ header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .minis
   justify-content: space-around;
   align-items: center;
 }
-.minister {
+.archive {
   width: 85vw !important;
 }
 
@@ -209,10 +209,6 @@ nav ul li ul li {
 .ministernav {
   justify-content: space-between;
   align-items: center;
-}
-
-.ministerarchive {
-
 }
 
 .bio img {
