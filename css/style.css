@@ -81,6 +81,7 @@ p {
   font-family: sans-serif;
   padding-bottom: 10vh;
   font-size: 1.7em;
+  line-height: 115%;
 }
 footer p {
   font-size: 1em;
@@ -104,9 +105,7 @@ header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .minis
   justify-content: space-around;
   align-items: center;
 }
-.archive {
-  width: 85vw !important;
-}
+
 
 /* header */
 header,footer {
@@ -184,7 +183,6 @@ nav ul li ul li {
 .child {
   width:75vw;
   margin: 10vh 0;
-  width: 65vw;
   align-items: unset;
 }
 
@@ -202,6 +200,9 @@ nav ul li ul li {
   border-bottom: solid #cc3300;
 }
 
+.about {
+  width: 50vw;
+}
 .ministernavchild {
   justify-content: space-between;
   width: 100%;
