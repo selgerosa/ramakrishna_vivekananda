@@ -45,8 +45,9 @@ h2 {
 }
 .homechild h2 {
   margin-bottom: 1vh;
+  text-align: center;
 }
-.about h2 {
+.about h2, .contact h2 {
   text-align: center;
   margin-bottom: 7.5vh;
 }
@@ -56,7 +57,7 @@ h2 {
 h3 {
   font-size: 1.7em;
 }
-.about h3 {
+.about h3,.contact h3 {
   font-size: 2em;
   margin-bottom: 7.5vh;
   text-align: center;
@@ -66,6 +67,9 @@ h4 {
 }
 nav h4 {
   font-size: 1.2em;
+}
+.homechild h4 {
+  text-align: center;
 }
 .about h4 {
   font-size: 1.7em;
@@ -193,14 +197,15 @@ nav ul li ul li {
 
 .homechild {
   align-items: center;
-  text-align: center;
   margin-left:5vw;
+  max-width: 50vw;
 }
+
 .homechild h4 {
   border-bottom: solid #cc3300;
 }
 
-.about {
+.about,.contact {
   width: 50vw;
 }
 .ministernavchild {
@@ -218,6 +223,17 @@ nav ul li ul li {
   margin:15vh 0 10vh;
 }
 
+.mapouter{
+  text-align:right;
+  height:400px;
+  width:600px;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:55vh;
+  width:40vw;
+}
 /* footer */
 .footer_child {
   width:30vw;
