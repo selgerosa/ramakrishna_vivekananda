@@ -120,23 +120,27 @@ footer p {
 }
 
 /* flex stuff */
-.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav {
+.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav, .biography, .biochild {
   display: flex;
 }
 
-header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .ministerarchive, .bionav {
+header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .ministerarchive, .bionav, .biography {
   flex-direction: row;
 }
 
-.child, .header_child, .homechild, .ministernav, .footer_child {
+.child, .header_child, .homechild, .ministernav, .footer_child, .biochild {
   flex-direction: column;
 }
 
-.parent,.child,.home,.ministerarchive, .bionav {
+.parent,.child,.home,.ministerarchive {
   justify-content: space-around;
   align-items: center;
 }
 
+.bionav {
+  justify-content: space-between;
+  align-items: center;
+}
 
 /* header */
 header,footer {
@@ -250,6 +254,11 @@ nav ul li ul li {
   margin:15vh 0 20vh;
 }
 
+.biochild {
+  width: 30vw;
+  align-items: center;
+  justify-content: center;
+}
 .mapouter{
   text-align:right;
   height:400px;
