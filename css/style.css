@@ -54,7 +54,7 @@ h2 {
 .bio h2 {
   margin-bottom: 5vh;
 }
-.biochild h2 {
+.biochild h2, .gallery h2 {
   text-align: center;
   margin-bottom: 5vh;
 }
@@ -124,7 +124,7 @@ footer p {
 }
 
 /* flex stuff */
-.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav, .biography, .biochild {
+.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav, .biography, .biochild, .slideshow, .slideshownav {
   display: flex;
 }
 
@@ -146,9 +146,6 @@ header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .minis
   align-items: center;
 }
 
-.gallery {
-  align-items: center !important;
-}
 
 /* header */
 header,footer {
@@ -286,6 +283,32 @@ nav ul li ul li {
   background:none!important;
   height:55vh;
   width:40vw;
+}
+
+/* slideshow */
+
+.gallery {
+  align-items: center;
+}
+
+.slideshow {
+  margin-bottom: 2vh;
+}
+
+.slideshow img {
+  display: none;
+  border: solid #cc3300;
+  padding:.7vw;
+  margin: 3vh 3vw;
+}
+
+#birthday20081, #birthday20071 {
+  display: flex;
+}
+
+.slideshownav img{
+  width: 15vw;
+  margin: 0 .5vw 2vh .5vw;
 }
 
 /* footer */
