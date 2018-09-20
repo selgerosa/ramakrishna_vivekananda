@@ -124,7 +124,7 @@ footer p {
 }
 
 /* flex stuff */
-.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav, .biography, .biochild, .slideshow, .slideshownav {
+.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav, .biography, .biochild, .slideshow, .slideshownav, .gallery a {
   display: flex;
 }
 
@@ -132,11 +132,11 @@ header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .minis
   flex-direction: row;
 }
 
-.child, .header_child, .homechild, .ministernav, .footer_child, .biochild {
+.child, .header_child, .homechild, .ministernav, .footer_child, .biochild, .gallery a {
   flex-direction: column;
 }
 
-.parent,.child,.home,.ministerarchive {
+.parent,.child,.home,.ministerarchive,.slideshownav {
   justify-content: space-around;
   align-items: center;
 }
@@ -245,7 +245,7 @@ nav ul li ul li {
   border-bottom: solid #cc3300;
 }
 
-.about,.contact,.activities,.bio {
+.about,.contact,.activities,.bio, .igallery {
   width: 50vw;
 }
 .ministernavchild {
@@ -287,8 +287,9 @@ nav ul li ul li {
 
 /* slideshow */
 
-.gallery {
+.gallery, .gallery a {
   align-items: center;
+  justify-content: center;
 }
 
 .slideshow {
@@ -302,13 +303,17 @@ nav ul li ul li {
   margin: 3vh 3vw;
 }
 
-#birthday20081, #birthday20071 {
+#birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041 {
   display: flex;
 }
 
 .slideshownav img{
-  width: 15vw;
-  margin: 0 .5vw 2vh .5vw;
+  margin: 0 .5vw;
+  max-height:20vh;
+}
+.slideshownav {
+  margin-bottom: 5vh;
+  width: 70vw;
 }
 
 /* footer */
