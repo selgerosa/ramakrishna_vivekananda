@@ -31,7 +31,7 @@ h1,h2,h3,h4,p {
   padding: 0;
 }
 
-h1, h2,h3,h4, nav a {
+h1,h2,h3,h4, nav a {
   font-family: 'EB Garamond', serif;
 }
 h1 {
@@ -120,19 +120,47 @@ p {
 
 footer p {
   font-size: 1em;
-  padding-bottom: .5vh;
+  padding: .5vh .5vw;
 }
 
 /* flex stuff */
-.parent, .child, header, .header_parent, .header_child, nav ul, .home, .homechild, .ministernav, .ministernavchild, .footer_parent, .footer_child, .ministerarchive, .bionav, .biography, .biochild, .slideshow, .slideshownav, .gallery a {
+.ministernav, .ministernavchild, .bionav, .biography, .biochild, .slideshow, .slideshownav, .gallery a {
   display: flex;
 }
 
-header, .header_parent, nav ul, .home, .ministernavchild, .footer_parent, .ministerarchive, .bionav, .biography {
+.flex {
+  display: flex;
+}
+
+.flexcol {
+  flex-direction: column;
+}
+
+.flexrow {
   flex-direction: row;
 }
 
-.child, .header_child, .homechild, .ministernav, .footer_child, .biochild, .gallery a {
+.justifybetween {
+  justify-content: space-between;
+}
+
+.justifyaround {
+  justify-content: space-around;
+}
+
+.justifycenter {
+  justify-content: center;
+}
+
+.aligncenter {
+  align-items: center;
+}
+
+header, .header_parent, nav, .home, .ministernavchild, .ministerarchive, .bionav, .biography {
+  flex-direction: row;
+}
+
+.child, .header_child, .nav2, .homechild, .ministernav, .biochild, .gallery a {
   flex-direction: column;
 }
 
@@ -176,54 +204,65 @@ header h2 {
 
 /* nav */
 nav {
-  border-bottom: solid #cc3300;
-}
-
-nav ul {
+  padding: 2vh 15vw 0 20vw;
   justify-content: space-between;
-  padding: 2vh 18vw 2vh 20vw;
-  margin:0;
 }
 
-.dropdown {
-  padding:0;
+ul {
+  margin:0;
+  list-style: none;
+}
+
+.dropdown, nav a {
+  width: 10vw;
+}
+
+.dropdowncontent {
+  padding:2vh 1vw;
+  margin-top: 2vh;
   border:none;
+  background-color: #cc3300;
+  opacity: 0;
+  transition: 1s;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+}
+.dropdowncontent a {
+  color: white;
 }
 
 nav a {
   font-size: 1.2em;
-}
-nav li {
- display: block;
- transition-duration: 0.5s;
+  margin-bottom: 2vh;
+
 }
 
-nav li:hover {
-  cursor: pointer;
+.dropdown:hover .dropdowncontent, .dropdowncontent:hover{
+  opacity:1;
+  display: flex;
 }
 
-nav ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  left: 0;
-  display: none;
+.nav2 {
+  position: fixed;
+  z-index: -1;
+  width:10vw;
+  left:10vw;
+  top:30vh;
+  border:solid #cc3300;
 }
 
-nav ul li:hover > ul,
-nav ul li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-nav ul li ul li {
-  clear: both;
-  width: 100%;
+.nav2 a {
+  font-size: 1.7em;
+  text-decoration: none;
+  margin: 1vh 1vw;
 }
 
 /* body */
+.parent {
+  border-top: solid #cc3300;
+
+}
 .child {
   width:75vw;
   margin: 10vh 0;
@@ -248,6 +287,11 @@ nav ul li ul li {
 .about,.contact,.activities,.bio, .igallery {
   width: 50vw;
 }
+#ministertitle {
+  font-size: 3em;
+  margin:10vh 0 15vh 0;
+}
+
 .ministernavchild {
   justify-content: space-between;
   width: 100%;
@@ -303,7 +347,7 @@ nav ul li ul li {
   margin: 3vh 3vw;
 }
 
-#birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001 {
+#birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001,#centenary19981,#centenary19951 {
   display: flex;
 }
 
@@ -317,14 +361,22 @@ nav ul li ul li {
 }
 
 /* footer */
-.footer_child {
-  width:30vw;
+.footerparent {
+  padding: 2vh 2vh;
+}
+.footerchild {
+  width: 70vw;
   margin:5vh 0;
 }
-.footer_parent {
-  align-items: center;
+.footerlist{
+  padding: 0 2vw;
 }
-#fc1 {
-  margin-left: 20vw;
-  margin-right:5vw;
+.footerlist li ul {
+  padding-left:2.5vw;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  padding: .5vh .5vw;
 }
