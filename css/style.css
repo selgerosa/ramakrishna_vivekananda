@@ -34,38 +34,26 @@ h1,h2,h3,h4,p {
 h1,h2,h3,h4, nav a {
   font-family: 'EB Garamond', serif;
 }
+h1,h2,h3 {
+  text-align: center;
+}
 h1 {
   font-size: 2.7em;
 }
-.header2 h1 {
-  text-align: center;
-}
 h2 {
   font-size: 2.4em;
-}
-.homechild h2 {
   margin-bottom: 1vh;
-  text-align: center;
 }
-.about h2, .contact h2 {
-  text-align: center;
-  margin-bottom: 7.5vh;
-}
-.bio h2 {
+
+.bio h2, .biochild h2, .gallery h2  {
   margin-bottom: 5vh;
 }
-.biochild h2, .gallery h2 {
-  text-align: center;
-  margin-bottom: 5vh;
-}
+
 h3 {
   font-size: 1.7em;
+  margin-bottom: 1vh;
 }
-.about h3,.contact h3, .gallery h3 {
-  font-size: 2em;
-  margin-bottom: 7.5vh;
-  text-align: center;
-}
+
 .bio h3{
   margin-bottom: 5vh;
 }
@@ -92,13 +80,7 @@ nav h4 {
 .homechild h4 {
   text-align: center;
 }
-.about h4 {
-  font-size: 1.7em;
-  text-align: right;
-}
-.about h4 {
-  margin: 1vh 0;
-}
+
 footer h4 {
   padding-bottom: 1vh;
 }
@@ -108,7 +90,9 @@ p {
   font-size: 1.7em;
   line-height: 115%;
 }
-
+.ministerarchive p {
+  padding: 5vh 0;
+}
 .tribute p {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -156,15 +140,15 @@ footer p {
   align-items: center;
 }
 
-header, .header_parent, nav, .home, .ministernavchild, .ministerarchive, .bionav, .biography {
+ nav, .home, .ministernavchild, .bionav, .biography {
   flex-direction: row;
 }
 
-.child, .header_child, .nav2, .homechild, .ministernav, .biochild, .gallery a {
+.homechild, .ministernav, .biochild, .gallery a {
   flex-direction: column;
 }
 
-.parent,.child,.home,.ministerarchive,.slideshownav {
+.parent,.child,.home,.slideshownav {
   justify-content: space-around;
   align-items: center;
 }
@@ -185,16 +169,18 @@ header img {
   width:7.5vw;
 }
 
-header h2 {
-  text-align: center;
+.headerhome h1, .headerhome h3 {
+  text-align: left;
 }
 
+.headerhome .header_child {
+  margin-left: 6vw;
+}
 .header_parent {
   margin: 3vh 8vw;
 }
 
 .header_child {
-  margin-left: 6vw;
   width: 70vw;
 }
 .headerlink {
@@ -250,12 +236,14 @@ nav a {
   left:10vw;
   top:30vh;
   border:solid #cc3300;
+  display: none;
+  padding: 1vh 0vw 1vh 1vw;
 }
 
 .nav2 a {
   font-size: 1.7em;
   text-decoration: none;
-  margin: 1vh 1vw;
+  margin-bottom: 2vh;
 }
 
 /* body */
@@ -284,12 +272,16 @@ nav a {
   border-bottom: solid #cc3300;
 }
 
-.about,.contact,.activities,.bio, .igallery {
+.width50,.bio, .igallery {
   width: 50vw;
 }
 #ministertitle {
   font-size: 3em;
   margin:10vh 0 15vh 0;
+}
+#ministersubtitle {
+  font-size: 2.9em;
+  margin-bottom:5vh;
 }
 
 .ministernavchild {
@@ -319,14 +311,15 @@ nav a {
 }
 .mapouter{
   text-align:right;
-  height:400px;
-  width:600px;
+  height:55vh;
+  width:50vw;
+  margin-bottom: 10vh;
 }
-.gmap_canvas {
+iframe {
   overflow:hidden;
   background:none!important;
   height:55vh;
-  width:40vw;
+  width:50vw;
 }
 
 /* slideshow */

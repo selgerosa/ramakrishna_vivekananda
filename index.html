@@ -2,10 +2,7 @@
  <head>
   <title>Welcome to the Ramakrishna-Vivekenanda Center of New York</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
-  <link rel="stylesheet" type="text/css" href="dist/aos.css" title="">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
-  <script src="main.js"></script>
-  <script src="dist/aos.js"></script>
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
  </head>
@@ -13,9 +10,9 @@
   <div class="body">
 
     <header class="flex">
-      <div class="header_parent flex">
-        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></p>
-        <div class="header_child flex">
+      <div class="header_parent flex aligncenter headerhome">
+        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol ">
           <a href="index.html" class="headerlink"><h1>Welcome to the <br> Ramakrishna-Vivekenanda Center of New York</h1>
           <h3>A Vedanta temple for Universal Worship</h3></a>
         </div>
@@ -56,8 +53,8 @@
     </nav>
 
     <div class="parent flex">
-      <div class="child flex">
-        <div class="nav2 flex" id="nav2flex" data-aos="fade-down">
+      <div class="child flex flexcol">
+        <div class="nav2" id="nav2">
           <a href="about.html">About</a>
           <a href="learn.html">Learn</a>
           <a href="media.html">Media</a>
@@ -102,7 +99,7 @@
       </div>
     </div>
 
-    <footer id="footer">
+    <footer >
       <div class="flex flexcol footerparent aligncenter ">
         <div class="flex flexrow justifybetween footerchild">
           <div class="" id="fc1">
@@ -132,7 +129,7 @@
                 </li>
               </ul>
             </div>
-            <div class="">
+            <div>
               <ul class="footerlist">
                 <li><a href="media.html">Media</a>
                   <ul><li><a href="images.html">Image Gallery</a></li>
@@ -154,21 +151,11 @@
             <p><a href="sitemap.xml">Full Sitemap</a></p>
           </div>
         </div>
-        <p>&copy; Ramakrishna-Vivekananda Center of New York /  <a href="credits.html">Site Credits</a></p>
-
+        <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
       </div>
-    </footer</>
+    </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script>
-  AOS.init({
-    disable:'phone',
-    offset:1000,
-    duration:500,
-    mirror:true,
-  }
-  );
-
-</script>
+  <script src="js/nav.js"></script>
  </body>
 </html>
