@@ -8,57 +8,59 @@
  </head>
  <body>
   <div class="body">
-    <header>
-      <div class="header_parent">
-        <img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra.">
-        <div class="header_child">
+    <header class="flex">
+      <div class="header_parent flex aligncenter headerhome">
+        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol ">
           <h1>Ramakrishna-Vivekenanda Center of New York</h1>
           <h2>Image Gallery</h2>
         </div>
       </div>
     </header>
-    <nav>
-      <ul>
-      <li>
+    <nav class="flex">
         <a href="index.html">Home</a>
-      </li>
-      <li>
+        <div class="dropdown">
         <a href="about.html">About</a>
-        <ul class="dropdown">
-          <li><a href="formsofdevotion3.html">Minister's Message</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Learn</a>
-        <ul class="dropdown">
-          <li><a href="teachings.html">Teachings</a></li>
-          <li><a href="biographies.html">Biographies</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Media</a>
-        <ul class="dropdown">
-          <li><a href="images.html">Image Gallery</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Audio</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Events</a>
-        <ul class="dropdown">
-          <li><a href="activities.html">Activities</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Shop</a>
-      </li>
-      <li>
+          <ul class="dropdowncontent">
+            <li><a href="minister.html">Minister's Message</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+        <a href="learn.html">Learn</a>
+          <ul class="dropdowncontent">
+            <li><a href="biographies.html">Biographies</a></li>
+            <li><a href="teachings.html">Teachings</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="media.html">Media</a>
+          <ul class="dropdowncontent">
+            <li><a href="images.html">Image Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="audio.html">Audio</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="events.html">Events</a>
+          <ul class="dropdowncontent">
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </div>
+        <a href="shop.html">Shop</a>
         <a href="contact.html">Contact</a>
-      </li>
     </nav>
 
-    <div class="parent">
-      <div class="child gallery igallery">
+    <div class="parent flex justifycenter">
+      <div class="nav2" id="nav2">
+        <a href="about.html">About</a>
+        <a href="learn.html">Learn</a>
+        <a href="media.html">Media</a>
+        <a href="events.html">Events</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="child flex flexcol gallery width50">
 
         <a href="birthday2008.html"><img src="img/hall_frontview.jpg" alt="Altar to Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda surrounded by flowers. There are people seated facing it.">
         <h3>Swami Vivekananda's Birthday Service <br>February 2008</h3></a>
@@ -85,27 +87,80 @@
         <h3>125th birthday of Thousand Island Park</h3></a>
         <a href="centenary1998.html"><img src="img/centenaryalter.jpg" alt="Religious Leaders at the Chapel Altar.">
         <h3>Centenary of the Ramakrishna Mission</h3></a>
-        <a href="centenary1995.html"><img src="img/MEv_2_1.jpg" alt="Religious Leaders at the Chapel Altar.">
+        <a href="centenary1995.html"><img src="img/MEv_2_1.jpg" alt="Visiting Swamis, religious leaders of different faiths, and musical artists seated in front of a crowd.">
         <h3>Centenary of Swami Vivekananda at Thousand Island Park, NY</h3></a>
-      </img>
+        <a href="centenary1993.html"><img src="img/MEv1_5.jpg" alt="Swami Vivekananda at the World's Parliament of religions, 1893.">
+        <h3>Centenary Celebration of Swami Vivekananda in America and the World's Parliament of Religions</h3></a>
+        <a href="interfaith1987.html"><img src="img/interfaith_1993_parliament_religious_leaders.jpg" alt="Swami Adiswarananda at Spiritual Summit IV, Cathedral of St. John the Divine, New York 1987.">
+        <h3>Interfaith Activities 1987-93</h3></a>
+        <a href="anniversary1983.html"><img src="img/rvcday.jpg" alt="The Center's exterior.">
+        <h3>50th Anniversary of the Ramakrishna-Vivekananda Center of New York</h3></a>
+        <a href="centenary1963.html"><img src="img/vivekananda_centenary_color_poster_for_thumbnail.jpg" alt="A painting of Swami Vivekananda in America. The portrait depics Swami Vivekananda with his arms crossed, looking to the left. Below him is his name in an ornate typeface.">
+        <h3>Swami Vivekananda Birth Centenary</h3></a>
+        <a href="centenary1936.html"><img src="img/ramakrishna_closeup.jpg" alt="Sri Ramakrishna">
+        <h3>Sri Ramakrishna Birth Centenary</h3></a>
+        <a href="harington.html"><img src="img/haringtongallery1.jpg" alt="Gallery installation of work.">
+        <h3>Mother of the Universe: A Website Exhibition</h3></a>
       </div>
     </div>
 
-    <footer>
-      <div class="footer_parent">
-        <div class="footer_child" id="fc1">
-          <h4>Contact Us</h4>
-          <p>+(212) 534-9445</p>
-          <p>rvcenternewyork@gmail.com</p>
-          <p>17 East 94th Street, New York, NY 10128</p>
-          <p>Fax: (212) 828-1618</p>
+    <footer >
+      <div class="flex flexcol footerparent aligncenter ">
+        <div class="flex flexrow justifybetween footerchild">
+          <div class="" id="fc1">
+            <h4>Contact Us</h4>
+            <p>+(212) 534-9445</p>
+            <p>rvcenternewyork@gmail.com</p>
+            <p>17 East 94th Street, New York, NY 10128</p>
+            <p>Fax: (212) 828-1618</p>
+          </div>
+
+          <div class="flex flexcol aligncenter">
+            <h4>Navigation</h4>
+            <div class="flex flexrow">
+              <div class="flex flexcol ">
+              <ul class="footerlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a>
+                  <ul>
+                    <li><a href="minister.html">Minister's Message</a></li>
+                  </ul>
+                </li>
+                <li><a href="learn.html">Learn</a>
+                  <ul>
+                    <li><a href="biographies.html">Biographies</a></li>
+                    <li><a href="teachings.html">Teachings</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footerlist">
+                <li><a href="media.html">Media</a>
+                  <ul><li><a href="images.html">Image Gallery</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="history.html">History</a></li>
+                  </ul>
+                </li>
+                <li><a href="events.html">Events</a>
+                  <ul class="dropdowncontent">
+                    <li><a href="activities.html">Activities</a></li>
+                  </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            </div>
+            <p><a href="sitemap.xml">Full Sitemap</a></p>
+          </div>
         </div>
-        <div class="footer_child">
-          <h4>Navigation</h4>
-          <!-- TODO: 2nd layer nav + link to full sitemap -->
-        </div>
+        <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
       </div>
-    </footer</>
+    </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/nav.js"></script>
  </body>
 </html>

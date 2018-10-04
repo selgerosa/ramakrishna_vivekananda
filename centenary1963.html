@@ -1,19 +1,20 @@
 <html>
  <head>
-  <title>Contact the Ramakrishna-Vivekenanda Center of New York</title>
+  <title>Swami Vivekananda Birth Centenary</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <script src="js/slides.js"></script>
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
  </head>
  <body>
   <div class="body">
     <header class="flex">
-      <div class="header_parent flex">
-        <img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra.">
-        <div class="header_child flex">
+      <div class="header_parent flex aligncenter headerhome">
+        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol ">
           <h1>Ramakrishna-Vivekenanda Center of New York</h1>
-          <h2>Contact Us</h2>
+          <h2>Image Gallery</h2>
         </div>
       </div>
     </header>
@@ -50,28 +51,37 @@
         <a href="shop.html">Shop</a>
         <a href="contact.html">Contact</a>
     </nav>
-    <div class="parent flex">
-      <div class="child flex flexcol width50">
-        <h2>Contact Us</h2>
-        <p> Further inquiries regarding the Center can be made by calling (212) 534-9445 between 10:30 a.m. and 4:30 p.m. EST Monday through Saturday. You can email us at <a href="mailto:rvcenternewyork@gmail.com">rvcenternewyork@gmail.com</a>. You can fax us at (212) 828-1618. The Center is located at 17 East 94th Street, New York, NY 10128.</p>
-        <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=17%20East%2094th%20Street%2C%20New%20York%2C%20NY%2010128&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
 
-        <h2>Vivekananda Cottage Visitor's Information</h2>
+    <div class="parent flex justifycenter">
+      <div class="child flex flexcol justifycenter aligncenter">
+        <h2>Swami Vivekananda Birth Centenary<br>April 25, 1983</h2>
 
-        <p>The Vivekananda Cottage at Thousand Island Park is usually open from July 14 to August 22. Dates may vary slightly each year. We suggest you call in advance. The cottage is a place of pilgrimage for devotees to visit. Daily visiting hours are mornings from 10:00 am to 12:00 noon and afternoons from 4:00 pm to 6:00 pm.</p>
+        <div class="slideshow flex justifycenter">
+          <img src="img/ramakrishna_centenary_nehru_letter.JPG" id="slide1" class=" slides17" alt="A painting of Swami Vivekananda in America. The portrait depics Swami Vivekananda with his arms crossed, looking to the left. Below him is his name in an ornate typeface.">
+          <img src="img/vivekananda_centenary_banquet_closeup.JPG" class="slides17" alt="Secretary General U. Thant of the United Nations giving keynote address, (seated Swami Nikhilananda, Spiritual Leader of the Ramakrishna-Vivekananda Center of New York).">
+          <img src="img/vivekananda_centenary_banquet.JPG" class="slides17" alt="United Nations Secretary General U Thant - Giving keynote address.">
+          <img src="img/vivekananda_centenary_color_poster_for_thumbnail.JPG" class="slides17" alt="View of congregation looking at the camera.">
+        </div>
 
-        <p>Thousand Island Park is a small village located on Wellesley Island, in a remote area about 360 miles from New York City, on the St. Lawrence River, near the Canadian border. Public transportation there is limited and so a car is a necessary.  The nearest convenient airport is located at Syracuse, about 100 miles from the Thousand Islands.</p>
 
-        <p>Since there are no arrangements at the Cottage for guest accommodation, those who wish to stay overnight are required to find a place nearby.  The resort towns of Alexandria Bay or Clayton (both on the U.S. mainland) are the nearest locations for hotel and motel accommodations.</p>
 
-        <p>During most of the summer there are no classes or lectures at the Vivekananda Cottage, but devotees may come for prayer and meditation at the Cottage at 4:30 PM. The exception to this is when Swami Yuktatmananda conducts his “seminar classes.”  During the seminar days, the program includes morning meditation followed by Swami’s discourse and discussion, afternoon vespers (arati) and meditation, and evening readings and discussion. Those who wish to attend the classes are requested to seek permission from our Center in advance.</p>
 
-        <div class="mapouter"><div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=42822%20St.%20Lawrence%20Ave.%20%20Unit%20%23%2074%20THOUSAND%20ISLAND%20PARK%2C%20N.Y.%2013692&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style></style></div>
+        <div class="slideshownav flex aligncenter justifycenter">
+          <img src="img/ramakrishna_centenary_nehru_letter.JPG" onclick="currentSlide(1,17)" alt="A painting of Swami Vivekananda in America. The portrait depics Swami Vivekananda with his arms crossed, looking to the left. Below him is his name in an ornate typeface.">
+          <img src="img/vivekananda_centenary_banquet_closeup.JPG" onclick="currentSlide(2,17)" alt="Secretary General U. Thant of the United Nations giving keynote address, (seated Swami Nikhilananda, Spiritual Leader of the Ramakrishna-Vivekananda Center of New York).">
+          <img src="img/vivekananda_centenary_banquet.JPG" onclick="currentSlide(3,17)" alt="United Nations Secretary General U Thant - Giving keynote address.">
+          <img src="img/vivekananda_centenary_color_poster_for_thumbnail.JPG" onclick="currentSlide(4,17)" alt="View of congregation looking at the camera.">
+        </div>
 
+
+        <div class="flex flexcol aligncenter">
+          <p class="width50">In 1963, on the occasion of the Centenary of Swami Vivekananda's birth, a banquet was held at New York's Warwick Hotel, with Secretary General of the United Nations U Thant as keynote speaker and Chester F. Carlson, president of the Center, presiding. On this occasion the Center received many messages of congratulation, one of which was from India's Prime Minister, Jawaharlal Nehru, who wrote that the life and teaching of Swami Vivekananda "inspired my generation and continue to inspire our people today....his message was not confined to India only, but was for the whole world. I pay my homage to his memory."</p>
+        </div>
+        <h3><a href="images.html">Back</a></h3>
       </div>
     </div>
 
-    <footer id="footer">
+    <footer >
       <div class="flex flexcol footerparent aligncenter ">
         <div class="flex flexrow justifybetween footerchild">
           <div class="" id="fc1">
@@ -101,7 +111,7 @@
                 </li>
               </ul>
             </div>
-            <div class="">
+            <div>
               <ul class="footerlist">
                 <li><a href="media.html">Media</a>
                   <ul><li><a href="images.html">Image Gallery</a></li>
@@ -123,8 +133,7 @@
             <p><a href="sitemap.xml">Full Sitemap</a></p>
           </div>
         </div>
-        <p>&copy; Ramakrishna-Vivekananda Center of New York /  <a href="credits.html">Site Credits</a></p>
-
+        <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
       </div>
     </footer>
   </div>

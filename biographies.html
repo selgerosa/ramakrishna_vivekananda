@@ -8,103 +8,136 @@
  </head>
  <body>
   <div class="body">
-    <header>
-      <div class="header_parent">
-        <img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra.">
-        <div class="header_child">
+    <header class="flex">
+      <div class="header_parent flex aligncenter">
+        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol ">
           <h1>Ramakrishna-Vivekenanda Center of New York</h1>
           <h2>Biographies</h2>
         </div>
       </div>
     </header>
-    <nav>
-      <ul>
-      <li>
+    <nav class="flex">
         <a href="index.html">Home</a>
-      </li>
-      <li>
+        <div class="dropdown">
         <a href="about.html">About</a>
-        <ul class="dropdown">
-          <li><a href="formsofdevotion3.html">Minister's Message</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Learn</a>
-        <ul class="dropdown">
-          <li><a href="">Teachings</a></li>
-          <li><a href="">Biographies</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Media</a>
-        <ul class="dropdown">
-          <li><a href="">Image Gallery</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Audio</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Events</a>
-        <ul class="dropdown">
-          <li><a href="activities.html">Activities</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Shop</a>
-      </li>
-      <li>
+          <ul class="dropdowncontent">
+            <li><a href="minister.html">Minister's Message</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+        <a href="learn.html">Learn</a>
+          <ul class="dropdowncontent">
+            <li><a href="biographies.html">Biographies</a></li>
+            <li><a href="teachings.html">Teachings</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="media.html">Media</a>
+          <ul class="dropdowncontent">
+            <li><a href="images.html">Image Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="audio.html">Audio</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="events.html">Events</a>
+          <ul class="dropdowncontent">
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </div>
+        <a href="shop.html">Shop</a>
         <a href="contact.html">Contact</a>
-      </li>
     </nav>
 
-    <div class="parent">
-      <div class="child">
-        <div class="biography">
-        <div class="biochild">
+    <div class="parent flex">
+      <div class="child flex flexcol">
+        <div class="flex">
+        <div class="learnchild flex flexcol aligncenter">
           <a href="ramakrishna.html"><img src="img/ramakrishna_seated_midsizencdas.jpg">
           <h2>Sri Ramakrishna</a></h2>
         </div>
-        <div class="biochild">
+        <div class="learnchild flex flexcol aligncenter">
           <a href="saradadevi.html"><img src="img/holy_mother_midsizencdas.jpg">
           <h2>Sri Sarada Devi</a></h2>
         </div>
-        <div class="biochild">
+        <div class="learnchild flex flexcol aligncenter">
           <a href="Vivekananda.html"><img src="img/vivekananda_seated_midsize.jpg">
           <h2>Swami Vivekananda</a></h2>
         </div>
       </div>
-      <div class="biography">
-        <div class="biochild">
+      <div class="flex">
+        <div class="learnchild flex flexcol aligncenter">
           <a href="Nikhilananda.html"><img src="img/sn.jpg">
           <h2>Swami Nikhilananda</a></h2>
         </div>
-        <div class="biochild">
+        <div class="learnchild flex flexcol aligncenter">
           <a href="adiswarananda.html"><img src="img/sa2.jpg">
           <h2>Swami Adiswarananda</a></h2>
         </div>
-        <div class="biochild">
+        <div class="learnchild flex flexcol aligncenter">
           <a href="yuktatmananda.html"><img src="img/Swami_Yuktatmananda.jpg">
           <h2>Swami Yuktatmananda</a></h2>
         </div>
       </div>
     </div>
   </div>
-
-    <footer>
-      <div class="footer_parent">
-        <div class="footer_child" id="fc1">
+  <footer >
+    <div class="flex flexcol footerparent aligncenter ">
+      <div class="flex flexrow justifybetween footerchild">
+        <div class="" id="fc1">
           <h4>Contact Us</h4>
           <p>+(212) 534-9445</p>
           <p>rvcenternewyork@gmail.com</p>
           <p>17 East 94th Street, New York, NY 10128</p>
           <p>Fax: (212) 828-1618</p>
         </div>
-        <div class="footer_child">
+
+        <div class="flex flexcol aligncenter">
           <h4>Navigation</h4>
-          <!-- TODO: 2nd layer nav + link to full sitemap -->
+          <div class="flex flexrow">
+            <div class="flex flexcol ">
+            <ul class="footerlist">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a>
+                <ul>
+                  <li><a href="minister.html">Minister's Message</a></li>
+                </ul>
+              </li>
+              <li><a href="learn.html">Learn</a>
+                <ul>
+                  <li><a href="biographies.html">Biographies</a></li>
+                  <li><a href="teachings.html">Teachings</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="footerlist">
+              <li><a href="media.html">Media</a>
+                <ul><li><a href="images.html">Image Gallery</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+                  <li><a href="audio.html">Audio</a></li>
+                  <li><a href="history.html">History</a></li>
+                </ul>
+              </li>
+              <li><a href="events.html">Events</a>
+                <ul class="dropdowncontent">
+                  <li><a href="activities.html">Activities</a></li>
+                </ul>
+              </li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          </div>
+          <p><a href="sitemap.xml">Full Sitemap</a></p>
         </div>
       </div>
-    </footer</>
+      <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
+    </div>
+  </footer>
   </div>
  </body>
 </html>

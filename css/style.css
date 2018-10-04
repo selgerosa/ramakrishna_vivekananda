@@ -42,11 +42,7 @@ h1 {
 }
 h2 {
   font-size: 2.4em;
-  margin-bottom: 1vh;
-}
-
-.bio h2, .biochild h2, .gallery h2  {
-  margin-bottom: 5vh;
+  margin-bottom: 3vh;
 }
 
 h3 {
@@ -91,7 +87,7 @@ p {
   line-height: 115%;
 }
 .ministerarchive p {
-  padding: 5vh 0;
+  padding: 2vh 0 7vh 0;
 }
 .tribute p {
     margin-bottom: 0;
@@ -108,7 +104,7 @@ footer p {
 }
 
 /* flex stuff */
-.ministernav, .ministernavchild, .bionav, .biography, .biochild, .slideshow, .slideshownav, .gallery a {
+.ministernav, .ministernavchild, .bionav, .slideshow, .slideshownav, .gallery a {
   display: flex;
 }
 
@@ -140,24 +136,20 @@ footer p {
   align-items: center;
 }
 
- nav, .home, .ministernavchild, .bionav, .biography {
+
+.home, .ministernavchild, .bionav {
   flex-direction: row;
 }
 
-.homechild, .ministernav, .biochild, .gallery a {
+.ministernav, .gallery a {
   flex-direction: column;
 }
 
-.parent,.child,.home,.slideshownav {
-  justify-content: space-around;
-  align-items: center;
-}
 
 .bionav {
   justify-content: space-between;
   align-items: center;
 }
-
 
 /* header */
 header,footer {
@@ -238,6 +230,8 @@ nav a {
   border:solid #cc3300;
   display: none;
   padding: 1vh 0vw 1vh 1vw;
+  text-align: left;
+
 }
 
 .nav2 a {
@@ -263,7 +257,6 @@ nav a {
 }
 
 .homechild {
-  align-items: center;
   margin-left:5vw;
   max-width: 50vw;
 }
@@ -272,7 +265,7 @@ nav a {
   border-bottom: solid #cc3300;
 }
 
-.width50,.bio, .igallery {
+.width50 {
   width: 50vw;
 }
 #ministertitle {
@@ -293,21 +286,13 @@ nav a {
   align-items: center;
 }
 
-.bio img {
-  border: solid #cc3300;
-  padding:.7vw;
-  margin:15vh 0 20vh;
+.learnchild {
+  width: 30vw;
 }
 
-.biochild {
-  width: 30vw;
-  align-items: center;
-  justify-content: center;
-}
-.biochild img {
+.learnchild img {
   border: solid #cc3300;
   padding:.7vw;
-  margin: 3vh 3vw;
 }
 .mapouter{
   text-align:right;
@@ -324,9 +309,10 @@ iframe {
 
 /* slideshow */
 
-.gallery, .gallery a {
+.gallery a {
   align-items: center;
   justify-content: center;
+  margin:5vh 0;
 }
 
 .slideshow {
@@ -339,8 +325,8 @@ iframe {
   padding:.7vw;
   margin: 3vh 3vw;
 }
-
-#birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001,#centenary19981,#centenary19951 {
+/* replace w one class and remove all ids */
+#slide1, #birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001,#centenary19981,#centenary19951, #centenary19931,#interfaith19871,#anniversary19831 {
   display: flex;
 }
 
