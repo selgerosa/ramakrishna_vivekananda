@@ -1,20 +1,20 @@
 <html>
  <head>
-  <title>Welcome to the Ramakrishna-Vivekenanda Center of New York</title>
+  <title>The Sculptures of Malvina Hoffman</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <script src="js/slides.js"></script>
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
  </head>
  <body>
   <div class="body">
-
     <header>
-      <div class="header_parent flex aligncenter headerhome">
+      <div class="header_parent flex aligncenter">
         <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
-        <div class="header_child flex flexcol ">
-          <a href="index.html" class="headerlink"><h1>Welcome to the <br> Ramakrishna-Vivekenanda Center of New York</h1>
-          <h3>A Vedanta temple for Universal Worship</h3></a>
+        <div class="header_child flex flexcol">
+          <h1>Ramakrishna-Vivekenanda Center of New York</h1>
+          <h2>The Sculptures of Malvina Hoffman</h2>
         </div>
       </div>
     </header>
@@ -53,50 +53,31 @@
     </nav>
 
     <div class="parent">
-      <div class="nav2" id="nav2">
-        <a href="about.html">About</a>
-        <a href="learn.html">Learn</a>
-        <a href="media.html">Media</a>
-        <a href="events.html">Events</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="child">
-        <div class="home">
-          <div class="imgtodo">
-            <img src="" alt="TODO">
+      <div class="child aligncenter">
+        <div class="slideshow">
+          <img src="img/ramakrishna_statue_bw_midsize.jpg" id="slide1" class="slides20">
+          <img src="img/ramakrishna_statue_color_horiz_midsize.jpg" class="slides20">
+          <img src="img/holy_mother_statue_bw_midsize.jpg" class="slides20">
+          <img src="img/holy_mother_statue_color_midsize.jpg" class="slides20">
+          <img src="img/vivekananda_statue_bw_midsize.jpg" class="slides20">
+          <img src="img/vivekananda_statue_color_midsize.jpg" class="slides20">
+        </div>
+        <div class="slideshownav">
+          <img src="img/ramakrishna_statue_bw_midsize.jpg" onclick="currentSlide(1,20)">
+          <img src="img/ramakrishna_statue_color_horiz_midsize.jpg" onclick="currentSlide(2,20)">
+          <img src="img/holy_mother_statue_bw_midsize.jpg" onclick="currentSlide(3,20)">
+          <img src="img/holy_mother_statue_color_midsize.jpg" onclick="currentSlide(4,20)">
+          <img src="img/vivekananda_statue_bw_midsize.jpg" onclick="currentSlide(5,20)">
+          <img src="img/vivekananda_statue_color_midsize.jpg" onclick="currentSlide(6,20)">
+        </div>
+          <p class="width50">The Ramakrishna-Vivekananda Center of New York is home to several sculptures of the renowned American artist, Malvina Hoffman. An alabaster bust of Sri Ramakrishna is the central figure on the altar of the Center’s chapel. Bronze sculptures of Holy Mother Sri Sarada Devi and Swami Vivekananda are also to be found in the chapel of the Center. It is interesting to note that as a young girl the artist had the rare opportunity of seeing Swami Vivekananda when she was taken by her mother to see the great spiritual personality from India who was then living and teaching in New York City. Below are photographs of the statues along with Malvina Hoffman’s own words about these works from her autobiographies.</p>
+          <div>
+            <img src="img/malvina_hoffman_midsize.jpg" class="" align=left id="wrap">
+            <p class="width50">"India brought back one of my vivid memories of childhood, an exciting evening spent with a relative of my father's who lived in a modest boarding-house in West Thirty-eighth Street. In the midst of this group of old-fashioned city boarders was introduced suddenly a newcomer -- the oriental philosopher and teacher, Swami Vivekananda. When he entered the dining-room there was a hush. His dark, bronzed countenance and hands were in sharp contrast to the voluminous, light folds of his turban and robes. His dark eyes hardly glanced up to notice his neighbors, but there was a sense of tranquillity and power about him that made an imperishable impression upon me. He seemed to personify the mystery and religious ‘aloofness’ of all true teachers of Brahma, and combined with this a kindly and gentle attitude of simplicity towards his fellow men.</p>
           </div>
-          <div class="homechild flex flexcol justifycenter">
-            <h4>Minister and Spiritual Leader</h4>
-            <h2>Swami Yuktatmananda</h2>
-            <h4>Founder and Minister 1933-1973</h4>
-            <h2>Swami Nikhilananda</h2>
-            <h4>Assistant Minister 1968-1973,<br> Minister 1973-2007</h4>
-            <h2>Swami Adiswarananda</h2>
-          </div>
+          <p class="width50">It was many years later, in 1931, that we visited outside of Calcutta, at Belur, the marble temple which was dedicated to this same man by thousands of his devoted followers. When I offered the garland of jasmine to be laid on the altar, I recalled, with emotion, that the only time I had seen this holy man, he had revealed to me more of the true spirit of India, without even uttering a word, than I had ever sensed in the many lectures on India, or by Indians, which I had attended since. -- From "Heads and Tales" by Malvina Hoffman,(Charles Scribner's Sons, New York, 1936</p>
+
         </div>
-        <div class="home">
-          <div class="flex flexcol aligncenter">
-          <h2>Current Events</h2>
-          <div class="imgtodo">
-            <img src="" alt="TODO">
-          </div>
-          <p><a href="events.html">Events</a></p>
-          </div>
-        </div>
-        <div class="home">
-          <div class="flex flexcol width50">
-          <h2>About Us</h2>
-          <p>The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion and philosophy of the Hindus. The Center seeks to stimulate the growth of the individual's innate spirituality through lectures, discourses, publications, and individual guidance. To learn more, visit our <a href="about.html">About Page</a>.</p>
-        </div>
-        </div>
-        <div class="home">
-          <div class="flex flexcol width50">
-          <h2>Contact Us</h2>
-          <p>To learn more about our services and classes, visit our <a href="activities.html">Activities Page</a>. Further inquiries regarding the Center can be made by calling (212) 534-9445 between 10:30 a.m. and 4:30 p.m. EST Monday through Saturday. For more ways to contact us, visit our <a href="contact.html">Contact Page</a>.</p>
-        </div>
-        </div>
-      </div>
     </div>
 
     <footer>
@@ -155,7 +136,5 @@
       </div>
     </footer>
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/nav.js"></script>
  </body>
 </html>

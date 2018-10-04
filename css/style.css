@@ -67,6 +67,9 @@ border-bottom: solid 3px #cc3300;
 .revelation h3 {
   margin-bottom: 0;
 }
+.learn h3 {
+  margin-bottom: 5vh;
+}
 h4 {
   font-size: 1.4em;
 }
@@ -104,7 +107,7 @@ footer p {
 }
 
 /* flex stuff */
-.ministernav, .ministernavchild, .bionav, .slideshow, .slideshownav, .gallery a {
+header, nav, .ministernav, .ministernavchild, .bionav, .slideshow, .slideshownav, .gallery a {
   display: flex;
 }
 
@@ -136,10 +139,6 @@ footer p {
   align-items: center;
 }
 
-
-.home, .ministernavchild, .bionav {
-  flex-direction: row;
-}
 
 .ministernav, .gallery a {
   flex-direction: column;
@@ -243,22 +242,24 @@ nav a {
 /* body */
 .parent {
   border-top: solid #cc3300;
-
+  display: flex;
+  justify-content: center;
 }
 .child {
   width:75vw;
   margin: 10vh 0;
-  align-items: unset;
+  display: flex;
+  flex-direction: column;
 }
 
 .home {
-  width: inherit;
   margin-bottom: 10vh;
+  display: flex;
+  justify-content: center;
 }
 
 .homechild {
   margin-left:5vw;
-  max-width: 50vw;
 }
 
 .homechild h4 {
@@ -268,6 +269,7 @@ nav a {
 .width50 {
   width: 50vw;
 }
+
 #ministertitle {
   font-size: 3em;
   margin:10vh 0 15vh 0;
@@ -293,7 +295,21 @@ nav a {
 .learnchild img {
   border: solid #cc3300;
   padding:.7vw;
+  max-height: 40vh;
 }
+
+.learn {
+  margin-bottom: 5vh;
+}
+
+.headquarters img {
+  margin-bottom: 5vh;
+}
+
+#wrap {
+  margin: 0 4vw 2vh 0;
+}
+
 .mapouter{
   text-align:right;
   height:55vh;
@@ -317,6 +333,8 @@ iframe {
 
 .slideshow {
   margin-bottom: 2vh;
+  display: flex;
+  justify-content: center;
 }
 
 .slideshow img {
@@ -325,7 +343,7 @@ iframe {
   padding:.7vw;
   margin: 3vh 3vw;
 }
-/* replace w one class and remove all ids */
+/* replace w one id and remove all ids */
 #slide1, #birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001,#centenary19981,#centenary19951, #centenary19931,#interfaith19871,#anniversary19831 {
   display: flex;
 }
@@ -337,6 +355,10 @@ iframe {
 .slideshownav {
   margin-bottom: 5vh;
   width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items:
+
 }
 
 /* footer */
