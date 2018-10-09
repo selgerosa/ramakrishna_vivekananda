@@ -44,32 +44,24 @@ h2 {
   font-size: 2.4em;
   margin-bottom: 3vh;
 }
+.center h2 {
+  padding-top:3vh;
+}
 
 h3 {
   font-size: 1.7em;
   margin-bottom: 1vh;
 }
 
-.bio h3{
-  margin-bottom: 5vh;
-}
-.bionav h3 {
-  margin-top:5vh;
-  border-bottom: none !important;
-}
 .tribute h3 {
   margin-top:3vh;
   padding-bottom: 5vh;
-}
-.tribute h3 {
-border-bottom: solid 3px #cc3300;
+  border-bottom: solid 3px #cc3300;
 }
 .revelation h3 {
   margin-bottom: 0;
 }
-.learn h3 {
-  margin-bottom: 5vh;
-}
+
 h4 {
   font-size: 1.4em;
 }
@@ -89,6 +81,9 @@ p {
   font-size: 1.7em;
   line-height: 115%;
 }
+.center p {
+  padding-bottom: 0;
+}
 .ministerarchive p {
   padding: 2vh 0 7vh 0;
 }
@@ -107,7 +102,7 @@ footer p {
 }
 
 /* flex stuff */
-header, nav, .ministernav, .ministernavchild, .bionav, .slideshow, .slideshownav, .gallery a {
+header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .gallery a {
   display: flex;
 }
 
@@ -142,12 +137,6 @@ header, nav, .ministernav, .ministernavchild, .bionav, .slideshow, .slideshownav
 
 .ministernav, .gallery a {
   flex-direction: column;
-}
-
-
-.bionav {
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* header */
@@ -298,12 +287,13 @@ nav a {
   max-height: 40vh;
 }
 
-.learn {
+.bottommargin {
   margin-bottom: 5vh;
 }
 
-.headquarters img {
-  margin-bottom: 5vh;
+
+.center {
+  text-align: center;
 }
 
 #wrap {
