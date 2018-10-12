@@ -14,8 +14,9 @@ img {
 a {
   color: #cc3300;
 }
-.child .hiddenlink{
+.hiddenlink{
   color:black;
+  text-decoration: none;
 }
 nav a{
   color:black;
@@ -231,11 +232,6 @@ nav a {
   flex-direction: column;
 }
 
-.home {
-  margin-bottom: 10vh;
-  display: flex;
-  justify-content: center;
-}
 
 .homechild {
   margin-left:5vw;
@@ -289,6 +285,10 @@ nav a {
   border-bottom: solid #cc3300;
   margin-bottom: 5vh;
   padding-bottom: 5vh;
+}
+
+.bottommargin20 {
+  margin-bottom: 20vh;
 }
 
 .center {
@@ -363,6 +363,10 @@ iframe {
 }
 .footerlist li ul {
   padding-left:2.5vw;
+}
+footer img {
+  width:1vw;
+  margin: 1vh 1vw;
 }
 footer a {
   color: white;
