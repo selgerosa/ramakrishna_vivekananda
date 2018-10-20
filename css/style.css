@@ -374,3 +374,81 @@ footer a {
   font-family: sans-serif;
   padding: .5vh .5vw;
 }
+
+.nav3 {
+  display: none;
+}
+
+@media (max-width:500px) {
+  .header_parent {
+    flex-direction: column;
+    margin: 1vh 1vw;
+  }
+  .header_child,.headerhome {
+     margin-left:0;
+  }
+  .header_child {
+    width: 90vw;
+    margin-left: 0;
+  }
+  header img {
+    width: 20vw;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  h3 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1.5em;
+  }
+  .child,.footerchild {
+    width: 90vw;
+  }
+  .child {
+    margin:5vh 0;
+  }
+  .homechild {
+    margin-left: 0;
+    margin-top:3vh;
+  }
+  nav {
+    display: none;
+  }
+  footer img {
+    width:3vw;
+  }
+
+  .flexcol-m {
+    flex-direction: column;
+  }
+
+  .width50 {
+    width:90vw; /* TODO: rename this maybe */
+  }
+  .bottommargin20 {
+    margin-bottom: 10vh;
+  }
+
+  .nav3 {
+    position:fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom:0;
+    width:100vw;
+    height:10vh;
+    background-color: #cc3300;
+    color:white;
+  }
+  .nav3 a {
+    color: white;
+  }
+  .nav3 p {
+    padding:0;
+  }
+}
