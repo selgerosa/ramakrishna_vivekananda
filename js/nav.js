@@ -3,7 +3,7 @@
   var startposition = $('header').height()+300;
     $(document).ready(function(){
         $(window).scroll(function(){
-          if($(window).width() >= 500){
+          if($(window).width() > 768){
             if ($(this).scrollTop() > endposition) {
               $('#nav2').fadeOut(500);
             }

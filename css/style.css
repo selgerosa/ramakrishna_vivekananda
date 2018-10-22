@@ -64,7 +64,7 @@ h4 {
 nav h4 {
   font-size: 1.2em;
 }
-.homechild h4 {
+#homechild h4 {
   text-align: center;
 }
 
@@ -200,7 +200,7 @@ nav a {
   display: flex;
 }
 
-.nav2 {
+#nav2 {
   position: fixed;
   z-index: -1;
   width:10vw;
@@ -213,7 +213,7 @@ nav a {
 
 }
 
-.nav2 a {
+#nav2 a {
   font-size: 1.7em;
   text-decoration: none;
   margin-bottom: 2vh;
@@ -233,15 +233,16 @@ nav a {
 }
 
 
-.homechild {
-  margin-left:5vw;
+#homechildimg {
+  margin-right:5vw;
+  width:40vw;
 }
 
-.homechild h4 {
+#homechild h4 {
   border-bottom: solid #cc3300;
 }
 
-.width50 {
+.bodycopy {
   width: 50vw;
 }
 
@@ -379,6 +380,23 @@ footer a {
   display: none;
 }
 
+@media (max-width:768px) {
+  .flexcol-t {
+    flex-direction: column;
+  }
+  #homechildimg {
+    margin: 0;
+    width: unset;
+  }
+  #homechild {
+    margin-left: 0;
+    margin-top:3vh;
+  }
+  .bodycopy {
+    width: 75vw;
+  }
+}
+
 @media (max-width:500px) {
   .header_parent {
     flex-direction: column;
@@ -412,10 +430,10 @@ footer a {
   .child {
     margin:5vh 0;
   }
-  .homechild {
-    margin-left: 0;
-    margin-top:3vh;
+  #homechildimg {
+    width: 90vw;
   }
+
   nav {
     display: none;
   }
@@ -427,8 +445,8 @@ footer a {
     flex-direction: column;
   }
 
-  .width50 {
-    width:90vw; /* TODO: rename this maybe */
+  .bodycopy {
+    width:90vw;
   }
   .bottommargin20 {
     margin-bottom: 10vh;
