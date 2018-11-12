@@ -1,9 +1,4 @@
-/* todo will delete */
-.imgtodo {
-  background-color: grey;
-  width: 30vw;
-  height:50vh;
-}
+
 body {
   margin:0;
 }
@@ -129,6 +124,9 @@ header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .galler
 .ministernav, .gallery a {
   flex-direction: column;
 }
+.nomargin {
+  margin:0 !important;
+}
 
 /* header */
 header,footer {
@@ -244,6 +242,10 @@ nav a {
 
 .bodycopy {
   width: 50vw;
+}
+
+.bodycopy img {
+  width: inherit;
 }
 
 #ministertitle {
@@ -448,6 +450,7 @@ footer a {
   .bodycopy {
     width:90vw;
   }
+
   .bottommargin20 {
     margin-bottom: 10vh;
   }
@@ -463,10 +466,21 @@ footer a {
     background-color: #cc3300;
     color:white;
   }
-  .nav3 a {
-    color: white;
+  .nav3 img {
+    width:15vw;
   }
-  .nav3 p {
-    padding:0;
+
+  .mapouter {
+    width:90vw;
+  }
+  iframe {
+    width: 90vw;
+  }
+
+  .learnchild {
+    width:90vw;
+  }
+  .learnchild img {
+    width: 90vw;
   }
 }
