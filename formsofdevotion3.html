@@ -5,59 +5,67 @@
   <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  </head>
  <body>
   <div class="body">
-    <header>
-      <div class="header_parent">
-        <img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra.">
-        <div class="header_child">
+    <header class="flex">
+      <div class="header_parent flex aligncenter">
+        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol">
           <h1>Ramakrishna-Vivekenanda Center of New York</h1>
           <h2>Minister's Message</h2>
         </div>
       </div>
     </header>
     <nav>
-      <ul>
-      <li>
         <a href="index.html">Home</a>
-      </li>
-      <li>
+        <div class="dropdown">
         <a href="about.html">About</a>
-        <ul class="dropdown">
-          <li><a href="formsofdevotion3.html">Minister's Message</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Learn</a>
-        <ul class="dropdown">
-          <li><a href="">Biographies</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Media</a>
-        <ul class="dropdown">
-          <li><a href="">Image Gallery</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Audio</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Shop</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
+          <ul class="dropdowncontent">
+            <li><a href="minister.html">Minister's Message</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+        <a href="learn.html">Learn</a>
+          <ul class="dropdowncontent">
+            <li><a href="biographies.html">Biographies</a></li>
+            <li><a href="teachings.html">Teachings</a></li>
+            <li><a href="history.html">History</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="media.html">Media</a>
+          <ul class="dropdowncontent">
+            <li><a href="images.html">Image Gallery</a></li>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="audio.html">Audio</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href="events.html">Events</a>
+          <ul class="dropdowncontent">
+            <li><a href="activities.html">Activities</a></li>
+          </ul>
+        </div>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
     </nav>
 
     <div class="parent">
-      <div class="child about">
+      <div class="nav3">
+      <a href="index.html"><img src="img/iconhome.png" alt="icon of house"></a>
+      <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
+      <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
+      <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
+      </div>
+      <div class="child bodycopy">
         <h2>Forms of Devotion</h2>
         <h3>3. Smarana, or Remembrance of God (Continued)</h3>
         <p>Holy Mother Sri Sarada Devi taught that remembrance of God leads to spiritual awakening: “As you smell the fragrance of a flower while handling it or the smell of sandalwood while rubbing it against a stone, so you obtain spiritual awakening by constantly thinking of God.” She said, “If you love a human being, you will have to suffer for it. He is blessed, indeed, who can love God alone. There is no suffering in loving God. Be devoted to God and take shelter at His feet. It is enough to remember that there is someone—call Him Father or Mother—who is always protecting you.”</p>
         <p><em>Prayer as a means to remember God</em>: Prayer helps us remember God and grow in devotion to him. Sri Ramakrishna teaches that through prayer all individual souls can be united to the Supreme Soul. Prayer is a spontaneous conversation a devotee has with God. Just as a child makes its needs known to its mother, through prayer a devotee expresses his needs to God: he prays for purity, devotion, faith, strength, discrimination, dispassion, and so on. God does not care how well articulated the prayer is but how sincere it is. Says Sri Ramakrishna, “Don’t you know that God is the Inner Guide? He sees the longing of our heart and the yearning of our soul. Suppose a man has several sons. The older boys address him distinctly as ‘Baba’ or ‘Papa’, but the babies can at best call him ‘Ba’ or ‘Pa’. Now, will the father be angry with those who address him in this indistinct way? The father knows that they too are calling him, only they cannot pronounce his name well. All children are the same to the father.”</p>
         <p>A devotee asked Swami Adbhutananda, a disciple of Sri Ramakrishna: “Maharaj, we have not seen God; how can we depend on Him? We do not know how to surrender to Him.” The Swami replied: “You are asking about prayer. Well, you know God’s name; you can begin with His name as your guide. Don’t you send your application for a job to the manager of a company without ever having seen him? Your interview with the manager depends upon your sending your application to him. You write the application thus: ‘Sir, please appoint me for the job; I shall be extremely happy to serve you; I promise my unswerving obedience to you,’ and so on. And you write all this without seeing the manager, don’t you? So, similarly, you can send an application to the Lord. However, this application is not to be written on paper, but on the pages of one’s mind.”</p>
-  
+
         <h4><a href="yuktatmananda.html">Swami Yuktatmananda</a></h4>
         <div class="ministernav">
           <h4><a href="formsofdevotion2.html">Part 2</a></h4>
@@ -66,20 +74,63 @@
     </div>
 
     <footer>
-      <div class="footer_parent">
-        <div class="footer_child" id="fc1">
-          <h4>Contact Us</h4>
-          <p>+(212) 534-9445</p>
-          <p>rvcenternewyork@gmail.com</p>
-          <p>17 East 94th Street, New York, NY 10128</p>
-          <p>Fax: (212) 828-1618</p>
+      <div class="flex flexcol footerparent aligncenter ">
+        <div class="flex flexrow justifybetween footerchild flexcol-m">
+          <div>
+            <h4>Contact Us</h4>
+            <p>+(212) 534-9445</p>
+            <p>rvcenternewyork@gmail.com</p>
+            <p>17 East 94th Street, New York, NY 10128</p>
+            <p>Fax: (212) 828-1618</p>
+            <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/facebook.png"></a>
+          </div>
+
+          <div class="flex flexcol aligncenter">
+            <h4>Navigation</h4>
+            <div class="flex flexrow">
+              <div class="flex flexcol ">
+              <ul class="footerlist">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a>
+                  <ul>
+                    <li><a href="minister.html">Minister's Message</a></li>
+                  </ul>
+                </li>
+                <li><a href="learn.html">Learn</a>
+                  <ul>
+                    <li><a href="biographies.html">Biographies</a></li>
+                    <li><a href="teachings.html">Teachings</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul class="footerlist">
+                <li><a href="media.html">Media</a>
+                  <ul><li><a href="images.html">Image Gallery</a></li>
+                    <li><a href="videos.html">Videos</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="history.html">History</a></li>
+                  </ul>
+                </li>
+                <li><a href="events.html">Events</a>
+                  <ul class="dropdowncontent">
+                    <li><a href="activities.html">Activities</a></li>
+                  </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            </div>
+            <p><a href="sitemap.xml">Full Sitemap</a></p>
+          </div>
         </div>
-        <div class="footer_child">
-          <h4>Navigation</h4>
-          <!-- TODO: 2nd layer nav + link to full sitemap -->
-        </div>
+        <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
       </div>
-    </footer</>
+    </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/nav.js"></script>
  </body>
 </html>

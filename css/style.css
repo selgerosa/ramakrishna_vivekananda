@@ -200,7 +200,7 @@ nav a {
 
 #nav2 {
   position: fixed;
-  z-index: -1;
+  z-index: 1;
   width:10vw;
   left:10vw;
   top:30vh;
@@ -274,7 +274,7 @@ nav a {
 .learnchild img {
   border: solid #cc3300;
   padding:.7vw;
-  width: 15vw;
+  height:35vh;
 }
 
 .bottommargin {
@@ -481,6 +481,7 @@ footer a {
     width:90vw;
   }
   .learnchild img {
-    width: 90vw;
+      width: 80vw;
+      height: auto;
   }
 }
