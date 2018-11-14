@@ -2,7 +2,7 @@
  <head>
   <title>Swami Yuktatamanda, The Spiritual Leader of the Ramakrishna-Vivekenanda Center of New York</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Neuton:300" rel="stylesheet">
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,8 @@
  <body>
   <div class="body">
     <header>
-      <div class="header_parent flex aligncenter">
-        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
-        <div class="header_child flex flexcol">
+      <div class="header_parent flex aligncenter justifycenter">
+        <div class="header_child flex flexcol aligncenter">
          <h1>Ramakrishna-Vivekenanda Center of New York</h1>
           <h2>Spiritual Leader</h2>
         </div>
@@ -25,12 +24,14 @@
         <a href="about.html">About</a>
           <ul class="dropdowncontent">
             <li><a href="minister.html">Minister's Message</a></li>
+            <li><a href="ministerarchive.html">Minister's Message Archive</a></li>
           </ul>
         </div>
         <div class="dropdown">
         <a href="learn.html">Learn</a>
           <ul class="dropdowncontent">
-            <li><a href="biographies.html">Biographies</a></li>
+            <li><a href="holybiographies.html">Holy Figure Biographies</a></li>
+            <li><a href="biographies.html">Swami Biographies</a></li>
             <li><a href="teachings.html">Teachings</a></li>
             <li><a href="history.html">History</a></li>
           </ul>
@@ -39,8 +40,6 @@
           <a href="media.html">Media</a>
           <ul class="dropdowncontent">
             <li><a href="images.html">Image Gallery</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="audio.html">Audio</a></li>
           </ul>
         </div>
         <div class="dropdown">
@@ -69,10 +68,10 @@
       <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
       </div>
       <div class="child bodycopy">
-        <img src="img/Swami_Yuktatmananda.jpg">
+        <img src="img/Swami_Yuktatmananda_2.jpg" id="swami yuktatmananda portrait" class="bottommargin">
         <h2>Swami Yuktatmananda</h2>
         <p>Swami Yuktatmananda joined the monastic Order of Sri Ramakrishna in Bangalore, India, in 1978 and was ordained a monk in 1988. For more than a decade, he served at the Ramakrishna Mission Vidyalaya in Coimbatore, a major educational center of the Order, leading its Polytechnic College. Later, after being in charge of the Ramakrishna Institute of Moral and Spiritual Education, a teacher training college of the Order’s Mysore Center, for more than four years, the Swami was sent by the Order in January 2002 to the Advaita Ashrama at Mayavati in the Himalayas, where he served for three years as editor of Prabuddha Bharata: Awakened India, the English language monthly journal on religion and philosophy published by the Order.</p>
-
+        <img src="img/Swami_Yuktatmananda_Podium.JPG" id="swami yuktatmananda speaking at a podium" class="bottommargin">
         <p>In May 2006 Swami Yuktatmananda was assigned by the Order to be the minister of its newly accepted branch, the Vedanta Center of St. Petersburg, Florida, where he served more than a year and a half. In December 2007, following the passing away of Swami Adiswarananda, Swami Yuktatmananda was selected by the Order to be the Minister and Spiritual Leader of the Ramakrishna-Vivekananda Center of New York.</p>
 
         <p>Swami Yuktatmananda’s writings appear regularly in the Monthly Announcements of the Center. On invitation, he lectures at religious, educational and cultural institutions in the United States and abroad.</p>
@@ -89,7 +88,8 @@
             <p>rvcenternewyork@gmail.com</p>
             <p>17 East 94th Street, New York, NY 10128</p>
             <p>Fax: (212) 828-1618</p>
-            <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/facebook.png"></a>
+            <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/iconfacebook.png" id="fb"></a>
+            <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
           </div>
 
           <div class="flex flexcol aligncenter">
@@ -100,13 +100,16 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a>
                   <ul>
-                    <li><a href="minister.html">Minister's Message</a></li>
+                    <li><a href="minister.html">- Minister's Message</a></li>
+                    <li><a href="ministerarchive.html">- Minister's Message Archive</a></li>
                   </ul>
                 </li>
                 <li><a href="learn.html">Learn</a>
                   <ul>
-                    <li><a href="biographies.html">Biographies</a></li>
-                    <li><a href="teachings.html">Teachings</a></li>
+                    <li><a href="holybiographies.html">- Holy Figure Biographies</a></li>
+                    <li><a href="biographies.html">- Swami Biographies</a></li>
+                    <li><a href="teachings.html">- Teachings</a></li>
+                    <li><a href="history.html">- History</a></li>
                   </ul>
                 </li>
               </ul>
@@ -114,12 +117,9 @@
             <div>
               <ul class="footerlist">
                 <li><a href="media.html">Media</a>
-                  <ul><li><a href="images.html">Image Gallery</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="audio.html">Audio</a></li>
-                    <li><a href="history.html">History</a></li>
-                  </ul>
-                </li>
+                  <ul>
+                    <li><a href="images.html">- Image Gallery</a></li>                  </ul>
+                  </li>
                 <li><a href="events.html">Events</a>
                   <ul class="dropdowncontent">
                     <li><a href="activities.html">Activities</a></li>

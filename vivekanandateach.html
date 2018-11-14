@@ -2,7 +2,7 @@
  <head>
   <title>Teachings of Swami Vivekananda from The Ramakrishna-Vivekenanda Center of New York</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Neuton:300" rel="stylesheet">
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,11 +11,10 @@
  <body>
   <div class="body">
     <header>
-      <div class="header_parent flex aligncenter">
-        <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
-        <div class="header_child flex flexcol">
-          <h1>Ramakrishna-Vivekenanda Center of New York</h1>
-          <h2>Swami Vivekananda</h2>
+      <div class="header_parent flex aligncenter justifycenter">
+        <div class="header_child flex flexcol aligncenter">
+         <h1>Ramakrishna-Vivekenanda Center of New York</h1>
+          <h2>Universal Teachings of Swami Vivekananda</h2>
         </div>
       </div>
     </header>
@@ -25,12 +24,14 @@
         <a href="about.html">About</a>
           <ul class="dropdowncontent">
             <li><a href="minister.html">Minister's Message</a></li>
+            <li><a href="ministerarchive.html">Minister's Message Archive</a></li>
           </ul>
         </div>
         <div class="dropdown">
         <a href="learn.html">Learn</a>
           <ul class="dropdowncontent">
-            <li><a href="biographies.html">Biographies</a></li>
+            <li><a href="holybiographies.html">Holy Figure Biographies</a></li>
+            <li><a href="biographies.html">Swami Biographies</a></li>
             <li><a href="teachings.html">Teachings</a></li>
             <li><a href="history.html">History</a></li>
           </ul>
@@ -39,8 +40,6 @@
           <a href="media.html">Media</a>
           <ul class="dropdowncontent">
             <li><a href="images.html">Image Gallery</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="audio.html">Audio</a></li>
           </ul>
         </div>
         <div class="dropdown">
@@ -54,23 +53,34 @@
     </nav>
 
     <div class="parent">
-      <div class="child width50">
-
-        <h2>Universal Teachings of Swami Vivekananda</h2>
-
-        <h3>See God In All</h3>
+      <div id="nav2">
+        <a href="about.html">About</a>
+        <a href="learn.html">Learn</a>
+        <a href="media.html">Media</a>
+        <a href="events.html">Events</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav3">
+      <a href="index.html"><img src="img/iconhome.png" alt="icon of house"></a>
+      <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
+      <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
+      <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
+      </div>
+      <div class="child bodycopy">
+        <h2>See God In All</h2>
         <p>This is the gist of all worship - to be pure and to do good to others. He who sees Siva in the poor, in the weak, and in the diseased, really worships Siva, and if he sees Siva only in the image, his worship is but preliminary. He who has served and helped one poor man seeing Siva in him, without thinking of his cast, creed, or race, or anything, with him Siva is more pleased than with the man who sees Him only in temples.  </p>
 
-        <h3>God Is Within You</h3>
+        <h2>God Is Within You</h2>
         <p>It is impossible to find God outside of ourselves. Our own souls contribute all of the divinity that is outside of us. We are the greatest temple. The objectification is only a faint imitation of what we see within ourselves.</p>
 
-        <h3>Perservere In Your Search For God</h3>
+        <h2>Perservere In Your Search For God</h2>
         <p>To succeed, you must have tremendous perseverance, tremendous will. "I will drink the ocean," says the persevering soul, "at my will mountains will crumble up." Have that sort of energy, that sort of will, work hard, and you will reach the goal.</p>
 
-        <h3>Trust Completely In God</h3>
+        <h2>Trust Completely In God</h2>
         <p>Stand up for God; let the world go.</p>
 
-        <h3>Love Of God Is Essential</h3>
+        <h2>Love Of God Is Essential</h2>
         <p>Giving up all other thoughts, with the whole mind day and night worship God. Thus being worshipped day and night, He reveals himself and makes His worshippers feel His presence.</p>
 
         <div class="flex justifyaround aligncenter width50 flexwrap topmargin">
@@ -82,15 +92,17 @@
       </div>
     </div>
 
-    <footer >
+    <footer>
       <div class="flex flexcol footerparent aligncenter ">
-        <div class="flex flexrow justifybetween footerchild">
-          <div class="" id="fc1">
+        <div class="flex flexrow justifybetween footerchild flexcol-m">
+          <div>
             <h4>Contact Us</h4>
             <p>+(212) 534-9445</p>
             <p>rvcenternewyork@gmail.com</p>
             <p>17 East 94th Street, New York, NY 10128</p>
             <p>Fax: (212) 828-1618</p>
+            <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/iconfacebook.png" id="fb"></a>
+            <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
           </div>
 
           <div class="flex flexcol aligncenter">
@@ -101,13 +113,16 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a>
                   <ul>
-                    <li><a href="minister.html">Minister's Message</a></li>
+                    <li><a href="minister.html">- Minister's Message</a></li>
+                    <li><a href="ministerarchive.html">- Minister's Message Archive</a></li>
                   </ul>
                 </li>
                 <li><a href="learn.html">Learn</a>
                   <ul>
-                    <li><a href="biographies.html">Biographies</a></li>
-                    <li><a href="teachings.html">Teachings</a></li>
+                    <li><a href="holybiographies.html">- Holy Figure Biographies</a></li>
+                    <li><a href="biographies.html">- Swami Biographies</a></li>
+                    <li><a href="teachings.html">- Teachings</a></li>
+                    <li><a href="history.html">- History</a></li>
                   </ul>
                 </li>
               </ul>
@@ -115,12 +130,9 @@
             <div>
               <ul class="footerlist">
                 <li><a href="media.html">Media</a>
-                  <ul><li><a href="images.html">Image Gallery</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="audio.html">Audio</a></li>
-                    <li><a href="history.html">History</a></li>
-                  </ul>
-                </li>
+                  <ul>
+                    <li><a href="images.html">- Image Gallery</a></li>                  </ul>
+                  </li>
                 <li><a href="events.html">Events</a>
                   <ul class="dropdowncontent">
                     <li><a href="activities.html">Activities</a></li>
@@ -138,5 +150,7 @@
       </div>
     </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="js/nav.js"></script>
  </body>
 </html>
