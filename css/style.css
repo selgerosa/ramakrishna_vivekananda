@@ -249,9 +249,9 @@ nav a {
   width: 50vw;
 }
 
-.bodycopy img {
+/* .bodycopy img {
   width: inherit;
-}
+} */
 
 #ministertitle {
   font-size: 3em;
@@ -294,8 +294,8 @@ nav a {
 
 .borderbottom {
   border-bottom: solid #cc3300;
-  margin-bottom: 5vh;
-  padding-bottom: 5vh;
+  margin-bottom: 10vh;
+  padding-bottom: 10vh;
 }
 .topmargin10 {
   margin-top: 10vh;
