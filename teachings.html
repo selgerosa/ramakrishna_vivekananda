@@ -2,7 +2,7 @@
  <head>
   <title>Teachings by the Ramakrishna-Vivekenanda Center of New York</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Neuton:300" rel="stylesheet">
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,8 @@
  <body>
    <div class="body">
      <header>
-       <div class="header_parent flex aligncenter">
-         <a href="index.html"><img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
-         <div class="header_child flex flexcol">
+       <div class="header_parent flex aligncenter justifycenter">
+         <div class="header_child flex flexcol aligncenter">
           <h1>Ramakrishna-Vivekenanda Center of New York</h1>
           <h2>Teachings</h2>
         </div>
@@ -25,12 +24,14 @@
         <a href="about.html">About</a>
           <ul class="dropdowncontent">
             <li><a href="minister.html">Minister's Message</a></li>
+            <li><a href="ministerarchive.html">Minister's Message Archive</a></li>
           </ul>
         </div>
         <div class="dropdown">
         <a href="learn.html">Learn</a>
           <ul class="dropdowncontent">
-            <li><a href="biographies.html">Biographies</a></li>
+            <li><a href="holybiographies.html">Holy Figure Biographies</a></li>
+            <li><a href="biographies.html">Swami Biographies</a></li>
             <li><a href="teachings.html">Teachings</a></li>
             <li><a href="history.html">History</a></li>
           </ul>
@@ -39,8 +40,6 @@
           <a href="media.html">Media</a>
           <ul class="dropdowncontent">
             <li><a href="images.html">Image Gallery</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="audio.html">Audio</a></li>
           </ul>
         </div>
         <div class="dropdown">
@@ -53,34 +52,28 @@
         <a href="contact.html">Contact</a>
     </nav>
 
-    <div class="parent">
-      <div id="nav2">
-        <a href="about.html">About</a>
-        <a href="learn.html">Learn</a>
-        <a href="media.html">Media</a>
-        <a href="events.html">Events</a>
-        <a href="shop.html">Shop</a>
-        <a href="contact.html">Contact</a>
-      </div>
+    <div class="parent flexcol aligncenter">
       <div class="nav3">
       <a href="index.html"><img src="img/iconhome.png" alt="icon of house"></a>
       <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
       <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
       <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
       </div>
+      <div class="child topmargin10"><h2><a href="ut.html">Universal Teachings</a></h2></div>
+
       <div class="child">
         <div class="flex learn flexcol-m">
         <div class="learnchild flex flexcol aligncenter">
           <a href="ramakrishnaut.html"><img src="img/ramakrishna_seated_midsizencdas.jpg">
-          <h2>Sri Ramakrishna</a></h2>
+          <h3>Sri Ramakrishna</a></h3>
         </div>
         <div class="learnchild flex flexcol aligncenter">
           <a href="saradadeviteach.html"><img src="img/holy_mother_midsizencdas.jpg">
-          <h2>Sri Sarada Devi</a></h2>
+          <h3>Sri Sarada Devi</a></h3>
         </div>
         <div class="learnchild flex flexcol aligncenter">
           <a href="Vivekanandateach.html"><img src="img/vivekananda_seated_midsize.jpg">
-          <h2>Swami Vivekananda</a></h2>
+          <h3>Swami Vivekananda</a></h3>
         </div>
       </div>
     </div>
@@ -94,7 +87,8 @@
           <p>rvcenternewyork@gmail.com</p>
           <p>17 East 94th Street, New York, NY 10128</p>
           <p>Fax: (212) 828-1618</p>
-          <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/facebook.png"></a>
+          <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/iconfacebook.png" id="fb"></a>
+          <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
         </div>
 
         <div class="flex flexcol aligncenter">
@@ -105,13 +99,16 @@
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a>
                 <ul>
-                  <li><a href="minister.html">Minister's Message</a></li>
+                  <li><a href="minister.html">- Minister's Message</a></li>
+                  <li><a href="ministerarchive.html">- Minister's Message Archive</a></li>
                 </ul>
               </li>
               <li><a href="learn.html">Learn</a>
                 <ul>
-                  <li><a href="biographies.html">Biographies</a></li>
-                  <li><a href="teachings.html">Teachings</a></li>
+                  <li><a href="holybiographies.html">- Holy Figure Biographies</a></li>
+                  <li><a href="biographies.html">- Swami Biographies</a></li>
+                  <li><a href="teachings.html">- Teachings</a></li>
+                  <li><a href="history.html">- History</a></li>
                 </ul>
               </li>
             </ul>
@@ -119,12 +116,9 @@
           <div>
             <ul class="footerlist">
               <li><a href="media.html">Media</a>
-                <ul><li><a href="images.html">Image Gallery</a></li>
-                  <li><a href="videos.html">Videos</a></li>
-                  <li><a href="audio.html">Audio</a></li>
-                  <li><a href="history.html">History</a></li>
-                </ul>
-              </li>
+                <ul>
+                  <li><a href="images.html">- Image Gallery</a></li>                  </ul>
+                </li>
               <li><a href="events.html">Events</a>
                 <ul class="dropdowncontent">
                   <li><a href="activities.html">Activities</a></li>

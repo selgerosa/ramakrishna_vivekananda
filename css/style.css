@@ -28,7 +28,7 @@ h1,h2,h3,h4,p {
 }
 
 h1,h2,h3,h4, nav a {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Neuton', serif;
 }
 h1,h2,h3 {
   text-align: center;
@@ -39,6 +39,9 @@ h1 {
 h2 {
   font-size: 2.4em;
   margin-bottom: 3vh;
+}
+.header_child h2 {
+  margin: 0;
 }
 .center h2 {
   padding-top:3vh;
@@ -67,7 +70,7 @@ footer h4 {
   padding-bottom: 1vh;
 }
 p {
-  font-family: sans-serif;
+  font-family: 'Libre Franklin',sans-serif;
   padding-bottom: 10vh;
   font-size: 1.7em;
   line-height: 115%;
@@ -76,6 +79,7 @@ p {
   padding-bottom: 0;
 }
 .ministerarchive p {
+  font-size: 1.3em;
   padding: 2vh 0 7vh 0;
 }
 
@@ -147,6 +151,7 @@ header img {
 }
 .header_parent {
   margin: 3vh 8vw;
+  width: 100vw;
 }
 
 .header_child {
@@ -269,12 +274,15 @@ nav a {
 .learnchild {
   width: 30vw;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .learnchild img {
   border: solid #cc3300;
   padding:.7vw;
-  height:35vh;
+  max-height: 35vh;
+  max-width:80%
 }
 
 .bottommargin {
@@ -289,7 +297,10 @@ nav a {
   margin-bottom: 5vh;
   padding-bottom: 5vh;
 }
-
+.topmargin10 {
+  margin-top: 10vh;
+  margin-bottom:0;
+}
 .bottommargin20 {
   margin-bottom: 20vh;
 }
@@ -362,14 +373,17 @@ iframe {
   margin:5vh 0;
 }
 .footerlist{
-  padding: 0 2vw;
+  padding: 0 1vw 0 0;
 }
 .footerlist li ul {
-  padding-left:2.5vw;
+  padding-left:1vw;
 }
-footer img {
-  width:1vw;
-  margin: 1vh 1vw;
+#yt {
+  padding: 1vh 0 0 1vw;
+}
+ #fb,#yt {
+  height:3vw;
+  width: auto;
 }
 footer a {
   color: white;
@@ -383,6 +397,26 @@ footer a {
 }
 
 @media (max-width:768px) {
+  .header_parent {
+    flex-direction: column;
+    margin: 1vh 1vw;
+    width:100vw;
+  }
+  .header_child,.headerhome {
+     margin-left:0 !important;
+  }
+  .header_child {
+    width: 60vw;
+    margin-left: 0;
+    text-align: center;
+  }
+  .header_child a h1, .header_child a h3 {
+    text-align: center;
+  }
+  header img {
+    width: 10vw;
+  }
+
   .flexcol-t {
     flex-direction: column;
   }
@@ -397,19 +431,16 @@ footer a {
   .bodycopy {
     width: 75vw;
   }
+  .learnchild {
+    width:20vw;
+  }
+
 }
 
 @media (max-width:500px) {
-  .header_parent {
-    flex-direction: column;
-    margin: 1vh 1vw;
-  }
-  .header_child,.headerhome {
-     margin-left:0;
-  }
+
   .header_child {
-    width: 90vw;
-    margin-left: 0;
+    width:95vw;
   }
   header img {
     width: 20vw;
@@ -445,6 +476,10 @@ footer a {
 
   .flexcol-m {
     flex-direction: column;
+  }
+
+  .aligncenter-m {
+    align-items: center;
   }
 
   .bodycopy {
@@ -483,5 +518,9 @@ footer a {
   .learnchild img {
       width: 80vw;
       height: auto;
+      max-height: 100vh;
+  }
+  #yt, #fb {
+    height:4vh;
   }
 }
