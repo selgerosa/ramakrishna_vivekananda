@@ -17,9 +17,6 @@ nav a{
   color:black;
   text-decoration: none;
 }
-.archive a {
-  text-decoration: none;
-}
 
 /* typefaces */
 h1,h2,h3,h4,p {
@@ -30,7 +27,7 @@ h1,h2,h3,h4,p {
 h1,h2,h3,h4, nav a {
   font-family: 'Neuton', serif;
 }
-h1,h2,h3 {
+h1,h2,h3,h4 {
   text-align: center;
 }
 h1 {
@@ -42,9 +39,6 @@ h2 {
 }
 .header_child h2 {
   margin: 0;
-}
-.center h2 {
-  padding-top:3vh;
 }
 
 h3 {
@@ -62,9 +56,6 @@ h4 {
 nav h4 {
   font-size: 1.2em;
 }
-#homechild h4 {
-  text-align: center;
-}
 
 footer h4 {
   padding-bottom: 1vh;
@@ -72,12 +63,10 @@ footer h4 {
 p {
   font-family: 'Libre Franklin',sans-serif;
   padding-bottom: 10vh;
-  font-size: 1.7em;
-  line-height: 115%;
+  font-size: 1.5em;
+  line-height: 125%;
 }
-.center p {
-  padding-bottom: 0;
-}
+
 .ministerarchive p {
   font-size: 1.3em;
   padding: 2vh 0 7vh 0;
@@ -133,7 +122,7 @@ header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .galler
 }
 
 /* header */
-header,footer {
+header {
   background-color: #cc3300;
   color:white;
 }
@@ -147,7 +136,7 @@ header img {
 }
 
 .headerhome .header_child {
-  margin-left: 6vw;
+  margin-left: 3vw;
 }
 .header_parent {
   margin: 3vh 8vw;
@@ -164,29 +153,39 @@ header img {
 
 /* nav */
 nav {
-  padding: 2vh 15vw 0 20vw;
+  width:80vw;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-}
+  padding: 1vh 0 1vh 10vw;
 
+}
+nav .navparent:hover, nav .navactive {
+  border-bottom: solid 5vh #cc3300;
+}
+.navparent {
+    padding:0 2vw;
+}
+.navactive {
+  color: #cc3300;
+}
 ul {
   margin:0;
+  padding: 0;
   list-style: none;
 }
 
-.dropdown, nav a {
-  width: 10vw;
-}
-
 .dropdowncontent {
-  padding:2vh 1vw;
-  margin-top: 2vh;
+  padding:1vh 1vw;
+  margin-top: 1vh;
   border:none;
-  background-color: #cc3300;
+  background-color: rgb(204,51,0,.8);
   opacity: 0;
   transition: 1s;
   display: none;
   flex-direction: column;
   position: absolute;
+  z-index: 2;
 }
 .dropdowncontent a {
   color: white;
@@ -195,7 +194,6 @@ ul {
 nav a {
   font-size: 1.2em;
   margin-bottom: 2vh;
-
 }
 
 .dropdown:hover .dropdowncontent, .dropdowncontent:hover{
@@ -204,54 +202,73 @@ nav a {
 }
 
 #nav2 {
-  position: fixed;
-  z-index: 1;
-  width:10vw;
-  left:10vw;
-  top:30vh;
-  border:solid #cc3300;
-  display: none;
-  padding: 1vh 0vw 1vh 1vw;
-  text-align: left;
-
+  border-right: solid #cc3300;
+  margin-right: 5vw;
+  padding-right: 5vw;
+  padding-top: 5vh;
+  padding-left:5vw;
+  width:20vw;
 }
-
+#nav2 p {
+  padding-bottom:4vh;
+  font-size: 1.3em;
+}
 #nav2 a {
-  font-size: 1.7em;
   text-decoration: none;
-  margin-bottom: 2vh;
+  color: black;
+}
+#nav2active {
+  color:#cc3300!important;
 }
 
 /* body */
 .parent {
   border-top: solid #cc3300;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 .child {
-  width:75vw;
-  margin: 10vh 0;
+  margin-top:5vh;
   display: flex;
   flex-direction: column;
+  width:70vw;
 }
 
-
-#homechildimg {
-  margin-right:5vw;
-  width:40vw;
+.width100 {
+  width: 100vw;
 }
-
-#homechild h4 {
-  border-bottom: solid #cc3300;
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .bodycopy {
   width: 50vw;
 }
 
-/* .bodycopy img {
-  width: inherit;
-} */
+.toplevel {
+  display: flex;
+  background-color: rgb(35,41,82, .9);
+  z-index: 1;
+  padding:5vh 5vw 0;
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 20vw;
+}
+.toplevelimg {
+  z-index: 0;
+  display:flex;
+}
+.toplevel a {
+    color:white;
+    text-decoration: none;
+}
+.toplevel p {
+  padding-bottom: 5vh;
+  font-size: 1.7em;
+}
 
 #ministertitle {
   font-size: 3em;
@@ -309,10 +326,6 @@ nav a {
   text-align: center;
 }
 
-#wrap {
-  margin: 0 4vw 2vh 0;
-}
-
 .mapouter{
   text-align:right;
   height:55vh;
@@ -365,19 +378,24 @@ iframe {
 }
 
 /* footer */
-.footerparent {
+footer {
+  background-color: #232952;
   padding: 2vh 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.footerchild {
+.footerparent {
   width: 70vw;
   margin:5vh 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.footerlist{
-  padding: 0 1vw 0 0;
+.footerchild {
+  width:35vw;
 }
-.footerlist li ul {
-  padding-left:1vw;
-}
+
 #yt {
   padding: 1vh 0 0 1vw;
 }
@@ -385,10 +403,9 @@ iframe {
   height:3vw;
   width: auto;
 }
-footer a {
+footer a, footer {
   color: white;
   text-decoration: none;
-  font-family: sans-serif;
   padding: .5vh .5vw;
 }
 
