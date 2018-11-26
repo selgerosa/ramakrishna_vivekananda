@@ -18,7 +18,7 @@
         </div>
       </div>
     </header>
-    <nav>
+    <nav id="nav">
         <div class="dropdown">
         <a href="about.html" class="navparent">About</a>
           <ul class="dropdowncontent">
@@ -82,23 +82,23 @@
 
     <div class="parent">
       <div class="nav3">
-      <a href="index.html"><img src="img/iconhome.png" alt="icon of house"></a>
       <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
       <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
       <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
+      <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
       </div>
-      <img src="img/alter.jpg" alt=''>
+      <img src="img/center1.jpg" alt=''>
       <div class="child">
           <div class="column">
             <h4>Minister and Spiritual Leader</h4>
             <h2><a href="yuktatmananda.html" class="hiddenlink">Swami Yuktatmananda</a></h2>
           </div>
-          <div class="flex flexrow justifybetween">
-          <div class="column">
+          <div class="flex flexrow flexcol-m justifybetween">
+          <div class="column justend">
             <h4>Founder and Minister 1933-1973</h4>
             <h2><a href="nikhilananda.html" class="hiddenlink">Swami Nikhilananda</a></h2>
           </div>
-          <div class="column">
+          <div class="column justend">
             <h4>Assistant Minister 1968-1973,<br> Minister 1973-2007</h4>
             <h2><a href="adiswarananda.html" class="hiddenlink">Swami Adiswarananda</a></h2>
           </div>
@@ -109,8 +109,8 @@
 
     <footer>
         <div class="footerparent flexcol-m">
-          <div class="footerchild"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
-          <div>
+          <div id="footerchild1"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
+          <div id="footerchild2">
             <p>Office: (212) 534-9445</p>
             <p>Fax: (212) 828-1618</p>
             <p>rvcenternewyork@gmail.com</p>
@@ -119,8 +119,9 @@
             <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
           </div>
         </div>
-        <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
+        <p>&copy; Ramakrishna-Vivekananda Center of New York | <a href="sitemap.xml">Sitemap</a> | <a href="credits.html">Site Credits</a></p>
     </footer>
   </div>
+  <script src="js/hamburger.js"></script>
  </body>
 </html>

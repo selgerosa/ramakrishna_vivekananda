@@ -8,13 +8,7 @@ img {
   width:100vw;
 }
 a {
-  color: #cc3300;
-}
-.hiddenlink{
-  color:black;
-  text-decoration: none;
-}
-nav a{
+  /* color: #cc3300; */
   color:black;
   text-decoration: none;
 }
@@ -110,7 +104,9 @@ header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .galler
 .aligncenter {
   align-items: center;
 }
-
+.justend {
+  justify-content: flex-end;
+}
 .flexwrap {
   flex-wrap: wrap;
 }
@@ -159,14 +155,12 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1vh 0 1vh 10vw;
-
+  align-items: center;
 }
 nav .navparent:hover, nav .navactive {
   border-bottom: solid 5vh #cc3300;
 }
-.navparent {
-    padding:0 2vw;
-}
+
 .navactive {
   color: #cc3300;
 }
@@ -205,9 +199,9 @@ nav a {
 #nav2 {
   border-right: solid #cc3300;
   margin-right: 5vw;
-  padding-right: 5vw;
+  padding-right: 2.5vw;
   padding-top: 5vh;
-  padding-left:5vw;
+  padding-left:2.5vw;
   width:20vw;
 }
 #nav2 p {
@@ -221,7 +215,9 @@ nav a {
 #nav2active {
   color:#cc3300!important;
 }
-
+#nav2m {
+  display: none;
+}
 /* body */
 .parent {
   border-top: solid #cc3300;
@@ -239,6 +235,7 @@ nav a {
 
 .width100 {
   width: 100vw;
+  max-width: 100%;
 }
 .column {
   display: flex;
@@ -246,7 +243,7 @@ nav a {
 }
 
 .bodycopy {
-  width: 50vw;
+  width: 55vw;
 }
 
 .toplevel {
@@ -256,7 +253,7 @@ nav a {
   padding:5vh 5vw 0;
   position: absolute;
   margin-top: 10vh;
-  margin-left: 20vw;
+  margin-left: 10vw;
 }
 .toplevelimg {
   z-index: 0;
@@ -268,7 +265,7 @@ nav a {
 }
 .toplevel p {
   padding-bottom: 5vh;
-  font-size: 1.7em;
+  font-size: 1.5em;
 }
 
 #ministertitle {
@@ -387,14 +384,18 @@ footer {
   align-items: center;
 }
 .footerparent {
-  width: 70vw;
-  margin:5vh 0;
+  width: 80vw;
+  margin:5vh 10vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.footerchild {
+#footerchild1 {
   width:35vw;
+}
+
+#footerchild2 {
+  text-align: right;
 }
 
 #yt {
@@ -418,7 +419,6 @@ footer a, footer {
   .header_parent {
     flex-direction: column;
     margin: 1vh 1vw;
-    width:100vw;
   }
   .header_child,.headerhome {
      margin-left:0 !important;
@@ -435,6 +435,9 @@ footer a, footer {
     width: 10vw;
   }
 
+  .child {
+    width:90vw;
+  }
   .flexcol-t {
     flex-direction: column;
   }
@@ -452,11 +455,22 @@ footer a, footer {
   .learnchild {
     width:20vw;
   }
-
+  .toplevel {
+    padding-bottom:2.5vh
+  }
+  .toplevelimg {
+    height:100vw;
+  }
+  .toplevel p{
+    font-size: 1em;
+    padding-bottom: 2.5vh;
+  }
 }
 
 @media (max-width:500px) {
-
+  .header_parent {
+    margin:0;
+  }
   .header_child {
     width:95vw;
   }
@@ -475,25 +489,73 @@ footer a, footer {
   p {
     font-size: 1.5em;
   }
-  .child,.footerchild {
+  .child,#footerchild1 {
     width: 90vw;
   }
   .child {
     margin:5vh 0;
   }
-  #homechildimg {
-    width: 90vw;
-  }
 
   nav {
     display: none;
+    height: 80vh;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    background: white;
+    width: 100vw;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-size: 2em;
   }
   footer img {
     width:3vw;
   }
 
+  footer {
+    padding: 0;
+  }
+  .footerparent {
+    width:90vw;
+  }
+  #footerchild1 {
+    margin-bottom:2vh;
+  }
+  #footerchild2 {
+    text-align: left;
+  }
+  #nav2 {
+    border: 1vw solid rgb(35,41,82);
+    border-top:none;
+    width: 78vw;
+    display: none;
+    padding: 5vh 4vw 0;
+    margin: 0 5vw;
+  }
+  #nav2m {
+    display: flex;
+    width:78vw;
+    background-color: rgb(35,41,82);
+    height:10vw;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 5vh 5vw 0;
+    padding:0 5vw;
+  }
+  #nav2m img {
+    width:8vw;
+  }
+  #nav2m p {
+    padding: 0;
+  }
   .flexcol-m {
     flex-direction: column;
+  }
+  .flexrow-m {
+    flex-direction: row;
   }
 
   .aligncenter-m {
@@ -501,7 +563,8 @@ footer a, footer {
   }
 
   .bodycopy {
-    width:90vw;
+    width:85vw;
+    margin:0 5vw;
   }
 
   .bottommargin20 {

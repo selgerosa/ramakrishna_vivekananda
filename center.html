@@ -22,7 +22,7 @@
         <div class="dropdown">
         <a href="about.html" class="navparent navactive">About</a>
           <ul class="dropdowncontent">
-            <li><a href=".html">The Center</a></li>
+            <li><a href="center.html">The Center</a></li>
             <li><a href=".html">Vedanta</a></li>
             <li><a href=".html">Minister & Spiritual Leader</a></li>
             <li><a href="contact.html">Contact Us</a></li>
@@ -88,7 +88,8 @@
       <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
       </div>
       <img src="img/center1.jpg" alt=''>
-      <div class="flex flexrow width100">
+      <div class="flex flexrow flexcol-m width100">
+      <div id="nav2m" onclick="expand();"><p>About</p><img src="img/plus.png" alt="plus icon"></div>
       <div id="nav2">
         <ul>
           <li><p><a href="" id="nav2active">The Center</a></p></li>
@@ -107,8 +108,8 @@
 
     <footer>
         <div class="footerparent flexcol-m">
-          <div class="footerchild"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
-          <div>
+          <div id="footerchild1"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
+          <div id="footerchild2">
             <p>Office: (212) 534-9445</p>
             <p>Fax: (212) 828-1618</p>
             <p>rvcenternewyork@gmail.com</p>
@@ -117,8 +118,19 @@
             <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
           </div>
         </div>
-        <p>&copy; Ramakrishna-Vivekananda Center of New York / <a href="credits.html">Site Credits</a></p>
+        <p>&copy; Ramakrishna-Vivekananda Center of New York | <a href="sitemap.xml">Sitemap</a> | <a href="credits.html">Site Credits</a></p>
     </footer>
   </div>
+  <script>
+    function expand() {
+      var nav2 = document.getElementById('nav2');
+      if (nav2.style.display=='') {
+        nav2.style.display='flex';
+      }
+      else {
+        nav2.style.display='none';
+      }
+    }
+  </script>
  </body>
 </html>
