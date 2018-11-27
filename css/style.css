@@ -218,6 +218,34 @@ nav a {
 #nav2m {
   display: none;
 }
+#nav4 {
+  height: 80vh;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  background: white;
+  width: 100vw;
+  flex-direction: column;
+  padding: 0;
+  padding:10vh 0vw;
+  font-size: 1.5em;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  visibility: hidden;
+}
+#nav4 p {
+  padding-bottom: 4vh;
+}
+#nav4 img {
+  width:10vw;
+}
+#nav4a, #nav4b, #nav4c {
+  display: none;
+  visibility: hidden;
+}
+
 /* body */
 .parent {
   border-top: solid #cc3300;
@@ -498,17 +526,6 @@ footer a, footer {
 
   nav {
     display: none;
-    height: 80vh;
-    z-index: 4;
-    position: fixed;
-    top: 0;
-    background: white;
-    width: 100vw;
-    flex-direction: column;
-    padding: 0;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    font-size: 2em;
   }
   footer img {
     width:3vw;
@@ -551,6 +568,8 @@ footer a, footer {
   #nav2m p {
     padding: 0;
   }
+
+
   .flexcol-m {
     flex-direction: column;
   }
