@@ -62,11 +62,6 @@ p {
   line-height: 125%;
 }
 
-.ministerarchive p {
-  font-size: 1.3em;
-  padding: 2vh 0 7vh 0;
-}
-
 footer p {
   font-size: 1em;
   padding: .5vh .5vw;
@@ -290,39 +285,6 @@ nav a {
 }
 .toplevel p {
   padding-bottom: 5vh;
-  font-size: 1.5em;
-}
-
-#ministertitle {
-  font-size: 3em;
-  margin:10vh 0 15vh 0;
-}
-#ministersubtitle {
-  font-size: 2.9em;
-  margin-bottom:5vh;
-}
-
-.ministernavchild {
-  justify-content: space-between;
-  width: 100%;
-}
-.ministernav {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.learnchild {
-  width: 30vw;
-  text-align: center;
-  display: flex;
-  align-items: center;
-}
-
-.learnchild img {
-  border: solid #cc3300;
-  padding:.7vw;
-  max-height: 35vh;
-  max-width:80%
 }
 
 .bottommargin {
@@ -466,30 +428,17 @@ footer a, footer {
   .flexcol-t {
     flex-direction: column;
   }
-  #homechildimg {
-    margin: 0;
-    width: unset;
-  }
-  #homechild {
-    margin-left: 0;
-    margin-top:3vh;
-  }
   .bodycopy {
     width: 75vw;
   }
-  .learnchild {
-    width:20vw;
-  }
+
   .toplevel {
     padding-bottom:2.5vh
   }
   .toplevelimg {
     height:100vw;
   }
-  .toplevel p{
-    font-size: 1em;
-    padding-bottom: 2.5vh;
-  }
+
 }
 
 @media (max-width:500px) {
@@ -609,15 +558,36 @@ footer a, footer {
     width: 90vw;
   }
 
-  .learnchild {
-    width:90vw;
-  }
-  .learnchild img {
-      width: 80vw;
-      height: auto;
-      max-height: 100vh;
-  }
   #yt, #fb {
     height:4vh;
+  }
+  .toplevel p{
+    padding-bottom: 2.5vh;
+  }
+}
+@media (min-width:2500px) {
+  h1 {
+    font-size: 4.7em;
+  }
+  h2 {
+    font-size: 4.2em;
+  }
+  h3 {
+    font-size: 3.5em;
+  }
+  h4 {
+    font-size: 2.5em;
+  }
+  nav a {
+    font-size: 2.5em;
+  }
+  p {
+    font-size: 3em;
+  }
+  footer p {
+    font-size: 2em;
+  }
+  #nav2 p {
+    font-size: 1.9em;
   }
 }

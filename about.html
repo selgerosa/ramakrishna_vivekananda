@@ -82,23 +82,32 @@
 
     <div class="parent flexcol aligncenter">
       <div class="nav3">
-      <a href="index.html"><img src="img/iconhome.png" alt="icon of house"></a>
       <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
       <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
       <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
+      <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
       </div>
       <div>
         <div class="toplevel">
           <ul>
-          <li><p class="padding"><a href="center.html">The Center</a></p></li>
-          <li><p class="padding"><a href=".html">Vedanta</a></p></li>
-          <li><p class="padding"><a href=".html">Minister & Spiritual Leader</a></p></li>
-          <li><p class="padding"><a href="contact.html">Contact Us</a></p></li>
-        </ul>
+            <li><p class="padding"><a href="center.html">The Center</a></p></li>
+            <li><p class="padding"><a href=".html">Vedanta</a></p></li>
+            <li><p class="padding"><a href=".html">Minister & Spiritual Leader</a></p></li>
+            <li><p class="padding"><a href="contact.html">Contact Us</a></p></li>
+          </ul>
+        </div>
+        <img src="img/rkcenter.png" alt="" class="toplevelimg">
       </div>
-      <img src="img/rkcenter.png" alt="" class="toplevelimg">
-    </div></div>
+    </div>
 
+    <div id='nav4'>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="">Teachings</a></p>
+      <p><a href="">Ramakrishna Order</a></p>
+      <p><a href="">Media</a></p>
+      <img src="img/iconclose.png" alt="'x' close icon" onclick="hamburger();">
+    </div>
     <footer>
         <div class="footerparent flexcol-m">
           <div id="footerchild1"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
@@ -114,5 +123,6 @@
         <p>&copy; Ramakrishna-Vivekananda Center of New York | <a href="sitemap.xml">Sitemap</a> | <a href="credits.html">Site Credits</a></p>
     </footer>
   </div>
+  <script src="js/hamburger.js"></script>
  </body>
 </html>

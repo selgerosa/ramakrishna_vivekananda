@@ -7,7 +7,12 @@ function hamburger() {
     temp.style.visibility="hidden";
   }
 }
-function close() {
-  alert('alert');
-  document.getElementById(nav4).style.visibility="hidden";
+function expand() {
+  var nav2 = document.getElementById('nav2');
+  if (nav2.style.display=='') {
+    nav2.style.display='flex';
+  }
+  else {
+    nav2.style.display='none';
+  }
 }
