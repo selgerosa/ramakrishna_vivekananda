@@ -241,10 +241,7 @@ nav a {
 #nav4 img {
   width:10vw;
 }
-#nav4a, #nav4b, #nav4c {
-  display: none;
-  visibility: hidden;
-}
+
 
 /* body */
 .parent {
