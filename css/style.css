@@ -401,6 +401,12 @@ footer a, footer {
 .nav3 {
   display: none;
 }
+.hide-m {
+  display: flex;
+}
+.hide-d {
+  display: none;
+}
 
 @media (max-width:768px) {
   .header_parent {
@@ -437,11 +443,18 @@ footer a, footer {
   }
   .toplevelimg {
     height:100vw;
+    object-fit: cover;
   }
 
 }
 
 @media (max-width:500px) {
+  .hide-d {
+    display: flex;
+  }
+  .hide-m {
+    display: none;
+  }
   .header_parent {
     margin:0;
   }
