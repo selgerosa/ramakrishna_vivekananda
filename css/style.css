@@ -1,6 +1,7 @@
 
 body {
   margin:0;
+  background-color: white;
 }
 img {
   max-width: 100%;
@@ -114,13 +115,10 @@ header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .galler
 }
 
 /* header */
-header {
-  background-color: #cc3300;
-  color:white;
-}
 
 header img {
   width:7.5vw;
+  background-color: #cc3300;
 }
 
 .headerhome h1, .headerhome h3 {
@@ -139,7 +137,6 @@ header img {
   width: 70vw;
 }
 .headerlink {
-  color:white;
   text-decoration: none;
 }
 
@@ -149,8 +146,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1vh 0 1vh 10vw;
+  padding: 1vh 10vw 1vh 10vw;
   align-items: center;
+  border-top: solid #cc3300;
+
 }
 nav .navparent:hover, nav .navactive {
   border-bottom: solid 5vh #cc3300;
