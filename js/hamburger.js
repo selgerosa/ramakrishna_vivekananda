@@ -9,7 +9,7 @@ function hamburger() {
 }
 function expand() {
   var nav2 = document.getElementById('nav2');
-  if (nav2.style.display=='') {
+  if (nav2.style.display=='' || nav2.style.display=='none') {
     nav2.style.display='flex';
   }
   else {

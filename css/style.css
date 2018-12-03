@@ -142,6 +142,7 @@ header img {
 /* nav */
 nav {
   width:80vw;
+  width:-webkit-fill-available;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -267,15 +268,17 @@ nav a {
 .toplevel {
   display: flex;
   background-color: rgb(35,41,82, .9);
-  z-index: 1;
   padding:5vh 5vw 0;
-  position: absolute;
-  margin-top: 10vh;
-  margin-left: 10vw;
+  margin:10vh 10vw;
+  max-width: 40vw;
 }
 .toplevelimg {
-  z-index: 0;
-  display:flex;
+  width: 100vw;
+  width:-webkit-fill-available;
+  height:100vh;
+}
+#toplevelabout {
+  background-image: url('../img/rkcenter.png');
 }
 .toplevel a {
     color:white;
@@ -409,7 +412,7 @@ footer a, footer {
 @media (max-width:768px) {
   .header_parent {
     flex-direction: column;
-    margin: 1vh 1vw;
+    margin: 3vh 0;
   }
   .header_child,.headerhome {
      margin-left:0 !important;
@@ -436,14 +439,6 @@ footer a, footer {
     width: 75vw;
   }
 
-  .toplevel {
-    padding-bottom:2.5vh
-  }
-  .toplevelimg {
-    height:100vw;
-    object-fit: cover;
-  }
-
 }
 
 @media (max-width:500px) {
@@ -453,9 +448,7 @@ footer a, footer {
   .hide-m {
     display: none;
   }
-  .header_parent {
-    margin:0;
-  }
+
   .header_child {
     width:95vw;
   }
@@ -540,7 +533,7 @@ footer a, footer {
 
   .bodycopy {
     width:85vw;
-    margin:0 5vw;
+    margin:2vh 5vw;
   }
 
   .bottommargin20 {
@@ -557,6 +550,7 @@ footer a, footer {
     height:10vh;
     background-color: #cc3300;
     color:white;
+    z-index: 2;
   }
   .nav3 img {
     width:15vw;
@@ -571,6 +565,10 @@ footer a, footer {
 
   #yt, #fb {
     height:4vh;
+  }
+  .toplevel {
+    max-width:80vw;
+    margin:5vh 5vw;
   }
   .toplevel p{
     padding-bottom: 2.5vh;
