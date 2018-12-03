@@ -6,7 +6,7 @@ body {
 img {
   max-width: 100%;
   align-self: center;
-  width:100vw;
+  width:100%;
 }
 a {
   /* color: #cc3300; */
@@ -167,6 +167,7 @@ ul {
   padding:1vh 1vw;
   margin-top: 1vh;
   border:none;
+  background-color: rgb(204,51,0);
   background-color: rgb(204,51,0,.8);
   opacity: 0;
   transition: 1s;
@@ -266,6 +267,7 @@ nav a {
 
 .toplevel {
   display: flex;
+  background-color: rgb(35,41,82);
   background-color: rgb(35,41,82, .9);
   padding:5vh 5vw 0;
   margin:10vh 10vw;
@@ -273,6 +275,7 @@ nav a {
 }
 .toplevelimg {
   max-width: 100vw;
+  width: 100%;
   height:100vh;
 }
 #toplevelabout {
