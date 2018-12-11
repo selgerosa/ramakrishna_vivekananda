@@ -6,6 +6,16 @@
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+      (function() {
+          var trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = 'https://easy.myfonts.net/v2/js?sid=681(font-family=Imperial+Std+Roman)&sid=683(font-family=Imperial+Std+Bold)&key=fIPkqbvzvz';
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+      })();
+  </script>
  </head>
  <body>
   <div class="body">
@@ -13,8 +23,8 @@
       <div class="header_parent flex aligncenter headerhome">
         <a href="index.html"><img src="img/logo-red.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
         <div class="header_child flex flexcol aligncenter-m">
-          <a href="index.html" class="headerlink"><h1>Ramakrishna-Vivekenanda Center of New York</h1>
-          <h3>A Vedanta temple for Universal Worship</h3></a>
+          <a href="index.html" class="headerlink"><h1>Ramakrishna-Vivekananda Center of New York</h1>
+          <h3>A Vedanta Temple for Universal Worship</h3></a>
         </div>
       </div>
     </header>
@@ -23,13 +33,13 @@
         <a href="about.html" class="navparent navactive">About</a>
           <ul class="dropdowncontent">
             <li><a href="center.html">The Center</a></li>
-            <li><a href=".html">Vedanta</a></li>
-            <li><a href=".html">Minister & Spiritual Leader</a></li>
+            <li><a href="vedanta.html">Vedanta</a></li>
+            <li><a href="leader.html">Minister & Spiritual Leader</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="dropdown">
-        <a href=".html" class="navparent">Teachings</a>
+        <a href="teachings.html" class="navparent">Teachings</a>
           <ul class="dropdowncontent">
             <li><a href=".html">Vedanta</a></li>
             <li><a href=".html">Sri Ramakrishna</a></li>
@@ -88,14 +98,14 @@
       <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
       </div>
       <img src="img/center1.jpg" alt=''>
-      <div class="flex flexrow flexcol-m width100">
+      <div class="flex flexrow flexcol-t width100">
         <div id="nav2m" onclick="expand();"><p>About</p><img src="img/plus.png" alt="plus icon"></div>
           <div id="nav2">
             <ul>
-              <li><p><a href="" id="nav2active">The Center</a></p></li>
-              <li><p><a href="">Vedanta</a></p></li>
-              <li><p><a href="">Minister & Spiritual Leader</a></p></li>
-              <li><p><a href="">Contact Us</a></p></li>
+              <li><p><a href="center.html" id="nav2active">The Center</a></p></li>
+              <li><p><a href="vedanta.html">Vedanta</a></p></li>
+              <li><p><a href="leader.html">Minister & Spiritual Leader</a></p></li>
+              <li><p><a href="contact.html">Contact Us</a></p></li>
             </ul>
           </div>
           <div class="topmargin bodycopy">
