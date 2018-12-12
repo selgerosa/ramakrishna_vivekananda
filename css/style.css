@@ -39,7 +39,7 @@ h2 {
 
 h3 {
   font-size: 1.7em;
-  margin: 0 1vw 3vh 1vw;
+  margin: 1vh 1vw 3vh 1vw;
 }
 
 .header_child h3 {
@@ -70,7 +70,7 @@ footer p {
 }
 
 /* flex stuff */
-header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .gallery a {
+header, nav, .slideshow, .slideshownav {
   display: flex;
 }
 
@@ -108,9 +108,6 @@ header, nav, .ministernav, .ministernavchild, .slideshow, .slideshownav, .galler
   flex-wrap: wrap;
 }
 
-.ministernav, .gallery a {
-  flex-direction: column;
-}
 .nomargin {
   margin:0 !important;
 }
@@ -271,9 +268,12 @@ nav a {
 
 .bodycopy {
   width: 55vw;
-
+  display: flex;
+  flex-direction: column;
 }
-
+.bodycopy img {
+  width: 40vw;
+}
 .toplevel {
   display: flex;
   background-color: rgb(35,41,82);
@@ -321,6 +321,11 @@ nav a {
 .center {
   text-align: center;
 }
+.bodycopy a{
+  display: flex;
+  align-items:center;
+  flex-direction:column;
+}
 
 .mapouter{
   text-align:right;
@@ -335,13 +340,12 @@ iframe {
   width:50vw;
 }
 
-/* slideshow */
-
-.gallery a {
-  align-items: center;
-  justify-content: center;
-  margin:5vh 0;
+#wrap {
+  width:20vw;
+  margin: 0 2.5vw 2vh 0;
 }
+
+/* slideshow */
 
 .slideshow {
   margin-bottom: 2vh;
@@ -354,22 +358,26 @@ iframe {
   border: solid #cc3300;
   padding:.7vw;
   margin: 3vh 3vw;
+  width: 100vw;
 }
 /* replace w one id and remove all ids */
 #slide1, #birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001,#centenary19981,#centenary19951, #centenary19931,#interfaith19871,#anniversary19831 {
   display: flex;
 }
-
+.gallery {
+  width: 65vw;
+}
 .slideshownav img{
   margin: 0 .5vw;
-  max-height:20vh;
+  max-height:15vh;
+  width:20%;
 }
 .slideshownav {
   margin-bottom: 5vh;
-  width: 70vw;
+  padding: 2vh 2vw;
   display: flex;
-  justify-content: center;
-  align-items:
+  justify-content:space-between;
+  align-items: center;
 
 }
 
@@ -432,9 +440,7 @@ footer a, footer {
     margin-left: 0;
     text-align: center;
   }
-  .header_child a h1, .header_child a h3 {
-    text-align: center;
-  }
+
   header img {
     width: 10vw;
   }
@@ -479,6 +485,9 @@ footer a, footer {
   }
   #nav2m p {
     padding: 0;
+  }
+  .gallery {
+    width: 100vw;
   }
   footer img {
     width:3vw;
