@@ -270,6 +270,7 @@ nav a {
   width: 55vw;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .bodycopy img {
   width: 40vw;
@@ -307,8 +308,8 @@ nav a {
 
 .borderbottom {
   border-bottom: solid #cc3300;
-  margin-bottom: 10vh;
-  padding-bottom: 10vh;
+  margin-bottom: 2.5vh;
+  padding-bottom: 2.5vh;
 }
 .topmargin10 {
   margin-top: 10vh;
@@ -320,11 +321,6 @@ nav a {
 
 .center {
   text-align: center;
-}
-.bodycopy a{
-  display: flex;
-  align-items:center;
-  flex-direction:column;
 }
 
 .mapouter{
@@ -366,6 +362,12 @@ iframe {
 }
 .gallery {
   width: 65vw;
+
+}
+.gallery a{
+  display: flex;
+  align-items:center;
+  flex-direction:column;
 }
 .slideshownav img{
   margin: 0 .5vw;
