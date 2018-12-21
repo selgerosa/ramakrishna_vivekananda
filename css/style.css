@@ -286,10 +286,24 @@ nav a {
 .toplevelimg {
   max-width: 100vw;
   width: 100%;
-  height:100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 #toplevelabout {
   background-image: url('../img/rkcenter.png');
+}
+#toplevelteachings {
+  background-image: url('../img/crowd.jpeg');
+}
+#toplevelrmkorder {
+  background-image: url('../img/belur_math3.jpg');
+}
+#toplevelactivities {
+  background-image: url('../img/centeractivity.png')
+}
+#toplevelmedia {
+  background-image: url('../img/150celebration.jpg')
 }
 .toplevel a {
     color:white;
@@ -430,6 +444,9 @@ footer a, footer {
 }
 
 @media (max-width:768px) {
+  .headerhome h1, .headerhome h3 {
+    text-align: center;
+  }
   .header_parent {
     flex-direction: column;
     margin: 3vh 0;
@@ -573,6 +590,9 @@ footer a, footer {
     margin:2vh 5vw;
   }
 
+  .bodycopy img {
+    width: 80vw;
+  }
   .bottommargin20 {
     margin-bottom: 10vh;
   }

@@ -2,56 +2,161 @@
  <head>
   <title>Divine Qualities Part 47</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
- </head>
- <body>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+      (function() {
+          var trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = 'https://easy.myfonts.net/v2/js?sid=681(font-family=Imperial+Std+Roman)&sid=683(font-family=Imperial+Std+Bold)&key=fIPkqbvzvz';
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+      })();
+  </script>
+  </head>
+  <body>
   <div class="body">
     <header>
-      <div class="header_parent">
-        <img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra.">
-        <div class="header_child">
-          <h1>Ramakrishna-Vivekenanda Center of New York</h1>
-          <h2>Minister's Message</h2>
+      <div class="header_parent flex aligncenter headerhome">
+        <a href="index.html"><img src="img/logo-red.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol aligncenter-m">
+          <a href="index.html" class="headerlink"><h1>Ramakrishna-Vivekananda Center of New York</h1>
+          <h3>A Vedanta Temple for Universal Worship</h3></a>
         </div>
       </div>
     </header>
     <nav>
-      <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-        <ul class="dropdown">
-          <li><a href="formsofdevotion3.html">Minister's Message</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Learn</a>
-        <ul class="dropdown">
-          <li><a href="">Biographies</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Media</a>
-        <ul class="dropdown">
-          <li><a href="">Image Gallery</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Audio</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Shop</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
+        <div class="dropdown">
+        <a href="about.html" class="navparent">About</a>
+          <ul class="dropdowncontent">
+            <li><a href="center.html">The Center</a></li>
+            <li><a href="vedanta.html">Vedanta</a></li>
+            <li><a href="leader.html">Minister & Spiritual Leader</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+        <a href="teachings.html" class="navparent navactive">Teachings</a>
+          <ul class="dropdowncontent">
+            <li><a href="vedanta1.html">Vedanta</a></li>
+            <li><a href=".html">Sri Ramakrishna</a></li>
+            <li><a href=".html">Holy Mother</a></li>
+            <li><a href=".html">Swami Vivekananda</a></li>
+            <li><a href=".html">Swami Yuktatmananda</a></li>
+            <li><a href=".html">Swami Adiswarananda</a></li>
+            <li><a href=".html">Swami Nikhilananda</a></li>
+            <li><a href=".html">Universal Teachings</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Ramakrishna Order</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Headquarters</a></li>
+            <li><a href=".html">History</a></li>
+            <li><a href=".html">Emblems</a></li>
+            <li><a href=".html">Centers in the West</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Activities</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Calendar</a></li>
+            <li><a href=".html">Services</a></li>
+            <li><a href=".html">Classes</a></li>
+            <li><a href=".html">Special Services</a></li>
+            <li><a href=".html">Library and Bookstore</a></li>
+            <li><a href=".html">Interfaith Activities</a></li>
+            <li><a href=".html">Vivekananda Cottage at<br> Thousand Island Park</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Media</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Audio</a></li>
+            <li><a href=".html">Video</a></li>
+            <li><a href=".html">Image Gallery</a></li>
+            <li><a href=".html">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Shop</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Online Shop</a></li>
+            <li><a href=".html">Bookstore Hours</a></li>
+          </ul>
+        </div>
     </nav>
 
     <div class="parent">
-      <div class="child about">
+      <div class="nav3">
+      <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
+      <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
+      <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
+      <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
+      </div>
+      <img src="img/center1.jpg" alt=''>
+      <div class="flex flexrow flexcol-t width100">
+        <div id="nav2m" onclick="expand();"><p>Teachings</p><img src="img/plus.png" alt="plus icon"></div>
+          <div id="nav2">
+            <ul>
+              <li><p><a href="message.html">Swami Yuktatmananda</a></p></li>
+              <li><p><a href="divinequalities1.html">Divine Qualities</a></p>
+                <ul>
+                  <li><p><a href="divinequalities1.html">Part 1</a></p></li>
+                  <li><p><a href="divinequalities2.html">Part 2</a></p></li>
+                  <li><p><a href="divinequalities3.html">Part 3</a></p></li>
+                  <li><p><a href="divinequalities4.html">Part 4</a></p></li>
+                  <li><p><a href="divinequalities5.html">Part 5</a></p></li>
+                  <li><p><a href="divinequalities6.html">Part 6</a></p></li>
+                  <li><p><a href="divinequalities7.html">Part 7</a></p></li>
+                  <li><p><a href="divinequalities8.html">Part 8</a></p></li>
+                  <li><p><a href="divinequalities9.html">Part 9</a></p></li>
+                  <li><p><a href="divinequalities10.html">Part 10</a></p></li>
+                  <li><p><a href="divinequalities11.html">Part 11</a></p></li>
+                  <li><p><a href="divinequalities12.html">Part 12</a></p></li>
+                  <li><p><a href="divinequalities13.html">Part 13</a></p></li>
+                  <li><p><a href="divinequalities14.html">Part 14</a></p></li>
+                  <li><p><a href="divinequalities15.html">Part 15</a></p></li>
+                  <li><p><a href="divinequalities16.html">Part 16</a></p></li>
+                  <li><p><a href="divinequalities17.html">Part 17</a></p></li>
+                  <li><p><a href="divinequalities18.html">Part 18</a></p></li>
+                  <li><p><a href="divinequalities19.html">Part 19</a></p></li>
+                  <li><p><a href="divinequalities20.html">Part 20</a></p></li>
+                  <li><p><a href="divinequalities21.html">Part 21</a></p></li>
+                  <li><p><a href="divinequalities22.html">Part 22</a></p></li>
+                  <li><p><a href="divinequalities23.html">Part 23</a></p></li>
+                  <li><p><a href="divinequalities24.html">Part 24</a></p></li>
+                  <li><p><a href="divinequalities25.html">Part 25</a></p></li>
+                  <li><p><a href="divinequalities26.html">Part 26</a></p></li>
+                  <li><p><a href="divinequalities27.html">Part 27</a></p></li>
+                  <li><p><a href="divinequalities28.html">Part 28</a></p></li>
+                  <li><p><a href="divinequalities29.html">Part 29</a></p></li>
+                  <li><p><a href="divinequalities30.html">Part 30</a></p></li>
+                  <li><p><a href="divinequalities31.html">Part 31</a></p></li>
+                  <li><p><a href="divinequalities32.html">Part 32</a></p></li>
+                  <li><p><a href="divinequalities33.html">Part 33</a></p></li>
+                  <li><p><a href="divinequalities34.html">Part 34</a></p></li>
+                  <li><p><a href="divinequalities35.html">Part 35</a></p></li>
+                  <li><p><a href="divinequalities36.html">Part 36</a></p></li>
+                  <li><p><a href="divinequalities37.html">Part 37</a></p></li>
+                  <li><p><a href="divinequalities38.html">Part 38</a></p></li>
+                  <li><p><a href="divinequalities39.html">Part 39</a></p></li>
+                  <li><p><a href="divinequalities40.html">Part 40</a></p></li>
+                  <li><p><a href="divinequalities41.html">Part 41</a></p></li>
+                  <li><p><a href="divinequalities42.html">Part 42</a></p></li>
+                  <li><p><a href="divinequalities43.html">Part 43</a></p></li>
+                  <li><p><a href="divinequalities44.html">Part 44</a></p></li>
+                  <li><p><a href="divinequalities45.html">Part 45</a></p></li>
+                  <li><p><a href="divinequalities46.html">Part 46</a></p></li>
+                  <li><p><a href="divinequalities47.html" id="nav2active">Part 47</a></p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="topmargin bodycopy">
         <h2>Essentials for Effectiveness</h2>
 
         <h3>Doing Work with <em>Shraddha</em></h3>
@@ -76,29 +181,32 @@
 
         <p>To be continued...</p>
 
-        <h4><a href="yuktatmananda.html">Swami Yuktatmananda</a></h4>
-        <div class="ministernav">
-          <h4><a href="divinequalities47.html">Part 46</a></h4>
-          <h4><a href="ministerarchive.html">Archive</a></h4>
-        </div>
       </div>
     </div>
 
+    <div id='nav4'>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="teachings.html">Teachings</a></p>
+      <p><a href="rmkorder.html">Ramakrishna Order</a></p>
+      <p><a href="media.html">Media</a></p>
+      <img src="img/iconclose.png" alt="'x' close icon" onclick="hamburger();">
+    </div>
     <footer>
-      <div class="footer_parent">
-        <div class="footer_child" id="fc1">
-          <h4>Contact Us</h4>
-          <p>+(212) 534-9445</p>
-          <p>rvcenternewyork@gmail.com</p>
-          <p>17 East 94th Street, New York, NY 10128</p>
-          <p>Fax: (212) 828-1618</p>
+        <div class="footerparent flexcol-t">
+          <div id="footerchild1"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
+          <div id="footerchild2">
+            <p>Office: (212) 534-9445</p>
+            <p>Fax: (212) 828-1618</p>
+            <p>rvcenternewyork@gmail.com</p>
+            <p>17 East 94th Street, New York, NY 10128</p>
+            <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/iconfacebook.png" id="fb"></a>
+            <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
+          </div>
         </div>
-        <div class="footer_child">
-          <h4>Navigation</h4>
-          <!-- TODO: 2nd layer nav + link to full sitemap -->
-        </div>
-      </div>
-    </footer</>
+        <p>&copy; Ramakrishna-Vivekananda Center of New York | <a href="sitemap.xml">Sitemap</a> | <a href="credits.html">Site Credits</a></p>
+    </footer>
   </div>
+  <script src="js/hamburger.js"></script>
  </body>
 </html>

@@ -2,56 +2,121 @@
  <head>
   <title>Time and Spiritual Life Part 5</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
-  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <!-- TODO: metadata -->
   <!-- TODO: favicon -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript">
+      (function() {
+          var trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = 'https://easy.myfonts.net/v2/js?sid=681(font-family=Imperial+Std+Roman)&sid=683(font-family=Imperial+Std+Bold)&key=fIPkqbvzvz';
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+      })();
+  </script>
  </head>
  <body>
   <div class="body">
     <header>
-      <div class="header_parent">
-        <img src="img/logo.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra.">
-        <div class="header_child">
-          <h1>Ramakrishna-Vivekenanda Center of New York</h1>
-          <h2>Minister's Message</h2>
+      <div class="header_parent flex aligncenter headerhome">
+        <a href="index.html"><img src="img/logo-red.png" alt="the logo of the Ramakrishna-Vivekenanda Center, an ornate swan in a pond above a lotus flower and encircled in a cobra."></a>
+        <div class="header_child flex flexcol aligncenter-m">
+          <a href="index.html" class="headerlink"><h1>Ramakrishna-Vivekananda Center of New York</h1>
+          <h3>A Vedanta Temple for Universal Worship</h3></a>
         </div>
       </div>
     </header>
     <nav>
-      <ul>
-      <li>
-        <a href="index.html">Home</a>
-      </li>
-      <li>
-        <a href="about.html">About</a>
-        <ul class="dropdown">
-          <li><a href="formsofdevotion3.html">Minister's Message</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Learn</a>
-        <ul class="dropdown">
-          <li><a href="">Biographies</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Media</a>
-        <ul class="dropdown">
-          <li><a href="">Image Gallery</a></li>
-          <li><a href="">Videos</a></li>
-          <li><a href="">Audio</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="">Shop</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
+        <div class="dropdown">
+        <a href="about.html" class="navparent">About</a>
+          <ul class="dropdowncontent">
+            <li><a href="center.html">The Center</a></li>
+            <li><a href="vedanta.html">Vedanta</a></li>
+            <li><a href="leader.html">Minister & Spiritual Leader</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+        <a href="teachings.html" class="navparent navactive">Teachings</a>
+          <ul class="dropdowncontent">
+            <li><a href="vedanta1.html">Vedanta</a></li>
+            <li><a href=".html">Sri Ramakrishna</a></li>
+            <li><a href=".html">Holy Mother</a></li>
+            <li><a href=".html">Swami Vivekananda</a></li>
+            <li><a href=".html">Swami Yuktatmananda</a></li>
+            <li><a href=".html">Swami Adiswarananda</a></li>
+            <li><a href=".html">Swami Nikhilananda</a></li>
+            <li><a href=".html">Universal Teachings</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Ramakrishna Order</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Headquarters</a></li>
+            <li><a href=".html">History</a></li>
+            <li><a href=".html">Emblems</a></li>
+            <li><a href=".html">Centers in the West</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Activities</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Calendar</a></li>
+            <li><a href=".html">Services</a></li>
+            <li><a href=".html">Classes</a></li>
+            <li><a href=".html">Special Services</a></li>
+            <li><a href=".html">Library and Bookstore</a></li>
+            <li><a href=".html">Interfaith Activities</a></li>
+            <li><a href=".html">Vivekananda Cottage at<br> Thousand Island Park</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Media</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Audio</a></li>
+            <li><a href=".html">Video</a></li>
+            <li><a href=".html">Image Gallery</a></li>
+            <li><a href=".html">Facebook</a></li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <a href=".html" class="navparent">Shop</a>
+          <ul class="dropdowncontent">
+            <li><a href=".html">Online Shop</a></li>
+            <li><a href=".html">Bookstore Hours</a></li>
+          </ul>
+        </div>
     </nav>
 
     <div class="parent">
-      <div class="child about">
+      <div class="nav3">
+      <a href="events.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
+      <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
+      <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
+      <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
+      </div>
+      <img src="img/center1.jpg" alt=''>
+      <div class="flex flexrow flexcol-t width100">
+        <div id="nav2m" onclick="expand();"><p>Teachings</p><img src="img/plus.png" alt="plus icon"></div>
+          <div id="nav2">
+            <ul>
+              <li><p><a href="message.html">Swami Yuktatmananda</a></p></li>
+              <li><p><a href="timeandspirituallife1.html">Time and Spiritual Life</a></p>
+                <ul>
+                  <li><p><a href="timeandspirituallife1.html">Part 1</a></p></li>
+                  <li><p><a href="timeandspirituallife2.html">Part 2</a></p></li>
+                  <li><p><a href="timeandspirituallife3.html">Part 3</a></p></li>
+                  <li><p><a href="timeandspirituallife4.html">Part 4</a></p></li>
+                  <li><p><a href="timeandspirituallife5.html" id="nav2active">Part 5</a></p></li>
+                  <li><p><a href="timeandspirituallife6.html">Part 6</a></p></li>
+                  <li><p><a href="timeandspirituallife7.html">Part 7</a></p></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="topmargin bodycopy">
         <h2>Time and Spiritual Life</h2>
         <h3>Dwelling in the Present</h3>
 
@@ -66,32 +131,32 @@
         <p>Our thoughts define our mind. They are by nature random and scattered. The mind does not make its presence felt until its randomness is threatened. When we watch our mind and try to bring order into our thoughts and actions, the mind rebels and puts up stiff resistance to our efforts. When we do not have a fixed routine for our everyday activities, the mind acts against our interest by making us fritter away our energy, and we just idle away our time with useless thoughts and actions. That is the trick the mind plays on us. On the other hand, a fixed daily routine helps us to effectively utilize our time, saves our precious energy by making us dwell in the present, and helps us become the master of our wayward mind.</p>
 
         <p>to be continued...</p>
-        <h4><a href="yuktatmananda.html">Swami Yuktatmananda</a></h4>
-        <div class="ministernav">
-          <div class="ministernavchild">
-            <h4><a href="timeandspirituallife4.html">Part 4</a></h4>
-            <h4><a href="timeandspirituallife6.html">Part 6</a></h4>
-          </div>
-          <h4><a href="ministerarchive.html">Archive</a></h4>
-        </div>
       </div>
     </div>
 
+    <div id='nav4'>
+      <p><a href="index.html">Home</a></p>
+      <p><a href="about.html">About</a></p>
+      <p><a href="teachings.html">Teachings</a></p>
+      <p><a href="rmkorder.html">Ramakrishna Order</a></p>
+      <p><a href="media.html">Media</a></p>
+      <img src="img/iconclose.png" alt="'x' close icon" onclick="hamburger();">
+    </div>
     <footer>
-      <div class="footer_parent">
-        <div class="footer_child" id="fc1">
-          <h4>Contact Us</h4>
-          <p>+(212) 534-9445</p>
-          <p>rvcenternewyork@gmail.com</p>
-          <p>17 East 94th Street, New York, NY 10128</p>
-          <p>Fax: (212) 828-1618</p>
+        <div class="footerparent flexcol-t">
+          <div id="footerchild1"><p>Founded in 1933 and located on New York City’s  Upper East  on 94th Street between 5th and Madison Ave. The Ramakrishna-Vivekananda Center of New York is an accredited branch of the Ramakrishna Order of India. The Center bases its teachings on the System of Vedanta, which combines both the religion of philosophy of the Hindus. The Center seeks to stimulate the growth of the individual’s innate spirituality through lectures, discourses, publications, and individual guidance.</p></div>
+          <div id="footerchild2">
+            <p>Office: (212) 534-9445</p>
+            <p>Fax: (212) 828-1618</p>
+            <p>rvcenternewyork@gmail.com</p>
+            <p>17 East 94th Street, New York, NY 10128</p>
+            <a href="https://www.facebook.com/Ramakrishna-Vivekananda-Center-of-New-York-165218223516894/"><img src="img/iconfacebook.png" id="fb"></a>
+            <a href="https://www.youtube.com/user/RamakrishnaCenterNY"><img src="img/iconyoutube.png" id="yt"></a>
+          </div>
         </div>
-        <div class="footer_child">
-          <h4>Navigation</h4>
-          <!-- TODO: 2nd layer nav + link to full sitemap -->
-        </div>
-      </div>
-    </footer</>
+        <p>&copy; Ramakrishna-Vivekananda Center of New York | <a href="sitemap.xml">Sitemap</a> | <a href="credits.html">Site Credits</a></p>
+    </footer>
   </div>
+  <script src="js/hamburger.js"></script>
  </body>
 </html>
