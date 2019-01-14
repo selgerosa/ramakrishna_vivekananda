@@ -403,7 +403,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  padding-bottom: 2vh;
 }
 .footerparent {
   width: 86vw;
@@ -430,7 +430,6 @@ footer {
 footer a, footer {
   color: white;
   text-decoration: none;
-  padding: 0;
 }
 
 .nav3 {
@@ -512,12 +511,13 @@ footer a, footer {
     width:3vw;
   }
   footer {
-    padding: 0;
-    padding-bottom: 2vh;
+    padding:5vh 3vw 5vh 8vw;
   }
   .footerparent {
-    width:90vw;
-    margin:5vh 3vw 5vh 8vw;
+    margin:0;
+  }
+  #yt, #fb {
+      padding-bottom: 1vh;
   }
   #footerchild1 {
     margin-bottom:2vh;
@@ -555,7 +555,7 @@ footer a, footer {
   p {
     font-size: 1.5em;
   }
-  .child,#footerchild1 {
+  .child {
     width: 90vw;
   }
   .child {
@@ -622,6 +622,10 @@ footer a, footer {
   }
   footer {
     margin-bottom: 10vh;
+  }
+
+  #footerchild1 {
+    width:85vw;
   }
   #yt, #fb {
     height:4vh;
