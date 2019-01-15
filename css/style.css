@@ -407,7 +407,7 @@ footer {
 }
 .footerparent {
   width: 86vw;
-  margin:5vh 0;
+  margin:5vh 7vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -427,7 +427,7 @@ footer {
   height:3vw;
   width: auto;
 }
-footer a, footer {
+footer a, footer p{
   color: white;
   text-decoration: none;
 }
