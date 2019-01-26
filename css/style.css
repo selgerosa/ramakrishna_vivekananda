@@ -27,10 +27,10 @@ h1,h2,h3,h4 {
   text-align: center;
 }
 h1 {
-  font-size: 2.2em;
+  font-size: 1.9em;
 }
 h2 {
-  font-size: 1.9em;
+  font-size: 1.7em;
   margin-bottom: 3vh;
 }
 .header_child h2 {
@@ -38,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6em;
+  font-size: 1.2em;
   margin: 1vh 1vw 3vh 1vw;
 }
 
@@ -47,11 +47,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: .9em;
   padding-bottom:1.5vh;
 }
 nav h4 {
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
 footer h4 {
@@ -60,7 +60,7 @@ footer h4 {
 p {
   font-family: 'Libre Franklin',sans-serif;
   padding-bottom: 7vh;
-  font-size: 1.4em;
+  font-size: 1.15em;
   line-height: 135%;
 }
 
@@ -179,7 +179,7 @@ ul {
 }
 
 nav a {
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 2vh;
 }
 
@@ -199,7 +199,7 @@ nav a {
 }
 #nav2 p {
   padding-bottom:4vh;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 #nav2 a {
   text-decoration: none;
