@@ -27,10 +27,10 @@ h1,h2,h3,h4 {
   text-align: center;
 }
 h1 {
-  font-size: 2.4em;
+  font-size: 2.2em;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.9em;
   margin-bottom: 3vh;
 }
 .header_child h2 {
@@ -38,7 +38,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.6em;
   margin: 1vh 1vw 3vh 1vw;
 }
 
@@ -47,11 +47,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   padding-bottom:1.5vh;
 }
 nav h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 footer h4 {
@@ -60,7 +60,7 @@ footer h4 {
 p {
   font-family: 'Libre Franklin',sans-serif;
   padding-bottom: 7vh;
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 135%;
 }
 
@@ -544,16 +544,16 @@ footer a, footer p{
     width: 20vw;
   }
   h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   h2 {
-    font-size: 1.7em;
+    font-size: 1.6em;
   }
   h3 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   p {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
   .child {
     width: 90vw;
@@ -640,27 +640,27 @@ footer a, footer p{
 }
 @media (min-width:2500px) {
   h1 {
-    font-size: 4.7em;
+    font-size: 4.5em;
   }
   h2 {
-    font-size: 4.2em;
+    font-size: 4em;
   }
   h3 {
-    font-size: 3.5em;
+    font-size: 3.3em;
   }
   h4 {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   nav a {
-    font-size: 2.5em;
+    font-size: 2.3em;
   }
   p {
-    font-size: 3em;
+    font-size: 2.7em;
   }
   footer p {
-    font-size: 2em;
+    font-size: 1.8em;
   }
   #nav2 p {
-    font-size: 1.9em;
+    font-size: 1.6em;
   }
 }
