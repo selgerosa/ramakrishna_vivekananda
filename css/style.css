@@ -2,6 +2,7 @@
 body {
   margin:0;
   background-color: #f2f2f2;
+  font-family: 'Libre Franklin',sans-serif;
 }
 img {
   max-width: 100%;
@@ -382,6 +383,30 @@ td p, td h3 {
   width:20vw;
   margin: 0 2.5vw 2vh 0;
 }
+
+.shoprow {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 5vh;
+}
+.shoprow div {
+  width: 70%;
+  margin-left: 4vw;
+}
+.shoprow img {
+  width: 30%;
+}
+.shoprow div p {
+  padding-bottom: 1vh;
+}
+.shoprow button {
+  border: solid #cc3300;
+  background-color: #f2f2f2;
+  font-size: 1em;
+  width:12vw;
+  height:7vh;
+}
+
 
 /* slideshow */
 
