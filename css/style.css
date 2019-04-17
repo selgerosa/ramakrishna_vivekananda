@@ -72,7 +72,7 @@ footer p {
   padding: .5vh .5vw;
 }
 
-#subhead {
+#subhead, .subhead {
   text-align: center;
 }
 
@@ -168,6 +168,13 @@ ul {
   list-style: none;
 }
 
+.bodycopy ul {
+  list-style: initial;
+  margin-left:4vw;
+}
+.bodycopy ul li p {
+  padding-bottom:4vh
+}
 .dropdowncontent {
   padding:1vh 1vw;
   margin-top: 1vh;
@@ -683,6 +690,7 @@ footer a, footer p{
 
   .bodycopy img {
     width: 80vw;
+    align-items: center;
   }
   .bottommargin20 {
     margin-bottom: 10vh;
