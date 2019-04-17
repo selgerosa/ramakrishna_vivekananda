@@ -418,6 +418,7 @@ td p, td h3 {
   font-size: 1em;
   width:12vw;
   height:7vh;
+  margin-bottom: 1vh;
 }
 .shopinternal p {
   padding-bottom: 3vh;
