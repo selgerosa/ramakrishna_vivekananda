@@ -383,12 +383,28 @@ table td {
 
   border: solid 2px #cc3300;
 }
+table, th, td {
+  border-collapse: collapse;
+
+}
 td p, td h3 {
   margin: 0;
   padding:0;
 }
 .mobiletitle {
   display: none;
+}
+.photo {
+  padding:1vh 1vw;
+  margin:0;
+  width:40vw;
+  margin-bottom: 5vh;
+}
+.photo input {
+    width: 5vw
+}
+.photo img {
+  width:15vw
 }
 
 #wrap{
@@ -412,7 +428,7 @@ td p, td h3 {
 .shoprow div p {
   padding-bottom: 1vh;
 }
-.shoprow button, .shopinternal button {
+ button {
   border: solid #cc3300;
   background-color: #f2f2f2;
   font-size: 1em;
