@@ -417,6 +417,9 @@ td p, td h3 {
   display: flex;
   flex-direction: row;
   margin: 0 0 5vh;
+  padding-bottom: 5vh;
+  border-bottom: 3px solid #cccccc;
+
 }
 .shoprow div {
   width: 70%;
