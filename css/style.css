@@ -23,7 +23,7 @@ h1,h2,h3,h4,p {
   padding: 0;
 }
 
-h1,h2,h3,h4, nav a {
+h1,h2,h3,h4,nav a, th {
   font-family: 'Imperial Std Roman', serif;
 }
 h1,h2,h3 {
@@ -385,7 +385,9 @@ table td {
 }
 table, th, td {
   border-collapse: collapse;
-
+}
+th {
+  padding: 1vh 1vw;
 }
 td p, td h3 {
   margin: 0;
@@ -457,6 +459,10 @@ button:hover {
   border: solid #cc3300;
   padding-top:1vh;
   margin-bottom: 2vh
+}
+#botm .shoprow{
+  border: none;
+  margin-bottom: 0
 }
 #botm h2 {
   border-bottom: solid #cc3300;
