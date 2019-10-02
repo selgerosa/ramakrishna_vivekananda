@@ -210,6 +210,7 @@ nav a {
   padding-left:8vw;
   padding: 5vh 2.5vw 0 2.5vw;
   width:20vw;
+  display: flex;
 }
 #nav2 p {
   padding-bottom:4vh;
@@ -481,6 +482,7 @@ button:hover {
   margin-bottom: 2vh;
   display: flex;
   justify-content: center;
+  max-width: 85%;
 }
 
 .slideshow img {
@@ -491,13 +493,16 @@ button:hover {
   width: 100vw;
 }
 /* replace w one id and remove all ids */
-#slide1, #birthday20081, #birthday20071, #service20061,#cooper20061,#nation20041,#building20041,#birthday20041,#tribute20021,#homage20021,#millennium20001,#birthday20001,#centenary19981,#centenary19951, #centenary19931,#interfaith19871,#anniversary19831 {
+#slide1{
   display: flex;
 }
 .gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.gallery p {
+  width: 55vw
 }
 .galleryimg a, .galleryimg img{
   display: flex;
@@ -507,10 +512,10 @@ button:hover {
   margin-left: 4vw;
 }
 .slideshownav img{
-  margin: 0 .5vw;
-  max-height:15vh;
+  margin: 2vh .5vw;
   max-width:16vw;
   align-self: center;
+  object-fit: cover;
 }
 .slideshownav {
   margin-bottom: 5vh;
@@ -518,7 +523,10 @@ button:hover {
   display: flex;
   justify-content:space-between;
   align-items: center;
-
+  max-width: 85%;
+  flex-wrap: wrap;
+  max-height:30vh;
+  overflow: scroll;
 }
 
 /* footer */
@@ -716,7 +724,7 @@ footer a, footer p{
     align-items: center;
   }
 
-  .bodycopy {
+  .bodycopy, .gallery p {
     width:85vw;
     margin:2vh 5vw;
   }
@@ -745,7 +753,9 @@ footer a, footer p{
   .nav3 img {
     width:15vw;
   }
-
+  .galleryimg a, .galleryimg a img {
+    width: 85vw;
+  }
   .mapouter {
     width:90vw;
   }
@@ -772,8 +782,8 @@ footer a, footer p{
   }
 
   .slideshownav img{
-    max-width: 18vw;
-    margin: 0 2vw;
+    max-width: 23vw;
+    margin: 2vh 2vw;
   }
   #wrap {
     width: 40vw
