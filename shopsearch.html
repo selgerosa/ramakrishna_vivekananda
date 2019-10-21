@@ -1,6 +1,6 @@
 <html>
  <head>
-  <title>Shop at Ramakrishna-Vivekenanda Center of New York Home Page</title>
+  <title>Book Shop Search at Ramakrishna-Vivekenanda Center of New York Home Page</title>
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <!-- TODO: metadata -->
@@ -115,7 +115,7 @@
         <div id="nav2m" onclick="expand();"><p>Shop</p><img src="img/plus.png" alt="plus icon" id="plus"><img src="img/minus.png" alt="minus icon" id="minus"></div>
           <div id="nav2">
             <ul>
-              <li><p><a href="shop.html" id="nav2active">Books</a></p>
+              <li><p><a href="shop.html">Books</a></p>
                 <ul>
                   <li><p><a href="shoprk.html">Sri Ramakrishna</a></p></li>
                   <li><p><a href="shopsv.html">Swami Vivekananda</a></p></li>
@@ -136,23 +136,45 @@
               <li><p><a href="shoporder.html">Order Form</a></p></li>
               <li><p><a href="https://a6632.americommerce.com/store/addtocart.aspx?item=a-6632&amp;view.x=1">View Cart and Checkout</a></p></li>
               <li><p><a href="shopsearch.html" id="nav2active">Search</a></p></li>
+
             </ul>
           </div>
           <div class="topmargin bodycopy">
-            <div id="botm">
-              <h2>Book of the Month</h2>
-            <div class="shoprow">
-              <img src="img/SV_world_teacher_sm.jpg" alt="">
-              <div>
-                <h3>Vivekananda, World Teacher</h3>
-                <p>His Teachings on the Spiritual Unity of Humankind - Through enlightening lectures, letters, poems, photographs, newspaper reports and reminiscences of Vivekananda, this book presents an intimate portrait of Vivekananda and his influential messages of spiritual democracy, spiritual humanism, and world unity.</p>
-                <p><a href="worldteacher.html">Learn More</a></p>
-                <p>6x9 Paperback: $21.99</p>
-                <button>Add to Cart</button>
-                <!-- TODO: figure out how to link americommerce -->
-              </div>
-            </div></div>
-            <p>todo-- add one book from each section with links to sections</p>
+            <h3 class="mobiletitle">Shop Search</h3>
+            <form action="http://search.cartserver.com/search/search.cgi" method="GET">
+                      <input type="hidden" name="cartid" value="a-6632">
+                      <table>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <p>Search in:
+                              <select name="category">
+                                <option value="Bookstore">Bookstore</option>
+                              </select></p>
+                            </td>
+                            <td>
+                              <p>Max hits:
+                              <select name="maxhits">
+                                <option selected="">20</option>
+                                <option>40</option>
+                                <option>60</option>
+                                <option>80</option>
+                              </select></p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="2">
+                              <p>Find:
+                              <input type="text" name="keywords" size="35">
+                              <input type="submit" name="go" value="GO!">
+                            </p>
+                              <br>
+                              <p>Enter word(s), partial word(s) with wildcards (*) and/or phrase(s) enclosed in quotes.</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </form>
 
           </div>
         </div>
