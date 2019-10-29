@@ -15,3 +15,9 @@ function showSlides(index,slides) {
   }
   slides[slideIndex-1].style.display = "flex";
 }
+
+function changeNav(inid, outid) {
+  console.log(document.getElementsByTagName("p"+inid));
+  document.getElementById("p"+inid).style.display="none";
+  document.getElementById("p"+outid).style.display="flex";
+}
