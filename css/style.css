@@ -670,6 +670,23 @@ footer a, footer p{
   .gallery img, .gallery a {
     width: 90vw;
   }
+  .gallerychild {
+    flex-direction: column;
+  }
+  .slideshownav {
+    flex-direction: row;
+    width:80vw
+  }
+  .slideshownav img {
+    width:20vw;
+  }
+  .slideshow {
+    width:76vw;
+  }
+  .slideshownav div button {
+    width:17vw;
+    margin-right:5vw;
+  }
   footer img {
     width:3vw;
   }
