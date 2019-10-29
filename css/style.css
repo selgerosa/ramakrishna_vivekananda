@@ -513,6 +513,9 @@ button:hover {
   display: flex;
   flex-direction: row;
 }
+.gallerychild {
+  margin-bottom: 5vh;
+}
 .galleryimg {
   display: flex;
   align-items:center;
@@ -550,7 +553,7 @@ button:hover {
 }
 .slideshownav div {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 /* footer */
