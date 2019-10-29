@@ -509,7 +509,7 @@ button:hover {
 .gallery p {
   width: 55vw
 }
-.gallery .gallerychild {
+.gallerychild {
   display: flex;
   flex-direction: row;
 }
@@ -780,6 +780,14 @@ footer a, footer p{
   .nav3 img {
     width:15vw;
   }
+  .galleryimg div{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left:5vw;
+  }
+  .galleryimg div img, .galleryimg div a {
+    width:90vw;
+  }
   .galleryimg a, .galleryimg a img {
     width: 85vw;
   }
@@ -807,10 +815,22 @@ footer a, footer p{
   .toplevel p{
     padding-bottom: 2.5vh;
   }
-
+  .gallerychild {
+    flex-direction: column;
+  }
+  .slideshow, .slideshownav {
+    width:90vw;
+  }
+  .slideshow {
+    margin: 0 2vw
+  }
   .slideshownav img{
-    max-width: 20vw;
+    max-width: 26vw;
     margin: 2vh 2vw;
+  }
+  .slideshownav button {
+    width: 20vw;
+    margin-right:5vw;
   }
   #wrap {
     width: 40vw
