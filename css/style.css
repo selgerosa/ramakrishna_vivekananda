@@ -133,7 +133,7 @@ header img {
   margin-left: 3vw;
 }
 .header_parent {
-  margin: 3vh 8vw;
+  margin: 2vh 8vw;
   width: 100vw;
 }
 
@@ -834,7 +834,7 @@ footer a, footer p{
     width:90vw;
   }
   .slideshow {
-    margin: 0 2vw
+    margin: 3vh 2vw 0;
   }
   .slideshownav img{
     max-width: 26vw;
