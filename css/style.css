@@ -484,10 +484,11 @@ button:hover {
 /* slideshow */
 
 .slideshow {
-  margin: 0 2vw 0 5vw;
+  margin: 0 2vw 0 3vw;
   display: flex;
   justify-content: center;
   width:46vw;
+  background-color: #fff;
 }
 
 .slideshow img {
@@ -515,6 +516,8 @@ button:hover {
 }
 .gallerychild {
   margin-bottom: 5vh;
+  background-color: #333;
+  padding: 2vh 0;
 }
 .galleryimg {
   display: flex;
@@ -545,6 +548,7 @@ button:hover {
   align-items: center;
   width:15vw;
   flex-wrap: wrap;
+  margin-left:2vw
 }
 
 .slideshownav button {
