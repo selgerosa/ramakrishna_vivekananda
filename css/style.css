@@ -670,13 +670,17 @@ footer a, footer p{
   }
   .slideshownav {
     flex-direction: row;
-    width:80vw
+    width:80vw;
+    margin: 0 2vw 2vh;
   }
   .slideshownav img {
     width:20vw;
   }
   .slideshow {
-    width:76vw;
+    width:78vw;
+  }
+  .slideshow img {
+    width: 65vw
   }
   .slideshownav div button {
     width:17vw;
