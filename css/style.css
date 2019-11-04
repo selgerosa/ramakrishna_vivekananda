@@ -322,22 +322,22 @@ nav a {
   text-align: center;
 }
 #toplevelabout {
-  background-image: url('../img/rkcenter.png');
+  background-image: url('https://ramakrishna.netlify.com/img/rkcenter.png');
 }
 #toplevelteachings {
-  background-image: url('../img/crowd.jpeg');
+  background-image: url('https://ramakrishna.netlify.com/img/crowd.jpeg');
 }
 #toplevelrmkorder {
-  background-image: url('../img/belur_math3.jpg');
+  background-image: url('https://ramakrishna.netlify.com/img/belur_math3.jpg');
 }
 #toplevelactivities {
-  background-image: url('../img/centeractivity.png')
+  background-image: url('https://ramakrishna.netlify.com/img/centeractivity.png');
 }
 #toplevelmedia {
-  background-image: url('../img/150celebration.jpg')
+  background-image: url('https://ramakrishna.netlify.com/img/150celebration.jpg');
 }
 #toplevelhome {
-  background-image: url('../img/IMG_3171.jpg')
+  background-image: url('https://ramakrishna.netlify.com/img/IMG_3171.jpg');
 }
 
 .toplevel a {
