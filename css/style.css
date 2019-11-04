@@ -316,7 +316,7 @@ nav a {
   display: flex;
   background-color: rgb(242, 242, 242);
   background-color: rgb(242, 242, 242, .9);
-  padding:5vh 5vw 0;
+  padding:5vh 5vw 2vh;
   margin:10vh 10vw;
   max-width: 25vw;
   text-align: center;
@@ -847,11 +847,11 @@ footer a, footer p{
     height:4vh;
     padding: 2vh 5vw;
   }
-  .toplevel {
+  .toplevel,.toplevelhome {
     max-width:80vw;
     margin:5vh 5vw;
   }
-  .toplevel p{
+  .toplevel p, .toplevelhome p{
     padding-bottom: 2.5vh;
   }
   .gallerychild {
