@@ -312,6 +312,15 @@ nav a {
   background-size: cover;
   background-position: center;
 }
+.toplevelhome {
+  display: flex;
+  background-color: rgb(242, 242, 242);
+  background-color: rgb(242, 242, 242, .9);
+  padding:5vh 5vw 0;
+  margin:10vh 10vw;
+  max-width: 25vw;
+  text-align: center;
+}
 #toplevelabout {
   background-image: url('../img/rkcenter.png');
 }
@@ -330,12 +339,7 @@ nav a {
 #toplevelhome {
   background-image: url('../img/IMG_3171.jpg')
 }
-#toplevelhome .toplevel {
-  background-color: #f2f2f2;
-}
-#toplevelhome .toplevel a {
-  color: black;
-}
+
 .toplevel a {
     color:white;
     text-decoration: none;
@@ -343,6 +347,10 @@ nav a {
 .toplevel p {
   padding-bottom: 5vh;
   text-align: left;
+}
+
+.toplevelhome a {
+  color: black;
 }
 
 .bottommargin {
