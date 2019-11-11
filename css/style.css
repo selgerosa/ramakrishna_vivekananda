@@ -296,6 +296,74 @@ nav a {
 .bodycopy img {
   width: 40vw;
 }
+.home {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.homenav {
+  position: absolute;
+  left: 7vw;
+  top:40vh;
+  width: 7vw;
+  background-color: rgb(255,255,255);
+  background-color: rgb(255,255,255,.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh 1vw;
+  text-align: center;
+}
+
+.homenav img {
+  width:4vw;
+}
+.home .slideshow {
+  margin:0;
+  width: initial;
+  height:90vh;
+}
+.home .slideshow img {
+  border: none;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+.homeslidedesc {
+  position: absolute;
+  top:40vh;
+  left: 16vw;
+  width: 25vw;
+  background-color: rgb(255,255,255);
+  background-color: rgb(255,255,255,.9);
+  padding: 2vh 2vw;
+  display: flex;
+  flex-direction: column;
+}
+#home1,#home2 {
+  display: none;
+}
+.homeslidedesc:hover {
+  display: flex;
+}
+.homeslidedesc:
+.homeslidedesc h3 {
+  text-align: left;
+  margin: 0;
+  padding-bottom: 2vh;
+}
+.homeslidedesc p, .homenav p {
+  padding-bottom: 2vh;
+  font-size: .9em;
+}
+.homeslidedesc h4 {
+  font-size: .75em;
+}
+.hometext {
+  width: 40vw;
+  padding: 7vh 5vw 0vh 5vw;
+}
 .toplevel {
   display: flex;
   background-color: rgb(35,41,82);
@@ -339,7 +407,6 @@ nav a {
 #toplevelhome {
   background-image: url('https://ramakrishna.netlify.com/img/IMG_3171.jpg');
 }
-
 .toplevel a {
     color:white;
     text-decoration: none;
@@ -709,6 +776,17 @@ footer a, footer p{
     width:20vw;
     margin: 0px 0.5vw 0 8.5vw;
   }
+  .homeslidedesc {
+    top:55vh;
+    left:19vw;
+  }
+  .homenav {
+    top:55vh;
+    width:10vw;
+  }
+  .homenav img {
+    width:7vw;
+  }
   footer img {
     width:3vw;
   }
@@ -778,7 +856,15 @@ footer a, footer p{
   #nav2m img {
     width:8vw;
   }
-
+  .homeslidedesc {
+    top:55vh;
+    left:29vw;
+    width:50vw;
+  }
+  .homenav {
+    top:55vh;
+    width:20vw;
+  }
   .flexcol-m {
     flex-direction: column;
   }

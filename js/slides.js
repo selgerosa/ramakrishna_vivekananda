@@ -2,9 +2,14 @@ var slideIndex = 1;
 
 
 function currentSlide(index,slides) {
-  showSlides(slideIndex =index, slides);
+  showSlides(slideIndex=index, slides);
 }
-
+function plusSlide(index,slides) {
+  showSlides(slideIndex=index+1, slides);
+}
+function minusSlide(index,slides) {
+  showSlides(slideIndex=index-1,slides);
+}
 function showSlides(index,slides) {
   var i;
   var slides = document.getElementsByClassName("slides"+slides);
@@ -17,7 +22,22 @@ function showSlides(index,slides) {
 }
 
 function changeNav(inid, outid) {
-  console.log(document.getElementsByTagName("p"+inid));
   document.getElementById("p"+inid).style.display="none";
   document.getElementById("p"+outid).style.display="flex";
+}
+
+function displayon(inid) {
+  for (i=1; i<3; i++) {
+    document.getElementById('home'+i).style.display="none";
+  }
+  document.getElementById(inid).style.display="flex";
+}
+
+function displayoff(inid) {
+  document.getElementById(inid).style.display="none";
+}
+function homeoff() {
+  for (i=1; i<3; i++) {
+    document.getElementById('home'+i).style.display="none";
+  }
 }
