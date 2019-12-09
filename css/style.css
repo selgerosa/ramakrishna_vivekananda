@@ -368,13 +368,13 @@ nav a {
   background-color: rgb(35,41,82);
   background-color: rgb(35,41,82, .9);
   padding:5vh 5vw 0;
-  margin:10vh 10vw;
+  margin:10vh 10vw 40vh;
   max-width: 20vw;
   max-width:fit-content;
   text-align: center;
 }
 .toplevelimg {
-  height:100vh; /* will update with absolute pixel value/aspect ratio*/
+  height:auto; /* will update with absolute pixel value/aspect ratio*/
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -483,9 +483,6 @@ th {
 td p, td h3 {
   margin: 0;
   padding:0;
-}
-.mobiletitle {
-  display: none;
 }
 .photo {
   padding:1vh 1vw;
@@ -748,10 +745,6 @@ footer a, footer p{
   }
   #nav2m p {
     padding: 0;
-  }
-  .mobiletitle {
-    display: block;
-    margin-top: 2vh;
   }
   .gallery img, .gallery a {
     width: 80vw;
