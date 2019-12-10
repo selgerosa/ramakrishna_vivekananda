@@ -203,7 +203,6 @@ nav a {
 
 #nav2 {
   border-right: solid #cc3300;
-  margin-right: 5vw;
   padding-right: 2.5vw;
   padding-top: 5vh;
   padding-left:8vw;
@@ -290,6 +289,7 @@ nav a {
   width: 55vw;
   display: flex;
   flex-direction: column;
+  margin-left: 5vw
   /* align-items: center; */
 }
 .bodycopy img {
@@ -562,19 +562,19 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
 /* slideshow */
 
 .slideshow {
-  margin: 0 2vw 0 3vw;
+  margin: 3vw;
   display: flex;
   justify-content: center;
-  width:46vw;
   background-color: #fff;
+  width: 49vw;
 }
 
 .slideshow img {
   display: none;
   border: solid #cc3300;
   padding:.7vw;
-  margin: 3vh 3vw;
-  width: 38vw;
+  margin: 3vw;
+  width: 41vw;
 }
 /* replace w one id and remove all ids */
 #slide1{
@@ -584,18 +584,17 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-left: 5vw;
 }
 .gallery p {
   width: 55vw
 }
 .gallerychild {
   display: flex;
-  flex-direction: row;
-}
-.gallerychild {
+  flex-direction: column;
   margin-bottom: 5vh;
-  background-color: #333;
-  padding: 2vh 0;
+  background-color: #511400;
+  width: 55vw
 }
 .galleryimg {
   display: flex;
@@ -615,23 +614,23 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
   display: flex;
 }
 .slideshownav img{
-  margin: 1vh .5vw;
-  width: 6vw;
+  margin: 0;
+  width: 5vw;
   align-self: center;
   object-fit: cover;
 }
 .slideshownav {
   display: none;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
-  width:15vw;
   flex-wrap: wrap;
-  margin-left:2vw
+  margin:0 2vw 3vw;
 }
 
 .slideshownav button {
-  width:6vw;
-  margin: 0 1.5vw 0 .5vw;
+  width:5vw;
+  margin: 0;
+  height:3vh;
 }
 .slideshownav div {
   display: flex;
@@ -746,25 +745,27 @@ footer a, footer p{
   #nav2m p {
     padding: 0;
   }
+  .gallery {
+    margin-left:0;
+  }
   .gallery img, .gallery a {
     width: 80vw;
   }
   .gallerychild {
-    flex-direction: column;
+    width:80vw;
   }
   .slideshownav {
     flex-direction: row;
-    width:80vw;
-    margin: 0 2vw 2vh;
+    width:76vw;
   }
   .slideshownav img {
-    width:20vw;
+    width:7.5vw;
   }
   .slideshow {
-    width:78vw;
+    width:74vw;
   }
   .slideshow img {
-    width: 65vw
+    width: 66vw
   }
   .slideshownav div button {
     width:20vw;
@@ -901,6 +902,7 @@ footer a, footer p{
   .nav3 img {
     width:15vw;
   }
+
   .galleryimg div{
     flex-direction: row;
     flex-wrap: wrap;
@@ -937,14 +939,15 @@ footer a, footer p{
   .toplevel p, .toplevelhome p{
     padding-bottom: 2.5vh;
   }
-  .gallerychild {
-    flex-direction: column;
+  .gallerychild, .slideshow {
+    width:90vw
   }
-  .slideshow, .slideshownav {
-    width:90vw;
+  .slideshownav {
+    display: none !important;
   }
   .slideshow {
-    margin: 3vh 2vw 0;
+    margin: 3vh 3vh;
+    width:80vw
   }
   .slideshownav img{
     max-width: 26vw;

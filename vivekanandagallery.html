@@ -95,7 +95,16 @@
        <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
        <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
        </div>
-       <img src="img/center1.jpg" alt=''>
+       <div id='nav4'>
+         <p><a href="index.html">Home</a></p>
+         <p><a href="about.html">About</a></p>
+         <p><a href="teachings.html">Teachings</a></p>
+         <p><a href="rmkorder.html">Ramakrishna Order</a></p>
+         <p><a href="activities.html">Activities</a></p>
+         <p><a href="media.html">Media</a></p>
+         <p><a href="shop.html">Shop</a></p>
+         <img src="img/iconclose.png" alt="'x' close icon" onclick="hamburger();">
+       </div>
        <div class="flex flexrow flexcol-t width100">
          <div id="nav2m" onclick="expand();"><p>Teachings</p><img src="img/plus.png" alt="plus icon" id="plus"><img src="img/minus.png" alt="minus icon" id="minus"></div>
            <div id="nav2">
@@ -121,19 +130,6 @@
           <div class="topmargin gallery">
         <h2>Swami Vivekananda</h2>
         <div class="gallerychild">
-          <div class="slideshownav" id="p1">
-            <img src="img/vivekananda/small/sv1.jpg" onclick="currentSlide(1,18)" alt="Black and white photo portrait of Swami Vivekananda.">
-            <img src="img/vivekananda/small/sv2.JPG" onclick="currentSlide(2,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
-            <img src="img/vivekananda/small/sv3.JPG" onclick="currentSlide(3,18)" alt="Colored photo of Swami Vivekananda with his arms crossed.">
-            <img src="img/vivekananda/small/sv4.JPG" onclick="currentSlide(4,18)" alt="Black and white portrait photo of Swami Vivekananda.">
-            <img src="img/vivekananda/small/sv5.JPG" onclick="currentSlide(5,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
-            <img src="img/vivekananda/small/sv6.JPG" onclick="currentSlide(6,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
-            <img src="img/vivekananda/small/sv7.JPG" onclick="currentSlide(7,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
-            <img src="img/vivekananda/small/sv8.JPG" onclick="currentSlide(8,18)" alt="Illustrated portrait of Swami Vivekananda.">
-            <img src="img/vivekananda/small/sv9.JPG" onclick="currentSlide(9,18)" alt="Black and white photo of Swami Vivekananda standing.">
-            <img src="img/vivekananda/small/sv10.JPG" onclick="currentSlide(10,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
-            <img src="img/vivekananda/small/sv11.JPG" onclick="currentSlide(11,18)" alt="Black and white photo of Swami Vivekananda seated.">
-          </div>
           <div class="slideshow">
             <img src="img/vivekananda/medium/sv1.jpg" id="slide1" onclick="currentSlide(2,18)" class=" slides18" alt="Black and white photo portrait of Swami Vivekananda.">
             <img src="img/vivekananda/medium/sv2.JPG" onclick="currentSlide(3,18)" class="slides18" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
@@ -147,25 +143,29 @@
             <img src="img/vivekananda/medium/sv10.JPG" onclick="currentSlide(11,18)" class="slides18" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
             <img src="img/vivekananda/medium/sv11.JPG" onclick="currentSlide(1,18)" class="slides18" alt="Black and white photo of Swami Vivekananda seated.">
           </div>
+          <div class="slideshownav" id="p1">
+            <button onclick="changeNav(1,2)"><</button>
+            <img src="img/vivekananda/small/sv1.jpg" onclick="currentSlide(1,18)" alt="Black and white photo portrait of Swami Vivekananda.">
+            <img src="img/vivekananda/small/sv2.JPG" onclick="currentSlide(2,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
+            <img src="img/vivekananda/small/sv3.JPG" onclick="currentSlide(3,18)" alt="Colored photo of Swami Vivekananda with his arms crossed.">
+            <img src="img/vivekananda/small/sv4.JPG" onclick="currentSlide(4,18)" alt="Black and white portrait photo of Swami Vivekananda.">
+            <img src="img/vivekananda/small/sv5.JPG" onclick="currentSlide(5,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
+            <img src="img/vivekananda/small/sv6.JPG" onclick="currentSlide(6,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
+            <img src="img/vivekananda/small/sv7.JPG" onclick="currentSlide(7,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
+            <img src="img/vivekananda/small/sv8.JPG" onclick="currentSlide(8,18)" alt="Illustrated portrait of Swami Vivekananda.">
+            <button onclick="changeNav(1,2)">></button>
+          </div>
+          <div class="slideshownav" id="p2">
+            <button onclick="changeNav(2,1)"><</button>
+            <img src="img/vivekananda/small/sv9.JPG" onclick="currentSlide(9,18)" alt="Black and white photo of Swami Vivekananda standing.">
+            <img src="img/vivekananda/small/sv10.JPG" onclick="currentSlide(10,18)" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers.">
+            <img src="img/vivekananda/small/sv11.JPG" onclick="currentSlide(11,18)" alt="Black and white photo of Swami Vivekananda seated.">
+            <button onclick="changeNav(2,1)">></button>
+          </div>
       </div>
         <h3><a href="images.html">More Images</a></h3>
       </div>
       </div>
-      </div>
-
-      <div class="nav3">
-      <a href="activities.html"><img src="img/iconevents.png" alt="icon of calendar with check mark"></a>
-      <a href="shop.html"><img src="img/iconshop.png" alt="icon of shopping cart"></a>
-      <a href="contact.html"><img src="img/iconcontact.png" alt="icon of envelope"></a>
-      <img src="img/hamburger.png" alt="icon of hamburger menu" onclick="hamburger();">
-      </div>
-      <div id='nav4'>
-      <p><a href="index.html">Home</a></p>
-      <p><a href="about.html">About</a></p>
-      <p><a href="teachings.html">Teachings</a></p>
-      <p><a href="rmkorder.html">Ramakrishna Order</a></p>
-      <p><a href="media.html">Media</a></p>
-      <img src="img/iconclose.png" alt="'x' close icon" onclick="hamburger();">
       </div>
       <footer>
       <div class="footerparent flexcol-t">
