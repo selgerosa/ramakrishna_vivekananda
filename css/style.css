@@ -76,7 +76,7 @@ footer p {
 }
 
 /* flex stuff */
-header, nav, .slideshow, .slideshownav {
+header, nav, .slideshow {
   display: flex;
 }
 
@@ -568,21 +568,21 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
 
 /* slideshow */
 
-.slideshow {
+.demo {
   margin: 3vw;
   display: flex;
   justify-content: center;
   background-color: #fff;
-  width: 49vw;
+  width: 40vw;
+  padding:4vw 3vw;
 }
-
-.slideshow img {
-  display: none;
+.slideshow {
   border: solid #cc3300;
   padding:.7vw;
-  margin: 3vw;
-  width: 41vw;
+  width: 27vw;
+  margin:0 5vw 3vw 5vw;
 }
+
 /* replace w one id and remove all ids */
 #slide1{
   display: flex;
@@ -619,29 +619,6 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
 }
 #p1 {
   display: flex;
-}
-.slideshownav img{
-  margin: 0;
-  width: 5vw;
-  align-self: center;
-  object-fit: cover;
-}
-.slideshownav {
-  display: none;
-  justify-content:center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin:0 2vw 3vw;
-}
-
-.slideshownav button {
-  width:5vw;
-  margin: 0;
-  height:3vh;
-}
-.slideshownav div {
-  display: flex;
-  flex-direction: row;
 }
 
 /* footer */
@@ -755,29 +732,20 @@ footer a, footer p{
   .gallery {
     margin-left:0;
   }
-  .gallery img, .gallery a {
+  /* .gallery img, .gallery a {
     width: 80vw;
-  }
+  } */
   .gallerychild {
     width:80vw;
   }
-  .slideshownav {
-    flex-direction: row;
-    width:76vw;
-  }
-  .slideshownav img {
-    width:7.5vw;
+  .demo {
+    width:66vw;
   }
   .slideshow {
-    width:74vw;
+    width: 50vw;
+    margin: 0 7vw 3vw 7vw
   }
-  .slideshow img {
-    width: 66vw
-  }
-  .slideshownav div button {
-    width:20vw;
-    margin: 0px 0.5vw 0 8.5vw;
-  }
+
   .homeslidedesc {
     top:55vh;
     left:19vw;
@@ -949,25 +917,16 @@ footer a, footer p{
   .gallerychild, .slideshow {
     width:90vw
   }
-  .slideshownav {
-    display: none !important;
+  .demo {
+    width:78vw;
   }
   .slideshow {
     margin: 3vh 3vh;
-    width:80vw
-  }
-  .slideshownav img{
-    max-width: 26vw;
-    margin: 2vh 2vw;
-  }
-  .slideshownav button {
-    width: 23vw;
-    margin: 0 .5vw 0 9.5vw;
+    width:65vw
   }
   #wrap {
     width: 40vw
   }
-
   .shoprow {
     flex-direction: column;
   }
