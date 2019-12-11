@@ -392,8 +392,12 @@ nav a {
 #toplevelabout {
   background-image: url('https://ramakrishna.netlify.com/img/rkcenter.png');
 }
+
 #toplevelteachings {
   background-image: url('https://ramakrishna.netlify.com/img/crowd.jpeg');
+}
+#toplevelteachings .toplevel {
+  margin-bottom: 10vh;
 }
 #toplevelrmkorder {
   background-image: url('https://ramakrishna.netlify.com/img/belur_math3.jpg');
@@ -403,6 +407,9 @@ nav a {
 }
 #toplevelmedia {
   background-image: url('https://ramakrishna.netlify.com/img/150celebration.jpg');
+}
+#toplevelmedia .toplevel,#toplevelabout .toplevel {
+  margin-bottom:50vh;
 }
 #toplevelhome {
   background-image: url('https://ramakrishna.netlify.com/img/IMG_3171.jpg');
