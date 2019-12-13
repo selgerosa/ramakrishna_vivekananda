@@ -115,7 +115,7 @@
                    <li><p><a href="ramakrishnaut.html">Teachings</a></p></li>
                    <li><p><a href="ramakrishnatributes.html">Tributes</a></p></li>
                    <li><p><a href="ramakrishnarevelation.html">Self-Revelation</a></p></li>
-                   <li><p><a href="ramakrishnagallery.html" id="nav2active">Image Gallery</a></p></li>
+                   <li><p><a href="ramakrishnagallery.html" id="nav2active">Sri Ramakrishna Image Album</a></p></li>
                  </ul>
                </li>
                <li><p><a href="saradadevi.html">Holy Mother</a></p></li>
@@ -129,23 +129,29 @@
           <div class="topmargin gallery">
         <h2>Sri Ramakrishna</h2>
         <div class="gallerychild">
-          <div class="slideshownav" id="p1">
-            <img src="img/ramakrishna/small/sr1.jpg" onclick="currentSlide(1,21)" alt="Marble bust of Sri Ramakrishna.">
-            <img src="img/ramakrishna/small/sr2.JPG" onclick="currentSlide(2,21)" alt="Scupture of Sri Ramakrishna seated surrounded by flowers.">
-            <img src="img/ramakrishna/small/sr3.JPG" onclick="currentSlide(3,21)" alt="Black and white photo of Sri Ramakrisha seated.">
-            <img src="img/ramakrishna/small/sr4.JPG" onclick="currentSlide(4,21)" alt="Black and white photo of Sri Ramakrishna leaning on a column.">
-            <img src="img/ramakrishna/small/sr5.JPG" onclick="currentSlide(5,21)" alt="Black and white photo of Sri Ramakrishna preaching to others.">
-            <img src="img/ramakrishna/small/sr6.JPG" onclick="currentSlide(6,21)" alt="Crop of Sri Ramakrishna's face">
-            <img src="img/ramakrishna/small/sr7.JPG" onclick="currentSlide(7,21)" alt="Black and white photo of Sri Ramakrishna, bust.">
-          </div>
-          <div class="slideshow">
-            <img src="img/ramakrishna/medium/sr1.jpg" id="slide1" onclick="currentSlide(2,21)" class="slides21" alt="Marble bust of Sri Ramakrishna.">
-            <img src="img/ramakrishna/medium/sr2.JPG" onclick="currentSlide(3,21)" class="slides21" alt="Scupture of Sri Ramakrishna seated with a flower necklasurrounded by flowers.">
-            <img src="img/ramakrishna/medium/sr3.JPG" onclick="currentSlide(4,21)" class="slides21" alt="Black and white photo of Sri Ramakrisha seated.">
-            <img src="img/ramakrishna/medium/sr4.JPG" onclick="currentSlide(5,21)" class="slides21" alt="Black and white photo of Sri Ramakrishna leaning on a column.">
-            <img src="img/ramakrishna/medium/sr5.JPG" onclick="currentSlide(6,21)" class="slides21" alt="Black and white photo of Sri Ramakrishna preaching to others.">
-            <img src="img/ramakrishna/medium/sr6.JPG" onclick="currentSlide(7,21)" class="slides21" alt="Crop of Sri Ramakrishna's face">
-            <img src="img/ramakrishna/medium/sr7.JPG" onclick="currentSlide(1,21)" class="slides21" alt="Black and white photo of Sri Ramakrishna, bust.">
+          <div class="demo">
+            <ul id="lightSlider">
+              <li data-thumb="img/ramakrishna/small/sr1.jpg">
+                <img src="img/ramakrishna/medium/sr1.jpg" alt="Marble bust of Sri Ramakrishna." class="slideshow">
+              </li>
+              <li data-thumb="img/ramakrishna/small/sr2.jpg">
+                <img src="img/ramakrishna/medium/sr2.jpg" alt="Scupture of Sri Ramakrishna seated with a flower necklasurrounded by flowers." class="slideshow">
+              </li>
+              <li data-thumb="img/ramakrishna/small/sr3.jpg">
+                <img src="img/ramakrishna/medium/sr3.jpg" alt="Black and white photo of Sri Ramakrisha seated." class="slideshow">
+              </li>
+              <li data-thumb="img/ramakrishna/small/sr4.jpg">
+                <img src="img/ramakrishna/medium/sr4.jpg" alt="Black and white photo of Sri Ramakrishna leaning on a column." class="slideshow">
+              </li>
+              <li data-thumb="img/ramakrishna/small/sr5.jpg">
+                <img src="img/ramakrishna/medium/sr5.jpg" alt="Black and white photo of Sri Ramakrishna preaching to others." class="slideshow">
+              </li>
+              <li data-thumb="img/ramakrishna/small/sr6.jpg">
+                <img src="img/ramakrishna/medium/sr6.jpg" alt="Crop of Sri Ramakrishna's face." class="slideshow">
+              </li>
+              <li data-thumb="img/ramakrishna/small/sr7.jpg">
+                <img src="img/ramakrishna/medium/sr7.jpg" alt="Black and white photo of Sri Ramakrishna, bust." class="slideshow">
+              </li>
           </div>
         </div>
 
@@ -169,6 +175,25 @@
       </footer>
       </div>
       <script src="js/hamburger.js"></script>
-      <script src="js/slides.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/lightslider.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+          $("#lightSlider").lightSlider({
+            gallery: true,
+            item:1,
+            loop:true,
+            thumbItem:8,
+            thumbMargin:0,
+            slidemargin:0,
+            adaptiveHeight:true
+          });
+         // $('.slideshow').click(function(){
+         //   var slider = $("#lightSlider").lightSlider();
+         //     slider.goToNextSlide();
+         // });
+        });
+      </script>
 </body>
 </html>

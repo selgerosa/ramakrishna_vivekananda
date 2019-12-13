@@ -114,7 +114,7 @@
               <li><p><a href="saradadevi.html">Holy Mother</a></p>
                 <ul>
                   <li><p><a href="saradadeviteach.html">Teachings</a></p></li>
-                  <li><p><a href="holymothergallery.html" id="nav2active">Image Gallery</a></p></li>
+                  <li><p><a href="holymothergallery.html" id="nav2active">Holy Mother Image Album</a></p></li>
                 </ul>
               </li>
               <li><p><a href="vivekananda.html">Swami Vivekananda</a></p></li>
@@ -127,25 +127,33 @@
           <div class="topmargin gallery">
         <h2>Holy Mother Sarada Devi</h2>
         <div class="gallerychild">
-          <div class="slideshownav" id="p1">
-            <img src="img/saradadevi/medium/sd1.jpg" onclick="currentSlide(1,19)" alt="Sepia photo of Holy Mother seated">
-            <img src="img/saradadevi/medium/sd2.JPG" onclick="currentSlide(2,19)" alt="Black and white photo, profile of Holy Mother.">
-            <img src="img/saradadevi/medium/sd3.JPG" onclick="currentSlide(3,19)" alt="Scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/medium/sd4.JPG" onclick="currentSlide(4,19)" alt="Scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/medium/sd5.JPG" onclick="currentSlide(5,19)" alt="Scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/medium/sd6.JPG" onclick="currentSlide(6,19)" alt="Black and white photo of Sri Sarada Devi seated.">
-            <img src="img/saradadevi/medium/sd7.JPG" onclick="currentSlide(7,19)" alt="Black and white photo of a scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/medium/sd8.JPG" onclick="currentSlide(8,19)" alt="Black and white photo of Sri Sarada Devi seated.">
-          </div>
-          <div class="slideshow">
-            <img src="img/saradadevi/large/sd1.jpg" id="slide1" class=" slides19" onclick="currentSlide(2,19)" alt="Sepia photo of Holy Mother seated">
-            <img src="img/saradadevi/large/sd2.JPG" class="slides19" onclick="currentSlide(3,19)" alt="Black and white photo, profile of Holy Mother.">
-            <img src="img/saradadevi/large/sd3.JPG" class="slides19" onclick="currentSlide(4,19)" alt="Scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/large/sd4.JPG" class="slides19" onclick="currentSlide(5,19)" alt="Scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/large/sd5.JPG" class="slides19" onclick="currentSlide(6,19)" alt="Scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/large/sd6.JPG" onclick="currentSlide(7,19)"  class="slides19" alt="Black and white photo of Sri Sarada Devi seated.">
-            <img src="img/saradadevi/large/sd7.JPG" onclick="currentSlide(8,19)" class="slides19" alt="Black and white photo of a scupture bust of Sri Sarada Devi surrounded by flowers.">
-            <img src="img/saradadevi/large/sd8.JPG" onclick="currentSlide(1,19)" class="slides19" alt="Black and white photo of Sri Sarada Devi seated.">
+          <div class="demo">
+            <ul id="lightSlider">
+              <li data-thumb="img/saradadevi/small/sd1.jpg">
+                <img src="img/saradadevi/medium/sd1.jpg" alt="Sepia photo of Holy Mother seated." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd2.jpg">
+                <img src="img/saradadevi/medium/sd2.jpg" alt="Black and white photo, profile of Holy Mother." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd3.jpg">
+                <img src="img/saradadevi/medium/sd3.jpg" alt="Scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd4.jpg">
+                <img src="img/saradadevi/medium/sd4.jpg" alt="Scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd5.jpg">
+                <img src="img/saradadevi/medium/sd5.jpg" alt="Scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd6.jpg">
+                <img src="img/saradadevi/medium/sd6.jpg" alt="Black and white photo of Sri Sarada Devi seated." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd7.jpg">
+                <img src="img/saradadevi/medium/sd7.jpg" alt="Black and white photo of a scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
+              </li>
+              <li data-thumb="img/saradadevi/small/sd8.jpg">
+                <img src="img/saradadevi/medium/sd8.jpg" alt="Black and white photo of Sri Sarada Devi seated." class="slideshow">
+              </li>
+            </ul>
           </div>
         </div>
       <h3><a href="images.html">More Image Galleries</a></h3>
@@ -168,6 +176,25 @@
       </footer>
       </div>
       <script src="js/hamburger.js"></script>
-      <script src="js/slides.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/lightslider.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+          $("#lightSlider").lightSlider({
+            gallery: true,
+            item:1,
+            loop:true,
+            thumbItem:8,
+            thumbMargin:0,
+            slidemargin:0,
+            adaptiveHeight:true
+          });
+         // $('.slideshow').click(function(){
+         //   var slider = $("#lightSlider").lightSlider();
+         //     slider.goToNextSlide();
+         // });
+        });
+      </script>
 </body>
 </html>
