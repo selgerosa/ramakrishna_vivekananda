@@ -118,22 +118,27 @@
           <div class="topmargin gallery">
         <h2>Centenary of Swami Vivekananda at Thousand Island Park, NY<br>July 21-23, 1995</h2></a>
         <div class="gallerychild">
-          <div class="slideshownav" id="p1">
-            <img src="img/centenary1995/MEv_2_1.jpg" onclick="currentSlide(1,6)" alt="Visiting Swamis, religious leaders of different faiths, and musical artists seated in front of a crowd.">
-            <img src="img/centenary1995/MEv_2_2.jpg" onclick="currentSlide(2,6)" alt="Centennial Blessing of the Thousand Islands">
-            <img src="img/centenary1995/MEv_2_3.jpg" onclick="currentSlide(3,6)" alt="Concert by the United States Army Band of Fort Drum, New York">
-            <img src="img/centenary1995/MEv_2_4.jpg" onclick="currentSlide(4,6)" alt="Visiting Swamis, guests, and representatives of all organizations of Thousand Island Park participating in the events.">
-            <img src="img/centenary1995/MEv_2_5.jpg" onclick="currentSlide(5,6)" alt="Concert at the Tabernacle by Uno Mundo (One World)">
-            <img src="img/centenary1995/MEv_2_6.jpg" onclick="currentSlide(6,6)" alt="Vivekananda Cottage at Thousand Island Park, New York">
-          </div>
-
-          <div class="slideshow">
-            <img src="img/centenary1995/MEv_2_1.jpg" id="slide1" onclick="currentSlide(2,6)" class="slides6" alt="Visiting Swamis, religious leaders of different faiths, and musical artists seated in front of a crowd.">
-            <img src="img/centenary1995/MEv_2_2.jpg" onclick="currentSlide(3,6)" class="slides6" alt="Centennial Blessing of the Thousand Islands">
-            <img src="img/centenary1995/MEv_2_3.jpg" onclick="currentSlide(4,6)" class="slides6" alt="Concert by the United States Army Band of Fort Drum, New York">
-            <img src="img/centenary1995/MEv_2_4.jpg" onclick="currentSlide(5,6)" class="slides6" alt="Visiting Swamis, guests, and representatives of all organizations of Thousand Island Park participating in the events.">
-            <img src="img/centenary1995/MEv_2_5.jpg" onclick="currentSlide(6,6)" class="slides6" alt="Concert at the Tabernacle by Uno Mundo (One World)">
-            <img src="img/centenary1995/MEv_2_6.jpg" onclick="currentSlide(1,6)" class="slides6" alt="Vivekananda Cottage at Thousand Island Park, New York.">
+          <div class="demo">
+            <ul id="lightSlider">
+              <li data-thumb="img/centenary1995/MEv_2_1s.jpg">
+                <img src="img/centenary1995/MEv_2_1.jpg" alt="Visiting Swamis, religious leaders of different faiths, and musical artists seated in front of a crowd." class="slideshow">
+              </li>
+              <li data-thumb="img/centenary1995/MEv_2_2s.jpg">
+                <img src="img/centenary1995/MEv_2_2.jpg" alt="Centennial Blessing of the Thousand Islands." class="slideshow">
+              </li>
+              <li data-thumb="img/centenary1995/MEv_2_3s.jpg">
+                <img src="img/centenary1995/MEv_2_3.jpg" alt="Concert by the United States Army Band of Fort Drum, New York." class="slideshow">
+              </li>
+              <li data-thumb="img/centenary1995/MEv_2_4s.jpg">
+                <img src="img/centenary1995/MEv_2_4.jpg" alt="Visiting Swamis, guests, and representatives of all organizations of Thousand Island Park participating in the events." class="slideshow">
+              </li>
+              <li data-thumb="img/centenary1995/MEv_2_5s.jpg">
+                <img src="img/centenary1995/MEv_2_5.jpg" alt="Concert at the Tabernacle by Uno Mundo (One World)." class="slideshow">
+              </li>
+              <li data-thumb="img/centenary1995/MEv_2_6s.jpg">
+                <img src="img/centenary1995/MEv_2_6.jpg" alt="Vivekananda Cottage at Thousand Island Park, New York." class="slideshow">
+              </li>
+            </ul>
           </div>
         </div>
 
@@ -161,6 +166,25 @@
       </footer>
       </div>
       <script src="js/hamburger.js"></script>
-      <script src="js/slides.js"></script>
-</body>
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/lightslider.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+          $("#lightSlider").lightSlider({
+            gallery: true,
+            item:1,
+            loop:true,
+            thumbItem:8,
+            thumbMargin:0,
+            slidemargin:0,
+            adaptiveHeight:true
+          });
+         // $('.slideshow').click(function(){
+         //   var slider = $("#lightSlider").lightSlider();
+         //     slider.goToNextSlide();
+         // });
+        });
+      </script>
+    </body>
 </html>

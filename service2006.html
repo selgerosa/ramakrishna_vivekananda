@@ -118,13 +118,15 @@
           <div class="topmargin gallery">
         <h2>Special Reception and Service in Honor of Revered Swami Prameyanandaji<br>May 28, 2006</h2></a>
         <div class="gallerychild">
-          <div class="slideshownav" id="p1">
-            <img src="img/service2006/Prameyanandaji1a.jpg" onclick="currentSlide(1,14)" alt="Swami Prameyanandaji and Swami Adiswarananda standing in front of the Altar">
-            <img src="img/service2006/Prameyanandaji2a.jpg" onclick="currentSlide(2,14)" alt="View of crowd">
-          </div>
-          <div class="slideshow">
-            <img src="img/service2006/Prameyanandaji1a.jpg" id="slide1" class="slides14" onclick="currentSlide(2,14)" alt="Swami Prameyanandaji and Swami Adiswarananda standing in front of the Altar">
-            <img src="img/service2006/Prameyanandaji2a.jpg" class="slides14" onclick="currentSlide(1,14)" alt="View of crowd">
+          <div class="demo">
+            <ul id="lightSlider">
+              <li data-thumb="img/service2006/Prameyanandaji1as.jpg">
+                <img src="img/service2006/Prameyanandaji1a.jpg" alt="Swami Prameyanandaji and Swami Adiswarananda standing in front of the Altar." class="slideshow">
+              </li>
+              <li data-thumb="img/service2006/Prameyanandaji2as.jpg">
+                <img src="img/service2006/Prameyanandaji2a.jpg" alt="View of crowd." class="slideshow">
+              </li>
+            </ul>
           </div>
         </div>
         <p>On May 28, 2006 a Special Reception and Service was held in honor of Revered Swami Prameyanandaji, a senior monk and member of the governing body of the Ramakrishna Math and Mission of India, on the occasion of the Swami’s first visit the Ramakrishna-Vivekananda Center of New York. The Chapel of the Center was filled to capacity for the event. After being introduced by Swami Adiswarananda, Revered Swami Prameyanandaji gave an illuminating talk on the subject, “Spiritual Life.”  The program concluded with a beautiful program of chanting and musical offerings by the Choir of the Center.  Following his visit to the Center, Revered Swami was escorted to Thousand Island Park where he spent several days visiting the Vivekananda Cottage, hallowed by the memory of Swami Vivekananda who spent seven historic weeks there in the summer of 1895.</p>
@@ -148,6 +150,25 @@
 </footer>
 </div>
 <script src="js/hamburger.js"></script>
-<script src="js/slides.js"></script>
+<link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/lightslider.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    $("#lightSlider").lightSlider({
+      gallery: true,
+      item:1,
+      loop:true,
+      thumbItem:8,
+      thumbMargin:0,
+      slidemargin:0,
+      adaptiveHeight:true
+    });
+   // $('.slideshow').click(function(){
+   //   var slider = $("#lightSlider").lightSlider();
+   //     slider.goToNextSlide();
+   // });
+  });
+</script>
 </body>
 </html>

@@ -118,23 +118,30 @@
           <div class="topmargin gallery">
           <h2>Sri Ramakrishna's Birthday Special Service <br> February 2007</h2></a>
           <div class="gallerychild">
-            <div class="slideshownav" id="p1">
-              <img src="img/birthday2007/RK2007_1.jpg" onclick="currentSlide(1,15)" alt="centered image of Altar to Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda.">
-              <img src="img/birthday2007/RK2007_2.jpg" onclick="currentSlide(2,15)" alt="bust of Sri Ramakrishna surrounded by flowers">
-              <img src="img/birthday2007/RK2007_3.jpg" onclick="currentSlide(3,15)" alt="closeup of bust of Sri Ramakrishna surrounded by flowers">
-              <img src="img/birthday2007/RK2007_4.jpg" onclick="currentSlide(4,15)" alt="view of crowd facing the altar">
-              <img src="img/birthday2007/RK2007_5.jpg" onclick="currentSlide(5,15)" alt="view of crowd surrounding altar">
-              <img src="img/birthday2007/RK2007_6.jpg" onclick="currentSlide(6,15)" alt="person talking at podium in front of crowd">
-              <img src="img/birthday2007/RK2007_7.jpg" onclick="currentSlide(7,15)" alt="view of crowd">
-            </div>
-            <div class="slideshow">
-              <img src="img/birthday2007/RK2007_1.jpg" id="slide1" onclick="currentSlide(2,15)" class="slides15" alt="centered image of Altar to Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda.">
-              <img src="img/birthday2007/RK2007_2.jpg" onclick="currentSlide(3,15)" class="slides15" alt="bust of Sri Ramakrishna surrounded by flowers">
-              <img src="img/birthday2007/RK2007_3.jpg" onclick="currentSlide(4,15)" class="slides15" alt="closeup of bust of Sri Ramakrishna surrounded by flowers">
-              <img src="img/birthday2007/RK2007_4.jpg" onclick="currentSlide(5,15)" class="slides15" alt="view of crowd surrounding altar">
-              <img src="img/birthday2007/RK2007_5.jpg" onclick="currentSlide(6,15)" class="slides15" alt="view of crowd facing the altar">
-              <img src="img/birthday2007/RK2007_6.jpg" onclick="currentSlide(7,15)" class="slides15" alt="person talking at podium in front of crowd">
-              <img src="img/birthday2007/RK2007_7.jpg" onclick="currentSlide(1,15)" class="slides15" alt="view of crowd">
+            <div class="demo">
+              <ul id="lightSlider">
+                <li data-thumb="img/birthday2007/RK2007_1s.jpg">
+                  <img src="img/birthday2007/RK2007_1.jpg" alt="centered image of Altar to Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda." class="slideshow">
+                </li>
+                <li data-thumb="img/birthday2007/RK2007_2s.jpg">
+                  <img src="img/birthday2007/RK2007_2.jpg" alt="bust of Sri Ramakrishna surrounded by flowers." class="slideshow">
+                </li>
+                <li data-thumb="img/birthday2007/RK2007_3s.jpg">
+                  <img src="img/birthday2007/RK2007_3.jpg" alt="closeup of bust of Sri Ramakrishna surrounded by flowers." class="slideshow">
+                </li>
+                <li data-thumb="img/birthday2007/RK2007_4s.jpg">
+                  <img src="img/birthday2007/RK2007_4.jpg" alt="view of crowd surrounding altar." class="slideshow">
+                </li>
+                <li data-thumb="img/birthday2007/RK2007_5s.jpg">
+                  <img src="img/birthday2007/RK2007_5.jpg" alt="view of crowd facing the altar." class="slideshow">
+                </li>
+                <li data-thumb="img/birthday2007/RK2007_6s.jpg">
+                  <img src="img/birthday2007/RK2007_6.jpg" alt="person talking at podium in front of crowd." class="slideshow">
+                </li>
+                <li data-thumb="img/birthday2007/RK2007_7s.jpg">
+                  <img src="img/birthday2007/RK2007_7.jpg" alt="view of crowd." class="slideshow">
+                </li>
+              </ul>
             </div>
           </div>
         <h3>Sri Ramakrishna's Universal Message of God-consciousneses</h3>
@@ -162,6 +169,25 @@
     </footer>
   </div>
   <script src="js/hamburger.js"></script>
-  <script src="js/slides.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/lightslider.js"></script>
+  <script type="text/javascript">
+      $(document).ready(function() {
+      $("#lightSlider").lightSlider({
+        gallery: true,
+        item:1,
+        loop:true,
+        thumbItem:8,
+        thumbMargin:0,
+        slidemargin:0,
+        adaptiveHeight:true
+      });
+     // $('.slideshow').click(function(){
+     //   var slider = $("#lightSlider").lightSlider();
+     //     slider.goToNextSlide();
+     // });
+    });
+  </script>
  </body>
 </html>

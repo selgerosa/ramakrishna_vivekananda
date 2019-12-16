@@ -118,14 +118,15 @@
           <div class="topmargin gallery">
         <h2>Sri Ramakrishna Birth Centenary<br>March 6, 1936</h2>
         <div class="gallerychild">
-          <div class="slideshownav" id="p1">
-            <img src="img/centenary1936/ramakrishna_closeup.jpg" onclick="currentSlide(1,1)" alt="Sri Ramakrishna.">
-            <img src="img/centenary1936/rvc_early_congregation_with_mcleod.JPG" onclick="currentSlide(2,1)" alt="Chapel of the Center with Swami Nikhilananda, Josephine McLeod and members of the congregation.">
-          </div>
-
-          <div class="slideshow">
-            <img src="img/centenary1936/ramakrishna_closeup.jpg" id="slide1" onclick="currentSlide(2,1)" class="slides1" alt="Sri Ramakrishna.">
-            <img src="img/centenary1936/rvc_early_congregation_with_mcleod.JPG" onclick="currentSlide(1,1)" class="slides1" alt="Chapel of the Center with Swami Nikhilananda, Josephine McLeod and members of the congregation.">
+          <div class="demo">
+            <ul id="lightSlider">
+              <li data-thumb="img/centenary1936/ramakrishna_closeups.jpg">
+                <img src="img/centenary1936/ramakrishna_closeup.jpg" alt="Sri Ramakrishna." class="slideshow">
+              </li>
+              <li data-thumb="img/centenary1936/rvc_early_congregation_with_mcleods.jpg">
+                <img src="img/centenary1936/rvc_early_congregation_with_mcleod.jpg" alt="Chapel of the Center with Swami Nikhilananda, Josephine McLeod and members of the congregation." class="slideshow">
+              </li>
+            </ul>
           </div>
         </div>
           <p>In 1936, the world observed the Centenary of Sri Ramakrishna's birth. For that occasion, the Ramakrishna-Vivekananda Center of New York, under the leadership of its founder, Swami Nikhilananda, held a special meeting in New York City's Town Hall. A large audience, including representatives of the leading newspapers of the City, listened as the distinguished speakers paid tribute to Sri Ramakrishna, the God-man of Nineteenth Century India. The <a href="centenaryaddress.html">address given at Town Hall by Swami Nikhilananda</a> was later published by the Center.</p>
@@ -149,6 +150,25 @@
       </footer>
       </div>
       <script src="js/hamburger.js"></script>
-      <script src="js/slides.js"></script>
-</body>
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script src="js/lightslider.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function() {
+          $("#lightSlider").lightSlider({
+            gallery: true,
+            item:1,
+            loop:true,
+            thumbItem:8,
+            thumbMargin:0,
+            slidemargin:0,
+            adaptiveHeight:true
+          });
+         // $('.slideshow').click(function(){
+         //   var slider = $("#lightSlider").lightSlider();
+         //     slider.goToNextSlide();
+         // });
+        });
+      </script>
+    </body>
 </html>
