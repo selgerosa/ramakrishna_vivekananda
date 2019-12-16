@@ -296,7 +296,7 @@ nav a {
   width: 40vw;
 }
 .home {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: row;
   overflow: hidden;
@@ -313,6 +313,7 @@ nav a {
   align-items: center;
   padding: 3vh 1vw;
   text-align: center;
+  z-index: 5
 }
 
 .homenav img {
@@ -322,8 +323,19 @@ nav a {
   margin:0;
   width: initial;
   height:90vh;
+  border: none;
+  padding: 0
 }
-.home .slideshow img {
+.home .slideshow .demo {
+  width: 100vw;
+  padding: 0;
+  margin: 0
+
+}
+.home .slideshow .demo ul li {
+  margin: 0
+}
+.home .slideshow .demo img {
   border: none;
   width: 100%;
   margin:0;
