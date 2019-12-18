@@ -348,7 +348,7 @@ nav a {
   width: 25vw;
   background-color: rgb(255,255,255);
   background-color: rgb(255,255,255,.9);
-  padding: 2vh 2vw;
+  padding: 1vh 2vw 2vh;
   display: flex;
   flex-direction: column;
 }
@@ -358,14 +358,14 @@ nav a {
 .homeslidedesc:hover {
   display: flex;
 }
-.homeslidedesc:
 .homeslidedesc h3 {
   text-align: left;
   margin: 0;
-  padding-bottom: 2vh;
+  margin: 1vh 0;
 }
 .homeslidedesc p, .homenav p {
-  padding-bottom: 2vh;
+  /* padding-bottom: 2vh; */
+  padding-bottom: 0;
   font-size: .9em;
 }
 .homeslidedesc h4 {

@@ -115,12 +115,12 @@
 
     <div class="parent aligncenter">
       <div class="homenav">
-        <img src="news.png" alt="" onmouseover="displayon(1);" onclick="displayon(1);">
-        <p>What's New</p>
-        <img src="calendar.png" alt="" onmouseover="displayon(2);" onclick="displayon(2);">
+        <!-- <img src="news.png" alt="" onmouseover="displayon(1);" onclick="displayon(1);">
+        <p>What's New</p> -->
+        <img src="calendar.png" alt="" onmouseover="displayon(1);" onclick="displayon(1);">
         <p>Events</p>
-        <img src="shop.png" alt="" onmouseover="displayon(3);" onclick="displayon(3);">
-        <p>Shop</p>
+        <!-- <img src="shop.png" alt="" onmouseover="displayon(3);" onclick="displayon(3);">
+        <p>Shop</p> -->
       </div>
       <div class="home">
       <div class="slideshow">
@@ -135,19 +135,27 @@
             <li>
               <img src="img/IMG_3169.jpg" alt="slide1" class="slideshow">
             </li>
+            <li>
+              <img src="img/IMG_3171.jpg" alt="slide1" class="slideshow">
+            </li>
           </ul>
       </div>
     </div>
-      <div class="homeslidedesc" id="home1" onmouseover="displayon(1);" onmouseout="displayoff(1);">
+      <!-- <div class="homeslidedesc" id="home1" onmouseover="displayon(1);" onmouseout="displayoff(1);">
         <h3>Minister's Message</h3>
         <p><a href="message.html">Read the monthly message</a></p>
         <h4> <span onclick="minusSlide(1,25);"><</span> 1/3 <span onclick="plusSlide(1,25);">></span></h4>
-      </div>
-      <div class="homeslidedesc" id="home2" onmouseover="displayon(2);" onmouseout="displayoff(2);">
+      </div> -->
+      <div class="homeslidedesc" id="home1" onmouseover="displayon(1);" onmouseout="displayoff(1);">
         <h3>Upcoming Events</h3>
-
-        <p><a href="specialservices.html"></a></p>
-        <h4> <span onclick="minusSlide(2,25);"><</span> 2/3 <span onclick="plusSlide(2,25);">></span></h4>
+        <p><a href="spec_guest_invt3.html">Special Guest: Swami Atmapriyananda, December 15</a></p>
+        <p><a href="hm_invt.html">Holy Mother's Birthday Special Service, December 22</a></p>
+        <p><a href="christmas_invt.html">Christmas Service, December 24</a></p>
+        <p><a href="services.html">Sunday Services</a></p>
+        <p><a href="specialservices.html">Annual Calendar</a></p>
+        <h3>Minister's Message</h3>
+        <p><a href="message.html">The Graded Way of Devotion</a></p>
+        <!-- <h4> <span onclick="minusSlide(2,25);"><</span> 2/3 <span onclick="plusSlide(2,25);">></span></h4> -->
       </div>
       <!-- <div class="homeslidedesc" id="home3" onmouseover="displayon(3);" onmouseout="displayoff(3);">
         <h3>Shop</h3>
@@ -199,11 +207,12 @@
         gallery: true,
         auto:true,
         item:1,
-        loop:true,
+        loop:false,
         thumbItem:0,
         thumbMargin:0,
-        slidemargin:0,
-        adaptiveHeight:true
+        slideMargin:0,
+        enableDrag:false,
+        controls:false
       });
      // $('.slideshow').click(function(){
      //   var slider = $("#lightSlider").lightSlider();
