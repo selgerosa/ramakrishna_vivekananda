@@ -449,7 +449,10 @@ nav a {
 .topmargin {
   margin-top: 5vh;
 }
-
+.invitation p {
+  text-align: center;
+  padding-bottom: 3vh
+}
 .borderbottom {
   border-bottom: solid #cc3300;
   margin-bottom: 10vh;
@@ -471,7 +474,9 @@ nav a {
 .center {
   text-align: center;
 }
-
+#service {
+  width: 70vw
+}
 .mapouter{
   text-align:right;
   height:55vh;
@@ -862,7 +867,7 @@ footer a, footer p{
 
   .bodycopy, .gallery p {
     width:85vw;
-    margin:2vh 5vw;
+    margin:2vh 7.5vw;
   }
 
   .bodycopy img {
@@ -906,6 +911,9 @@ footer a, footer p{
   }
   iframe {
     width: 90vw;
+  }
+  #service {
+    width: 95vw
   }
   footer {
     margin-bottom: 8vh;
