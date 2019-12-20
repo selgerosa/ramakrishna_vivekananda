@@ -1,0 +1,32 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3850024, 2019-12-19T13:29:41-0500
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: ImperialBTWXX-Roman by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/imperial/imperial/
+ *
+ * Webfont: ImperialBTWXX-Bold by Bitstream
+ * URL: https://www.myfonts.com/fonts/bitstream/imperial/bold/
+ *
+ *
+ * Licensed pageviews: 100,000
+ * Webfonts copyright: Copyright 1990-2003 Bitstream Inc. All rights reserved.
+ *
+ * © 2019 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://hello.myfonts.net/count/3abf28");
+
+
+@font-face {font-family: 'ImperialBTWXX-Roman';src: url('webfonts/3ABF28_0_0.eot');src: url('webfonts/3ABF28_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3ABF28_0_0.woff2') format('woff2'),url('webfonts/3ABF28_0_0.woff') format('woff'),url('webfonts/3ABF28_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'ImperialBTWXX-Bold';src: url('webfonts/3ABF28_1_0.eot');src: url('webfonts/3ABF28_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3ABF28_1_0.woff2') format('woff2'),url('webfonts/3ABF28_1_0.woff') format('woff'),url('webfonts/3ABF28_1_0.ttf') format('truetype');}
