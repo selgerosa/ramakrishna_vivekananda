@@ -746,7 +746,7 @@ footer a, footer p{
 
 @media (max-width:500px) {
   #toplevelabout {
-    background-image: url('https://ramakrishna.netlify.com/img/about_m.jpg');
+    background-image: url('https://ramakrishna.netlify.com/img/about_m.png');
   }
   #toplevelteachings  {
     background-image: url('https://ramakrishna.netlify.com/img/crowd_m.jpg');
@@ -758,7 +758,7 @@ footer a, footer p{
     background-image: url('https://ramakrishna.netlify.com/img/classes_m.jpg');
   }
   #toplevelmedia {
-    background-image: url('https://ramakrishna.netlify.com/img/150celebrations_m.jpg');
+    background-image: url('https://ramakrishna.netlify.com/img/150celebration_m.jpg');
   }
   .hide-d,.nav3 {
     display: flex;
