@@ -746,22 +746,19 @@ footer a, footer p{
 
 @media (max-width:500px) {
   #toplevelabout {
-    background-image: url('https://ramakrishna.netlify.com/img/about_m.png');
+    background-image: url('https://ramakrishna.netlify.com/img/about_m.jpg');
   }
   #toplevelteachings  {
-    background-image: url('https://ramakrishna.netlify.com/img/crowd_m.png');
+    background-image: url('https://ramakrishna.netlify.com/img/crowd_m.jpg');
   }
   #toplevelrmkorder {
-    background-image: url('https://ramakrishna.netlify.com/img/belur_math_3_m.png');
+    background-image: url('https://ramakrishna.netlify.com/img/belur_math3_m.jpg');
   }
   #toplevelactivities {
-    background-image: url('https://ramakrishna.netlify.com/img/classes_m.png');
+    background-image: url('https://ramakrishna.netlify.com/img/classes_m.jpg');
   }
   #toplevelmedia {
-    background-image: url('https://ramakrishna.netlify.com/img/150celebrations_m.png');
-  }
-  #toplevelhome {
-    background-image: url('https://ramakrishna.netlify.com/img/.png');
+    background-image: url('https://ramakrishna.netlify.com/img/150celebrations_m.jpg');
   }
   .hide-d,.nav3 {
     display: flex;
