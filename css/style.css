@@ -45,7 +45,7 @@ h2 {
 
 h3 {
   font-size: 1.2em;
-  margin: 1vh 1vw 3vh 1vw
+  margin: 1vh 1vw 3vh
 }
 
 .header_child h3 {
@@ -86,20 +86,20 @@ header,nav,.dropdown:hover .dropdowncontent,.dropdowncontent:hover,.flex,#nav2,#
   display: flex
 }
 
-.dropdowncontent,#nav2m,#minus,#home1,#home2,#home3,.nav3,.hide-d,#nav2 {
-  display: none;
+.dropdowncontent,#nav2m,#minus,#home1,#home2,#home3,.nav3,.hide-d {
+  display: none
 }
 
 .flexcol {
-  flex-direction: column;
+  flex-direction: column
 }
 
 .flexrow {
-  flex-direction: row;
+  flex-direction: row
 }
 
 .justifybetween {
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .justifyaround {
@@ -566,7 +566,7 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
   border: solid #c30;
   padding:.7vw;
   width: 27vw;
-  margin:0 5vw 3vw 5vw;
+  margin:0 5vw 3vw
 }
 
 /* replace w one id and remove all ids */
@@ -645,7 +645,7 @@ footer a, footer p{
     margin-left: 0;
     text-align: center;
   }
-
+  #nav2 {display:none }
   header img {
     width: 10vw;
   }
@@ -705,7 +705,7 @@ footer a, footer p{
   }
   .slideshow {
     width: 50vw;
-    margin: 0 7vw 3vw 7vw
+    margin: 0 7vw 3vw
   }
 
   .homeslidedesc {
