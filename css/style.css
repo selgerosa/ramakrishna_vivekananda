@@ -331,7 +331,10 @@ nav a {
   padding: 1vh 2vw 2vh;
   flex-direction: column;
 }
-
+.homeslidedesc ul  {
+  padding-left:2vw;
+  list-style: circle;
+}
 .homeslidedesc h3 {
   text-align: left;
   margin: 0;
