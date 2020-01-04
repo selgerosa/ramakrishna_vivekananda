@@ -806,10 +806,19 @@ footer a, footer p{
   #nav2m img {
     width:8vw;
   }
+  .homeslidedesc ul, .homenav p {
+    font-size: 1.1em;
+  }
+  .homeslidedesc h3 {
+    font-size: 1.3em;
+  }
+  .homeslidedesc ul {
+    padding-left:10vw;
+  }
   .homeslidedesc {
     top:55vh;
     left:29vw;
-    width:50vw;
+    width:60vw;
   }
   .homenav {
     top:55vh;
