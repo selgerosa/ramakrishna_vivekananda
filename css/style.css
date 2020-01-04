@@ -818,12 +818,14 @@ footer a, footer p{
   }
   .homeslidedesc {
     top:55vh;
-    left:29vw;
+    left:27vw;
     width:60vw;
+    padding:4vw
   }
   .homenav {
     top:55vh;
     width:20vw;
+    left:5vw;
   }
   .flexcol-m {
     flex-direction: column;
