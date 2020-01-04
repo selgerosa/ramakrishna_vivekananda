@@ -790,10 +790,10 @@ footer a, footer p{
   p {
     font-size: 1.25em;
   }
-  .child,.galleryimg div img,.galleryimg div a,.gallerychild,.slideshow,.mapouter,iframe {
+  .child,.galleryimg div img,.galleryimg div a,.gallerychild,.slideshow,.mapouter {
     width: 90vw;
   }
-  .galleryimg a, .galleryimg a img,#footer1,.bodycopy, .gallery p {
+  .galleryimg a, .galleryimg a img,#footer1,.bodycopy, .gallery p,iframe {
     width: 85vw;
   }
   .child {
