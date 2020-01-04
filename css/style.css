@@ -334,16 +334,18 @@ nav a {
 .homeslidedesc ul  {
   padding-left:2vw;
   list-style: circle;
+  font-size: 1.2em;
 }
 .homeslidedesc h3 {
   text-align: left;
   margin: 0;
   margin: 1vh 0;
+  font-size: 1.3em;
 }
 .homeslidedesc p, .homenav p {
   /* padding-bottom: 2vh; */
   padding-bottom: 0;
-  font-size: .9em;
+  font-size: 1.175em;
 }
 .homeslidedesc h4 {
   font-size: .75em;
