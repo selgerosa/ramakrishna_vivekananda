@@ -468,7 +468,8 @@ iframe {
 }
 table {
   border: solid 5px #c30;
-  margin:5vh 5vw;
+  margin:0vh 0 5vh;
+  width:55vw;
 }
 table td {
   padding:2.5vh 2.5vw;
@@ -798,7 +799,7 @@ footer a, footer p{
   .child {
     margin:5vh 0;
   }
-
+  table {width:70vw;}
   #nav2m {
     height: 10vh;
   }
