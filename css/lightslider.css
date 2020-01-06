@@ -150,15 +150,15 @@
 
 /* slider actions */
 .lSAction > a {
-    width: 32px;
+    width: 48px;
     display: block;
     top: 50%;
-    height: 32px;
+    height: 48px;
     background-image: url('../img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
-    margin-top: -16px;
+    margin-top: -32px;
     /* opacity: 0.5; */
     -webkit-transition: opacity 0.35s linear 0s;
     transition: opacity 0.35s linear 0s;
@@ -171,7 +171,7 @@
     left: 10px;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
+    background-position: -48px 0;
     right: 10px;
 }
 .lSAction > a.disabled {

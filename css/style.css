@@ -479,6 +479,9 @@ table td {
 table, th, td {
   border-collapse: collapse;
 }
+table tr td:nth-child(1) {
+  width: 10vw;
+}
 th {
   padding: 1vh 1vw;
 }
@@ -571,11 +574,10 @@ button:active { box-shadow: 0 22px 0 0 rgba(255,255,255,0.2) inset, 0 1px 0 0 rg
 .slideshow {
   border: solid #c30;
   padding:.7vw;
-  width: 27vw;
-  margin:0 5vw 3vw
+  width: 26vw;
+  margin:0 6vw 3vw
 }
 
-/* replace w one id and remove all ids */
 .gallery {
   flex-direction: column;
   align-items: center;
@@ -700,9 +702,6 @@ footer a, footer p{
   .gallery {
     margin-left:0;
   }
-  /* .gallery img, .gallery a {
-    width: 80vw;
-  } */
   .gallerychild {
     width:78vw;
   }
@@ -710,8 +709,8 @@ footer a, footer p{
     width:66vw;
   }
   .slideshow {
-    width: 50vw;
-    margin: 0 7vw 3vw
+    width: 48vw;
+    margin: 0 8vw 3vw
   }
 
   .homeslidedesc {
@@ -747,6 +746,10 @@ footer a, footer p{
   }
   #wrap {
     width: 20vw
+  }
+  table {width:70vw;}
+  table tr td:nth-child(1) {
+    width: 20vw;
   }
 }
 
@@ -799,7 +802,6 @@ footer a, footer p{
   .child {
     margin:5vh 0;
   }
-  table {width:70vw;}
   #nav2m {
     height: 10vh;
   }
@@ -893,8 +895,8 @@ footer a, footer p{
     width:78vw;
   }
   .slideshow {
-    margin: 3vh 3vh;
-    width:65vw
+    margin: 3vh 4vh;
+    width:60vw
   }
   #wrap {
     width: 40vw
