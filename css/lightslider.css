@@ -150,18 +150,15 @@
 
 /* slider actions */
 .lSAction > a {
-    width: 48px;
+    width: 64px;
     display: block;
     top: 50%;
-    height: 48px;
+    height: 64px;
     background-image: url('../img/controls.png');
     cursor: pointer;
     position: absolute;
     z-index: 99;
     margin-top: -32px;
-    /* opacity: 0.5; */
-    -webkit-transition: opacity 0.35s linear 0s;
-    transition: opacity 0.35s linear 0s;
 }
 .lSAction > a:hover {
     opacity: 1;
@@ -171,7 +168,7 @@
     left: 10px;
 }
 .lSAction > .lSNext {
-    background-position: -48px 0;
+    background-position: -64px 0;
     right: 10px;
 }
 .lSAction > a.disabled {
@@ -184,7 +181,17 @@
     overflow: hidden;
 }
 
-
+@media (max-width:500px) {
+  .lSAction > a{
+    width:32px;
+    background-image:url('../img/controls1.png');
+    height:32px;
+    margin-top: -16px;
+    }
+    .lSAction > .lSNext {
+        background-position: -32px 0;
+      }
+  }
 /* vertical */
 .lSSlideOuter.vertical {
     position: relative;
