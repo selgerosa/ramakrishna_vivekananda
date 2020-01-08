@@ -303,7 +303,7 @@ nav a {
 .homenav img {
   width:4vw;
 }
-/* .home .slideshow {
+.home .slideshow {
   margin:0;
   width: initial;
   height:80vh;
@@ -324,7 +324,7 @@ nav a {
   width: 100%;
   margin:0;
   padding:0;
-} */
+}
 .homeslidedesc {
   position: absolute;
   top:40vh;
@@ -758,7 +758,7 @@ footer a, footer p{
 }
 
 @media (max-width:500px) {
-  #toplevelabout {
+  #toplevelabout,#toplevelhome {
     background-image: url('https://ramakrishna.netlify.com/img/about_m.jpg');
   }
   #toplevelteachings  {
