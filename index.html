@@ -116,11 +116,11 @@
       <div class="home">
       <div class="slideshow">
         <div class="demo ">
-          <ul>
+          <ul id="lightSlider">
             <li>
               <img src="img/IMG_3171.jpg" alt="slide1" class="slideshow">
             </li>
-            <!-- <li>
+            <li>
               <img src="img/IMG_3170.jpg" alt="slide1" class="slideshow">
             </li>
             <li>
@@ -128,7 +128,7 @@
             </li>
             <li>
               <img src="img/IMG_3171.jpg" alt="slide1" class="slideshow">
-            </li> -->
+            </li>
           </ul>
       </div>
     </div>
@@ -196,6 +196,7 @@
       $("#lightSlider").lightSlider({
         gallery: true,
         auto:true,
+        autoWidth:true,
         item:1,
         loop:false,
         thumbItem:0,
