@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -145,22 +146,22 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/centenary1993/MEv1_1s.jpg">
+              <li data-thumb="img/centenary1993/MEv1_1s.jpg" data-src="img/centenary1993/MEv1_1.jpg">
                 <img src="img/centenary1993/MEv1_1.jpg" alt="Swami Vivekananda at the World's Parliament of religions, 1893." class="slideshow">
               </li>
-              <li data-thumb="img/centenary1993/MEv1_2s.jpg">
+              <li data-thumb="img/centenary1993/MEv1_2s.jpg" data-src="img/centenary1993/MEv1_2.jpg">
                 <img src="img/centenary1993/MEv1_2.jpg" alt="Distinguished participants at the United Nations Tribute standing on stage." class="slideshow">
               </li>
-              <li data-thumb="img/centenary1993/MEv1_3s.jpg">
+              <li data-thumb="img/centenary1993/MEv1_3s.jpg" data-src="img/centenary1993/MEv1_3.jpg">
                 <img src="img/centenary1993/MEv1_3.jpg" alt="Concert featuring the seventy musicians of the Inter-School Orchestra of New York." class="slideshow">
               </li>
-              <li data-thumb="img/centenary1993/MEv1_4s.jpg">
+              <li data-thumb="img/centenary1993/MEv1_4s.jpg" data-src="img/centenary1993/MEv1_4.jpg">
                 <img src="img/centenary1993/MEv1_4.jpg" alt="Swami Adiswarananda addressing the congregation, view from crowd." class="slideshow">
               </li>
-              <li data-thumb="img/centenary1993/MEv1_5s.jpg">
+              <li data-thumb="img/centenary1993/MEv1_5s.jpg" data-src="img/centenary1993/MEv1_5.jpg">
                 <img src="img/centenary1993/MEv1_5.jpg" alt="Swami Adiswarananda addressing the congregation, view from altar" class="slideshow">
               </li>
-              <li data-thumb="img/centenary1993/MEv1_6s.jpg">
+              <li data-thumb="img/centenary1993/MEv1_6s.jpg" data-src="img/centenary1993/MEv1_6.jpg">
                 <img src="img/centenary1993/MEv1_6.jpg" alt="Yale Glee club performing at the Centennial Tribute Concert at the Brick Presbyterian Church of New York." class="slideshow">
               </li>
             </ul>
@@ -189,19 +190,32 @@
       </footer>
       </div>
       <script src="js/hamburger.js"></script>
+      <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
             slideMargin:0,
-            adaptiveHeight:true
-          });
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
     </body>

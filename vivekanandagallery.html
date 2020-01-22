@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
-  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -157,37 +157,37 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/vivekananda/small/sv1.jpg">
+              <li data-thumb="img/vivekananda/small/sv1.jpg" data-src="img/vivekananda/large/sv1.jpg">
                 <img src="img/vivekananda/medium/sv1.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv2.jpg">
+              <li data-thumb="img/vivekananda/small/sv2.jpg" data-src="img/vivekananda/large/sv2.jpg">
                 <img src="img/vivekananda/medium/sv2.jpg" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv3.jpg">
+              <li data-thumb="img/vivekananda/small/sv3.jpg" data-src="img/vivekananda/large/sv3.jpg">
                 <img src="img/vivekananda/medium/sv3.jpg" alt="Colored photo of Swami Vivekananda with his arms crossed." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv4.jpg">
+              <li data-thumb="img/vivekananda/small/sv4.jpg" data-src="img/vivekananda/large/sv4.jpg">
                 <img src="img/vivekananda/medium/sv4.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv5.jpg">
+              <li data-thumb="img/vivekananda/small/sv5.jpg" data-src="img/vivekananda/large/sv5.jpg">
                 <img src="img/vivekananda/medium/sv5.jpg" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv6.jpg">
+              <li data-thumb="img/vivekananda/small/sv6.jpg" data-src="img/vivekananda/large/sv6.jpg">
                 <img src="img/vivekananda/medium/sv6.jpg" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv7.jpg">
+              <li data-thumb="img/vivekananda/small/sv7.jpg" data-src="img/vivekananda/large/sv7.jpg">
                 <img src="img/vivekananda/medium/sv7.jpg" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv8.jpg">
+              <li data-thumb="img/vivekananda/small/sv8.jpg" data-src="img/vivekananda/large/sv8.jpg">
                 <img src="img/vivekananda/medium/sv8.jpg" alt="Illustrated portrait of Swami Vivekananda." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv9.jpg">
+              <li data-thumb="img/vivekananda/small/sv9.jpg" data-src="img/vivekananda/large/sv9.jpg">
                 <img src="img/vivekananda/medium/sv9.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv10.jpg">
+              <li data-thumb="img/vivekananda/small/sv10.jpg" data-src="img/vivekananda/large/sv10.jpg">
                 <img src="img/vivekananda/medium/sv10.jpg" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/vivekananda/small/sv11.jpg">
+              <li data-thumb="img/vivekananda/small/sv11.jpg" data-src="img/vivekananda/large/sv11.jpg">
                 <img src="img/vivekananda/medium/sv11.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
           </ul>
@@ -215,17 +215,29 @@
       <script src="js/hamburger.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
             slideMargin:0,
-            adaptiveHeight:true
-          });
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
 </body>

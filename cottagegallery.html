@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -153,37 +154,37 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/cottage/small/thousandislandcottage1.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage1.jpg" data-src="img/cottage/large/thousandislandcottage1.jpg">
                 <img src="img/cottage/medium/thousandislandcottage1.jpg" alt="Swami Yuktatmananda and others laying flowers on memorial." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage2.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage2.jpg" data-src="img/cottage/large/thousandislandcottage2.jpg">
                 <img src="img/cottage/medium/thousandislandcottage2.jpg" alt="Crowd of people at commemoration." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage3.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage3.jpg" data-src="img/cottage/large/thousandislandcottage3.jpg">
                 <img src="img/cottage/medium/thousandislandcottage3.jpg" alt="Vivekananda Cottage." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage4.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage4.jpg" data-src="img/cottage/large/thousandislandcottage4.jpg">
                 <img src="img/cottage/medium/thousandislandcottage4.jpg" alt="Scuptures and flowers." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage5.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage5.jpg" data-src="img/cottage/large/thousandislandcottage5.jpg">
                 <img src="img/cottage/medium/thousandislandcottage5.jpg" alt="Vivekananda Rock Memorial." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage6.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage6.jpg" data-src="img/cottage/large/thousandislandcottage6.jpg">
                 <img src="img/cottage/medium/thousandislandcottage6.jpg" alt="Photo of event." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage7.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage7.jpg" data-src="img/cottage/large/thousandislandcottage7.jpg">
                 <img src="img/cottage/medium/thousandislandcottage7.jpg" alt="Photo of event." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage8.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage8.jpg" data-src="img/cottage/large/thousandislandcottage8.jpg">
                 <img src="img/cottage/medium/thousandislandcottage8.jpg" alt="Rocky garden." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage9.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage9.jpg" data-src="img/cottage/large/thousandislandcottage9.jpg">
                 <img src="img/cottage/medium/thousandislandcottage9.jpg" alt="Vivekananda cottage." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage10.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage10.jpg" data-src="img/cottage/large/thousandislandcottage10.jpg">
                 <img src="img/cottage/medium/thousandislandcottage10.jpg" alt="Congregation in room." class="slideshow">
               </li>
-              <li data-thumb="img/cottage/small/thousandislandcottage11.jpg">
+              <li data-thumb="img/cottage/small/thousandislandcottage11.jpg" data-src="img/cottage/large/thousandislandcottage11.jpg">
                 <img src="img/cottage/medium/thousandislandcottage11.jpg" alt="Congregation in room." class="slideshow">
               </li>
             </ul>
@@ -212,17 +213,29 @@
       <script src="js/hamburger.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
             slideMargin:0,
-            adaptiveHeight:true
-          });
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
   </body>

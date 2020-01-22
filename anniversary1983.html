@@ -144,19 +144,19 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/anniversary1983/rvcdays.jpg">
+              <li data-thumb="img/anniversary1983/rvcdays.jpg" data-src="img/anniversary1983/rvcday.jpg">
                 <img src="img/anniversary1983/rvcday.jpg" alt="The Center from the outside." class="slideshow">
               </li>
-              <li data-thumb="img/anniversary1983/rvcatnights.jpg">
+              <li data-thumb="img/anniversary1983/rvcatnights.jpg" data-src="img/anniversary1983/rvcatnight.jpg">
                 <img src="img/anniversary1983/rvcatnight.jpg" alt="New York Times article about event." class="slideshow">
               </li>
-              <li data-thumb="img/anniversary1983/1983_50th_anniversary_ny_timess.jpg">
+              <li data-thumb="img/anniversary1983/1983_50th_anniversary_ny_timess.jpg" data-src="img/anniversary1983/1983_50th_anniversary_ny_times.jpg">
                 <img src="img/anniversary1983/1983_50th_anniversary_ny_times.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
-              <li data-thumb="img/anniversary1983/1983_50th_anniversary_service_congregations.jpg">
+              <li data-thumb="img/anniversary1983/1983_50th_anniversary_service_congregations.jpg" data-src="img/anniversary1983/1983_50th_anniversary_service_congregation.jpg">
                 <img src="img/anniversary1983/1983_50th_anniversary_service_congregation.jpg" alt="View of congregation looking at the camera." class="slideshow">
               </li>
-              <li data-thumb="img/anniversary1983/1983_50th_anniversary_services.jpg">
+              <li data-thumb="img/anniversary1983/1983_50th_anniversary_services.jpg" data-src="img/anniversary1983/1983_50th_anniversary_service.jpg">
                 <img src="img/anniversary1983/1983_50th_anniversary_service.jpg" alt="View of crowd from the altar." class="slideshow">
               </li>
             </ul>
@@ -186,23 +186,32 @@
       </div>
       <script src="js/hamburger.js"></script>
       <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
             slideMargin:0,
-            adaptiveHeight:true
-          });
-         // $('.slideshow').click(function(){
-         //   var slider = $("#lightSlider").lightSlider();
-         //     slider.goToNextSlide();
-         // });
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
     </body>

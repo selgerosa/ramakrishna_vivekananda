@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -144,25 +145,25 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/tribute2002/Audience9s.jpg">
+              <li data-thumb="img/tribute2002/Audience9s.jpg" data-src="img/tribute2002/Audience9.jpg">
                 <img src="img/tribute2002/Audience9.jpg" alt="A Unique Assembly in the City of New York of the Spiritual Leaders of all Ramakrishna Order Centers of North America New School University Tishman Auditorium, September 22, 2002" class="slideshow">
               </li>
-              <li data-thumb="img/tribute2002/SA_2s.jpg">
+              <li data-thumb="img/tribute2002/SA_2s.jpg" data-src="img/tribute2002/SA_2.jpg">
                 <img src="img/tribute2002/SA_2.jpg" alt="Swami Vivekananda Welcoming the Distinguished Participants." class="slideshow">
               </li>
-              <li data-thumb="img/tribute2002/Audience4s.jpg">
+              <li data-thumb="img/tribute2002/Audience4s.jpg" data-src="img/tribute2002/Audience4.jpg">
                 <img src="img/tribute2002/Audience4.jpg" alt="A View of the Audience." class="slideshow">
               </li>
-              <li data-thumb="img/tribute2002/Guests1s.jpg">
+              <li data-thumb="img/tribute2002/Guests1s.jpg" data-src="img/tribute2002/Guests1.jpg">
                 <img src="img/tribute2002/Guests1.jpg" alt="A View of Swamis and Distinguished Participants." class="slideshow">
               </li>
-              <li data-thumb="img/tribute2002/Guests4s.jpg">
+              <li data-thumb="img/tribute2002/Guests4s.jpg" data-src="img/tribute2002/Guests4.jpg">
                 <img src="img/tribute2002/Guests4.jpg" alt="A View of the Swamis and Distinguished Participants with Rabbi Joseph H. Gelberman Offering His Prayers for Peace and Unity." class="slideshow">
               </li>
-              <li data-thumb="img/tribute2002/Perform3s.jpg">
+              <li data-thumb="img/tribute2002/Perform3s.jpg" data-src="img/tribute2002/Perform3.jpg">
                 <img src="img/tribute2002/Perform3.jpg" alt="Nicole Leon Performing on Violin." class="slideshow">
               </li>
-              <li data-thumb="img/tribute2002/SA_3s.jpg">
+              <li data-thumb="img/tribute2002/SA_3s.jpg" data-src="img/tribute2002/SA_3.jpg">
                 <img src="img/tribute2002/SA_3.jpg" alt="Swami Adiswarananda Thanking the Distinguished Participants and Offering His Concluding Prayer." class="slideshow">
               </li>
             </ul>
@@ -219,17 +220,29 @@
         <script src="js/hamburger.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/lightslider.js"></script>
+        <script src="js/lightgallery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+        <!-- lightgallery plugins -->
+        <script src="js/lg-thumbnail.min.js"></script>
+        <script src="js/lg-fullscreen.min.js"></script>
+        <script src="js/lg-zoom.min.js"></script>
         <script type="text/javascript">
             $(document).ready(function() {
             $("#lightSlider").lightSlider({
               gallery: true,
               item:1,
-              loop:true,
+              loop:false,
               thumbItem:8,
               thumbMargin:0,
               slideMargin:0,
-              adaptiveHeight:true
-            });
+              adaptiveHeight:true,
+              enableDrag:false,
+              onSliderLoad: (function() {
+              $("#lightSlider").lightGallery({
+                zoom: true
+              });
+            })
+          });
           });
         </script>
     </body>

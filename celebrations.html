@@ -32,6 +32,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -143,43 +145,43 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-            <li data-thumb="img/celebrations/small/celebrations1.jpg">
+            <li data-thumb="img/celebrations/small/celebrations1.jpg" data-src="img/celebrations/large/celebrations1.jpg">
               <img src="img/celebrations/medium/celebrations1.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations2.jpg">
+            <li data-thumb="img/celebrations/small/celebrations2.jpg" data-src="img/celebrations/large/celebrations2.jpg">
               <img src="img/celebrations/medium/celebrations2.jpg" alt="Sri Ramakrishna Birthday Special Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations3.jpg">
+            <li data-thumb="img/celebrations/small/celebrations3.jpg" data-src="img/celebrations/large/celebrations3.jpg">
               <img src="img/celebrations/medium/celebrations3.jpg" alt="Holy Mother Birthday Special Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations4.jpg">
+            <li data-thumb="img/celebrations/small/celebrations4.jpg" data-src="img/celebrations/large/celebrations4.jpg">
               <img src="img/celebrations/medium/celebrations4.jpg" alt="Swami Vivekananda Birthday Special Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations5.jpg">
+            <li data-thumb="img/celebrations/small/celebrations5.jpg" data-src="img/celebrations/large/celebrations5.jpg">
               <img src="img/celebrations/medium/celebrations5.jpg" alt="Sri Durga Puja Special Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations6.jpg">
+            <li data-thumb="img/celebrations/small/celebrations6.jpg" data-src="img/celebrations/large/celebrations6.jpg">
               <img src="img/celebrations/medium/celebrations6.jpg" alt="Buddha Birthday Special Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations7.jpg">
+            <li data-thumb="img/celebrations/small/celebrations7.jpg" data-src="img/celebrations/large/celebrations7.jpg">
               <img src="img/celebrations/medium/celebrations7.jpg" alt="Christmas Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations8.jpg">
+            <li data-thumb="img/celebrations/small/celebrations8.jpg" data-src="img/celebrations/large/celebrations8.jpg">
               <img src="img/celebrations/medium/celebrations8.jpg" alt="Easter Service." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations9.jpg">
+            <li data-thumb="img/celebrations/small/celebrations9.jpg" data-src="img/celebrations/large/celebrations9.jpg">
               <img src="img/celebrations/medium/celebrations9.jpg" alt="Centennial of Swami Vivekananda in America." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations10.jpg">
+            <li data-thumb="img/celebrations/small/celebrations10.jpg" data-src="img/celebrations/large/celebrations10.jpg">
               <img src="img/celebrations/medium/celebrations10.jpg" alt="Tribute to the Spiritural Oneness of Humanity." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations11.jpg">
+            <li data-thumb="img/celebrations/small/celebrations11.jpg" data-src="img/celebrations/large/celebrations11.jpg">
               <img src="img/celebrations/medium/celebrations11.jpg" alt="Dedication of Vivekananda Rock Memorial." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations12.jpg">
+            <li data-thumb="img/celebrations/small/celebrations12.jpg" data-src="img/celebrations/large/celebrations12.jpg">
               <img src="img/celebrations/medium/celebrations12.jpg" alt="150th Birthday of Swami Vivekenanda." class="slideshow">
             </li>
-            <li data-thumb="img/celebrations/small/celebrations13.jpg">
+            <li data-thumb="img/celebrations/small/celebrations13.jpg" data-src="img/celebrations/large/celebrations13.jpg">
               <img src="img/celebrations/medium/celebrations13.jpg" alt="Dedication of Vivekananda Rock Memorial." class="slideshow">
             </li>
           </ul>
@@ -208,21 +210,29 @@
 <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/lightslider.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<!-- lightgallery plugins -->
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/lg-zoom.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
     $("#lightSlider").lightSlider({
       gallery: true,
       item:1,
-      loop:true,
+      loop:false,
       thumbItem:8,
       thumbMargin:0,
       slideMargin:0,
-      adaptiveHeight:true
-    });
-   // $('.slideshow').click(function(){
-   //   var slider = $("#lightSlider").lightSlider();
-   //     slider.goToNextSlide();
-   // });
+      adaptiveHeight:true,
+      enableDrag:false,
+      onSliderLoad: (function() {
+      $("#lightSlider").lightGallery({
+        zoom: true
+      });
+    })
+  });
   });
 </script>
 </body>

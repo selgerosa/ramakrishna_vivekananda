@@ -32,6 +32,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" title="style">
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+  <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+  <link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -144,31 +146,31 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/interfaith1987/1993nytimes_s.jpg">
+              <li data-thumb="img/interfaith1987/1993nytimes_s.jpg" data-src="img/interfaith1987/1993nytimes.jpg">
                 <img src="img/interfaith1987/1993nytimes.jpg" alt="New York Times Article." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/As_Many_Faiths_photo_s.jpg">
+              <li data-thumb="img/interfaith1987/As_Many_Faiths_photo_s.jpg" data-src="img/interfaith1987/As_Many_Faiths_photo.jpg">
                 <img src="img/interfaith1987/As_Many_Faiths_photo.jpg" alt="Swami Adiswarananda speaking at the 150th Birthday of Sri Ramakrisha." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith_1946_town_hall_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith_1946_town_hall_s.jpg" data-src="img/interfaith1987/interfaith_1946_town_hall.jpg">
                 <img src="img/interfaith1987/interfaith_1946_town_hall.jpg" alt="Interfaith Meeting at Town Hall, New York." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith_1893_parliament_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith_1893_parliament_s.jpg" data-src="img/interfaith1987/interfaith_1893_parliament.jpg">
                 <img src="img/interfaith1987/interfaith_1893_parliament.jpg" alt="Assembly of Religious & Spiritual Leaders at the 1993 Parliament of the World's Religion held at Chicago to Commemorate the Centenary of the Parliament of 1893." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith_1993_parliament_religious_leaders_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith_1993_parliament_religious_leaders_s.jpg" data-src="img/interfaith1987/interfaith_1993_parliament_religious_leaders.jpg">
                 <img src="img/interfaith1987/interfaith_1993_parliament_religious_leaders.jpg" alt="1993 Parliament Poster." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith_1993_parliament_poster_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith_1993_parliament_poster_s.jpg" data-src="img/interfaith1987/interfaith_1993_parliament_poster.jpg">
                 <img src="img/interfaith1987/interfaith_1993_parliament_poster.jpg" alt="1993 Parliament Poster." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith_cathedral_summit_2_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith_cathedral_summit_2_s.jpg" data-src="img/interfaith1987/interfaith_cathedral_summit_2.jpg">
                 <img src="img/interfaith1987/interfaith_cathedral_summit_2.jpg" alt="Swami Adiswarananda at Spiritual Summit IV, Cathedral of St. John the Divine, New York 1987." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith_seamans_church_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith_seamans_church_s.jpg" data-src="img/interfaith1987/interfaith_seamans_church.jpg">
                 <img src="img/interfaith1987/interfaith_seamans_church.jpg" alt="Dedication of the New Seaman's Church Institute, South Street Seaport, New York." class="slideshow">
               </li>
-              <li data-thumb="img/interfaith1987/interfaith-cathedral_summit-1_s.jpg">
+              <li data-thumb="img/interfaith1987/interfaith-cathedral_summit-1_s.jpg" data-src="img/interfaith1987/cathedral_summit-1.jpg">
                 <img src="img/interfaith1987/interfaith-cathedral_summit-1.jpg" alt="Swami Adiswarananda at Spiritual Summit IV, Cathedral of St. John the Divine, New York 1987." class="slideshow">
               </li>
             </ul>
@@ -201,21 +203,29 @@
       <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
-            slidemargin:0,
-            adaptiveHeight:true
-          });
-         // $('.slideshow').click(function(){
-         //   var slider = $("#lightSlider").lightSlider();
-         //     slider.goToNextSlide();
-         // });
+            slideMargin:0,
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
     </body>

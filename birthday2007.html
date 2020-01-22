@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -144,25 +145,25 @@
           <div class="gallerychild">
             <div class="demo">
               <ul id="lightSlider">
-                <li data-thumb="img/birthday2007/RK2007_1s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_1s.jpg" data-src="img/birthday2007/RK2007_1.jpg">
                   <img src="img/birthday2007/RK2007_1.jpg" alt="centered image of Altar to Sri Ramakrishna, Sri Sarada Devi, and Swami Vivekananda." class="slideshow">
                 </li>
-                <li data-thumb="img/birthday2007/RK2007_2s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_2s.jpg" data-src="img/birthday2007/RK2007_2.jpg">
                   <img src="img/birthday2007/RK2007_2.jpg" alt="bust of Sri Ramakrishna surrounded by flowers." class="slideshow">
                 </li>
-                <li data-thumb="img/birthday2007/RK2007_3s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_3s.jpg" data-src="img/birthday2007/RK2007_3.jpg">
                   <img src="img/birthday2007/RK2007_3.jpg" alt="closeup of bust of Sri Ramakrishna surrounded by flowers." class="slideshow">
                 </li>
-                <li data-thumb="img/birthday2007/RK2007_4s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_4s.jpg" data-src="img/birthday2007/RK2007_4.jpg">
                   <img src="img/birthday2007/RK2007_4.jpg" alt="view of crowd surrounding altar." class="slideshow">
                 </li>
-                <li data-thumb="img/birthday2007/RK2007_5s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_5s.jpg" data-src="img/birthday2007/RK2007_5.jpg">
                   <img src="img/birthday2007/RK2007_5.jpg" alt="view of crowd facing the altar." class="slideshow">
                 </li>
-                <li data-thumb="img/birthday2007/RK2007_6s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_6s.jpg" data-src="img/birthday2007/RK2007_6.jpg">
                   <img src="img/birthday2007/RK2007_6.jpg" alt="person talking at podium in front of crowd." class="slideshow">
                 </li>
-                <li data-thumb="img/birthday2007/RK2007_7s.jpg">
+                <li data-thumb="img/birthday2007/RK2007_7s.jpg" data-src="img/birthday2007/RK2007_7.jpg">
                   <img src="img/birthday2007/RK2007_7.jpg" alt="view of crowd." class="slideshow">
                 </li>
               </ul>
@@ -195,17 +196,29 @@
   <script src="js/hamburger.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/lightslider.js"></script>
+  <script src="js/lightgallery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+  <!-- lightgallery plugins -->
+  <script src="js/lg-thumbnail.min.js"></script>
+  <script src="js/lg-fullscreen.min.js"></script>
+  <script src="js/lg-zoom.min.js"></script>
   <script type="text/javascript">
       $(document).ready(function() {
       $("#lightSlider").lightSlider({
         gallery: true,
         item:1,
-        loop:true,
+        loop:false,
         thumbItem:8,
         thumbMargin:0,
         slideMargin:0,
-        adaptiveHeight:true
-      });
+        adaptiveHeight:true,
+        enableDrag:false,
+        onSliderLoad: (function() {
+        $("#lightSlider").lightGallery({
+          zoom: true
+        });
+      })
+    });
     });
   </script>
  </body>

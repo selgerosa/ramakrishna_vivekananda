@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -155,25 +156,25 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/ramakrishna/small/sr1.jpg">
+              <li data-thumb="img/ramakrishna/small/sr1.jpg" data-src="img/ramakrishna/large/sr1.jpg">
                 <img src="img/ramakrishna/medium/sr1.jpg" alt="Marble bust of Sri Ramakrishna." class="slideshow">
               </li>
-              <li data-thumb="img/ramakrishna/small/sr2.jpg">
+              <li data-thumb="img/ramakrishna/small/sr2.jpg" data-src="img/ramakrishna/large/sr2.jpg">
                 <img src="img/ramakrishna/medium/sr2.jpg" alt="Scupture of Sri Ramakrishna seated with a flower necklasurrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/ramakrishna/small/sr3.jpg">
+              <li data-thumb="img/ramakrishna/small/sr3.jpg" data-src="img/ramakrishna/large/sr3.jpg">
                 <img src="img/ramakrishna/medium/sr3.jpg" alt="Black and white photo of Sri Ramakrisha seated." class="slideshow">
               </li>
-              <li data-thumb="img/ramakrishna/small/sr4.jpg">
+              <li data-thumb="img/ramakrishna/small/sr4.jpg" data-src="img/ramakrishna/large/sr4.jpg">
                 <img src="img/ramakrishna/medium/sr4.jpg" alt="Black and white photo of Sri Ramakrishna leaning on a column." class="slideshow">
               </li>
-              <li data-thumb="img/ramakrishna/small/sr5.jpg">
+              <li data-thumb="img/ramakrishna/small/sr5.jpg" data-src="img/ramakrishna/large/sr5.jpg">
                 <img src="img/ramakrishna/medium/sr5.jpg" alt="Black and white photo of Sri Ramakrishna preaching to others." class="slideshow">
               </li>
-              <li data-thumb="img/ramakrishna/small/sr6.jpg">
+              <li data-thumb="img/ramakrishna/small/sr6.jpg" data-src="img/ramakrishna/large/sr6.jpg">
                 <img src="img/ramakrishna/medium/sr6.jpg" alt="Crop of Sri Ramakrishna's face." class="slideshow">
               </li>
-              <li data-thumb="img/ramakrishna/small/sr7.jpg">
+              <li data-thumb="img/ramakrishna/small/sr7.jpg" data-src="img/ramakrishna/large/sr7.jpg">
                 <img src="img/ramakrishna/medium/sr7.jpg" alt="Black and white photo of Sri Ramakrishna, bust." class="slideshow">
               </li>
           </div>
@@ -201,17 +202,29 @@
       <script src="js/hamburger.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
             slideMargin:0,
-            adaptiveHeight:true
-          });
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
 </body>

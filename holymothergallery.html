@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -153,28 +154,28 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/saradadevi/small/sd1.jpg">
+              <li data-thumb="img/saradadevi/small/sd1.jpg" data-src="img/saradadevi/large/sd1.jpg">
                 <img src="img/saradadevi/medium/sd1.jpg" alt="Sepia photo of Holy Mother seated." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd2.jpg">
+              <li data-thumb="img/saradadevi/small/sd2.jpg" data-src="img/saradadevi/large/sd2.jpg">
                 <img src="img/saradadevi/medium/sd2.jpg" alt="Black and white photo, profile of Holy Mother." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd3.jpg">
+              <li data-thumb="img/saradadevi/small/sd3.jpg" data-src="img/saradadevi/large/sd3.jpg">
                 <img src="img/saradadevi/medium/sd3.jpg" alt="Scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd4.jpg">
+              <li data-thumb="img/saradadevi/small/sd4.jpg" data-src="img/saradadevi/large/sd4.jpg">
                 <img src="img/saradadevi/medium/sd4.jpg" alt="Scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd5.jpg">
+              <li data-thumb="img/saradadevi/small/sd5.jpg" data-src="img/saradadevi/large/sd5.jpg">
                 <img src="img/saradadevi/medium/sd5.jpg" alt="Scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd6.jpg">
+              <li data-thumb="img/saradadevi/small/sd6.jpg" data-src="img/saradadevi/large/sd6.jpg">
                 <img src="img/saradadevi/medium/sd6.jpg" alt="Black and white photo of Sri Sarada Devi seated." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd7.jpg">
+              <li data-thumb="img/saradadevi/small/sd7.jpg" data-src="img/saradadevi/large/sd7.jpg">
                 <img src="img/saradadevi/medium/sd7.jpg" alt="Black and white photo of a scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
               </li>
-              <li data-thumb="img/saradadevi/small/sd8.jpg">
+              <li data-thumb="img/saradadevi/small/sd8.jpg" data-src="img/saradadevi/large/sd8.jpg">
                 <img src="img/saradadevi/medium/sd8.jpg" alt="Black and white photo of Sri Sarada Devi seated." class="slideshow">
               </li>
             </ul>
@@ -202,17 +203,29 @@
       <script src="js/hamburger.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
       <script src="js/lightslider.js"></script>
+      <script src="js/lightgallery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+      <!-- lightgallery plugins -->
+      <script src="js/lg-thumbnail.min.js"></script>
+      <script src="js/lg-fullscreen.min.js"></script>
+      <script src="js/lg-zoom.min.js"></script>
       <script type="text/javascript">
           $(document).ready(function() {
           $("#lightSlider").lightSlider({
             gallery: true,
             item:1,
-            loop:true,
+            loop:false,
             thumbItem:8,
             thumbMargin:0,
             slideMargin:0,
-            adaptiveHeight:true
-          });
+            adaptiveHeight:true,
+            enableDrag:false,
+            onSliderLoad: (function() {
+            $("#lightSlider").lightGallery({
+              zoom: true
+            });
+          })
+        });
         });
       </script>
 </body>

@@ -33,6 +33,7 @@
   <link href="https://fonts.googleapis.com/css?family=Libre+Franklin" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
   <link type="text/css" rel="stylesheet" href="css/lightslider.css" />
+<link type="text/css" rel="stylesheet" href="css/lightGallery.min.css" />
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-133168379-3"></script>
   <script>
@@ -144,40 +145,40 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/building2004/s1.jpg">
+              <li data-thumb="img/building2004/s1.jpg" data-src="img/building2004/BD1.jpg">
                 <img src="img/building2004/BD1.jpg" alt="Restored facade of the building." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/building_dedication2s.jpg">
+              <li data-thumb="img/building2004/building_dedication2s.jpg" data-src="img/building2004/building_dedication2.jpg">
                 <img src="img/building2004/building_dedication2.jpg" alt="Dedication to the building poster." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/symposium2s.jpg">
+              <li data-thumb="img/building2004/symposium2s.jpg" data-src="img/building2004/symposium2.jpg">
                 <img src="img/building2004/symposium2.jpg" alt="List of distinguished participants." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s2.jpg">
+              <li data-thumb="img/building2004/s2.jpg" data-src="img/building2004/BD2.jpg">
                 <img src="img/building2004/BD2.jpg" alt="New chapel altar." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s3.jpg">
+              <li data-thumb="img/building2004/s3.jpg" data-src="img/building2004/BD3.jpg">
                 <img src="img/building2004/BD3.jpg" alt="Swami Adiswarananda welcoming the congregation." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s4.jpg">
+              <li data-thumb="img/building2004/s4.jpg" data-src="img/building2004/BD4.jpg">
                 <img src="img/building2004/BD4.jpg" alt="View of the congregation." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s5.jpg">
+              <li data-thumb="img/building2004/s5.jpg" data-src="img/building2004/BD5.jpg">
                 <img src="img/building2004/BD5.jpg" alt="Alternate view of the congregation." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s6.jpg">
+              <li data-thumb="img/building2004/s6.jpg" data-src="img/building2004/BD6.jpg">
                 <img src="img/building2004/BD6.jpg" alt="John Sweeney addressing the congregation." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s7.jpg">
+              <li data-thumb="img/building2004/s7.jpg" data-src="img/building2004/BD7.jpg">
                 <img src="img/building2004/BD7.jpg" alt="View of the center choir." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s8.jpg">
+              <li data-thumb="img/building2004/s8.jpg" data-src="img/building2004/BD8.jpg">
                 <img src="img/building2004/BD8.jpg" alt="Overflow seating in the new library." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s9.jpg">
+              <li data-thumb="img/building2004/s9.jpg" data-src="img/building2004/BD9.jpg">
                 <img src="img/building2004/BD9.jpg" alt="Overflow seating in the new exhibition gallery." class="slideshow">
               </li>
-              <li data-thumb="img/building2004/s10.jpg">
+              <li data-thumb="img/building2004/s10.jpg" data-src="img/building2004/BD10.jpg">
                 <img src="img/building2004/BD10.jpg" alt="Luncheon reception for the swamis and other participants." class="slideshow">
               </li>
             </ul>
@@ -205,17 +206,29 @@
 <script src="js/hamburger.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="js/lightslider.js"></script>
+<script src="js/lightgallery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+<!-- lightgallery plugins -->
+<script src="js/lg-thumbnail.min.js"></script>
+<script src="js/lg-fullscreen.min.js"></script>
+<script src="js/lg-zoom.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
     $("#lightSlider").lightSlider({
       gallery: true,
       item:1,
-      loop:true,
+      loop:false,
       thumbItem:8,
       thumbMargin:0,
       slideMargin:0,
-      adaptiveHeight:true
-    });
+      adaptiveHeight:true,
+      enableDrag:false,
+      onSliderLoad: (function() {
+      $("#lightSlider").lightGallery({
+        zoom: true
+      });
+    })
+  });
   });
 </script>
 </body>
