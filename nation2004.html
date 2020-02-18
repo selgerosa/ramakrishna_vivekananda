@@ -145,19 +145,19 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
-              <li data-thumb="img/nation2004/UN_Swami1s.jpg">
+              <li data-thumb="img/nation2004/UN_Swami1s.jpg" data-src="img/nation2004/UN_Swami1.jpg">
                 <img src="img/nation2004/UN_Swami1.jpg" alt="Swami Adiswarananda addressing the delegates." class="slideshow">
               </li>
-              <li data-thumb="img/nation2004/UN_Swami2s.jpg">
+              <li data-thumb="img/nation2004/UN_Swami2s.jpg" data-src="img/nation2004/UN_Swami2.jpg">
                 <img src="img/nation2004/UN_Swami2.jpg" alt="Swami Adiswarananda addressing the delegates." class="slideshow">
               </li>
-              <li data-thumb="img/nation2004/UN_Swami3s.jpg">
+              <li data-thumb="img/nation2004/UN_Swami3s.jpg" data-src="img/nation2004/UN_Swami3.jpg">
                 <img src="img/nation2004/UN_Swami3.jpg" alt="Group portrait of many participants." class="slideshow">
               </li>
-              <li data-thumb="img/nation2004/UN_Swami5s.jpg">
+              <li data-thumb="img/nation2004/UN_Swami5s.jpg" data-src="img/nation2004/UN_Swami4.jpg">
                 <img src="img/nation2004/UN_Swami5.jpg" alt="View of panel from back of the room with full audience in view." class="slideshow">
               </li>
-              <li data-thumb="img/nation2004/CharlieRoses.jpg">
+              <li data-thumb="img/nation2004/CharlieRoses.jpg" data-src="img/nation2004/CharlieRose.jpg">
                 <img src="img/nation2004/CharlieRose.jpg" alt="Swami Adiswarananda at the Charlie Rose Show with other speakers." class="slideshow">
               </li>
             </ul>
@@ -262,7 +262,8 @@
       enableDrag:false,
       onSliderLoad: (function() {
       $("#lightSlider").lightGallery({
-        zoom: true
+        zoom: true,
+width:'125%'
       });
     })
   });

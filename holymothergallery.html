@@ -154,6 +154,9 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
+              <li data-thumb="img/saradadevi/small/sd8.jpg" data-src="img/saradadevi/large/sd8.jpg">
+                <img src="img/saradadevi/medium/sd8.jpg" alt="Black and white photo of Sri Sarada Devi seated." class="slideshow">
+              </li>
               <li data-thumb="img/saradadevi/small/sd1.jpg" data-src="img/saradadevi/large/sd1.jpg">
                 <img src="img/saradadevi/medium/sd1.jpg" alt="Sepia photo of Holy Mother seated." class="slideshow">
               </li>
@@ -174,9 +177,6 @@
               </li>
               <li data-thumb="img/saradadevi/small/sd7.jpg" data-src="img/saradadevi/large/sd7.jpg">
                 <img src="img/saradadevi/medium/sd7.jpg" alt="Black and white photo of a scupture bust of Sri Sarada Devi surrounded by flowers." class="slideshow">
-              </li>
-              <li data-thumb="img/saradadevi/small/sd8.jpg" data-src="img/saradadevi/large/sd8.jpg">
-                <img src="img/saradadevi/medium/sd8.jpg" alt="Black and white photo of Sri Sarada Devi seated." class="slideshow">
               </li>
             </ul>
           </div>
@@ -222,7 +222,8 @@
             enableDrag:false,
             onSliderLoad: (function() {
             $("#lightSlider").lightGallery({
-              zoom: true
+              zoom: true,
+width:'125%'
             });
           })
         });

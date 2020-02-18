@@ -157,6 +157,9 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
+              <li data-thumb="img/vivekananda/small/sv11.jpg" data-src="img/vivekananda/large/sv11.jpg">
+                <img src="img/vivekananda/medium/sv11.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
+              </li>
               <li data-thumb="img/vivekananda/small/sv1.jpg" data-src="img/vivekananda/large/sv1.jpg">
                 <img src="img/vivekananda/medium/sv1.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
@@ -186,9 +189,6 @@
               </li>
               <li data-thumb="img/vivekananda/small/sv10.jpg" data-src="img/vivekananda/large/sv10.jpg">
                 <img src="img/vivekananda/medium/sv10.jpg" alt="Metal sculpture of Swami Vivekananda seated surrounded by flowers." class="slideshow">
-              </li>
-              <li data-thumb="img/vivekananda/small/sv11.jpg" data-src="img/vivekananda/large/sv11.jpg">
-                <img src="img/vivekananda/medium/sv11.jpg" alt="Black and white photo portrait of Swami Vivekananda." class="slideshow">
               </li>
           </ul>
         </div>
@@ -234,7 +234,8 @@
             enableDrag:false,
             onSliderLoad: (function() {
             $("#lightSlider").lightGallery({
-              zoom: true
+              zoom: true,
+width:'125%'
             });
           })
         });

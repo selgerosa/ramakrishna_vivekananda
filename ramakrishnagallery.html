@@ -156,14 +156,14 @@
         <div class="gallerychild">
           <div class="demo">
             <ul id="lightSlider">
+              <li data-thumb="img/ramakrishna/small/sr3.jpg" data-src="img/ramakrishna/large/sr3.jpg">
+                <img src="img/ramakrishna/medium/sr3.jpg" alt="Black and white photo of Sri Ramakrisha seated." class="slideshow">
+              </li>
               <li data-thumb="img/ramakrishna/small/sr1.jpg" data-src="img/ramakrishna/large/sr1.jpg">
                 <img src="img/ramakrishna/medium/sr1.jpg" alt="Marble bust of Sri Ramakrishna." class="slideshow">
               </li>
               <li data-thumb="img/ramakrishna/small/sr2.jpg" data-src="img/ramakrishna/large/sr2.jpg">
                 <img src="img/ramakrishna/medium/sr2.jpg" alt="Scupture of Sri Ramakrishna seated with a flower necklasurrounded by flowers." class="slideshow">
-              </li>
-              <li data-thumb="img/ramakrishna/small/sr3.jpg" data-src="img/ramakrishna/large/sr3.jpg">
-                <img src="img/ramakrishna/medium/sr3.jpg" alt="Black and white photo of Sri Ramakrisha seated." class="slideshow">
               </li>
               <li data-thumb="img/ramakrishna/small/sr4.jpg" data-src="img/ramakrishna/large/sr4.jpg">
                 <img src="img/ramakrishna/medium/sr4.jpg" alt="Black and white photo of Sri Ramakrishna leaning on a column." class="slideshow">
@@ -221,7 +221,8 @@
             enableDrag:false,
             onSliderLoad: (function() {
             $("#lightSlider").lightGallery({
-              zoom: true
+              zoom: true,
+width:'125%'
             });
           })
         });
